@@ -767,6 +767,4 @@ Shadowrocket只有iOS/iPadOS/tvOS版本和M系列芯片的Mac才能下载，开�
 
 [Apple官网购买礼品卡方法](https://blog.skylershu.com/post/apple-gift-card)
 
-[支付宝购买美区礼品卡教程](https://youtu.be/W3chc223K-w)
-
-[美区Shadowrocket下载链接](https://apps.apple.com/us/app/shadowrocket/id932747118?l=zh)
+[Shadowrocket下载链接](https://apps.apple.com/app/shadowrocket/id932747118)
