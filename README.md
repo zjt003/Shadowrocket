@@ -1,3 +1,5 @@
+[README in English via Google Translate](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://github.com/LOWERTOP/Shadowrocket/blob/main/README.md)
+
 ```
 Shadowrocket快速使用方法：
 1.首页 - 添加节点。
