@@ -1,4 +1,10 @@
 [![README in English](https://img.shields.io/static/v1?label=README&message=in%20English&color=orange&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://github.com/LOWERTOP/Shadowrocket/blob/main/README.md "README in English via Google Translate")
+[![GitHub stars][stars-image]][stars-url]
+[![Telegram Shadowrocket](https://img.shields.io/static/v1?label=Telegram&message=Shadowrocket&color=blue&logo=telegram&logoColor=white&labelColor=grey&messageColor=white)](https://t.me/ShadowrocketApp "官方频道")
+[![Telegram LOWERTOP](https://img.shields.io/static/v1?label=Telegram&message=LOWERTOP&color=blue&logo=telegram&logoColor=white&labelColor=grey&messageColor=white)](https://t.me/LowerTopBot "联系方式")
+
+[stars-url]: https://github.com/LOWERTOP/Shadowrocket/stargazers "已被星标次数"
+[stars-image]: https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=static&logo=github&label=Star
 
 ------
 
