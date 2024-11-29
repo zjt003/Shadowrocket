@@ -1,6 +1,8 @@
 [![README by Translate](https://img.shields.io/static/v1?label=README&message=by%20Translate&color=orange&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://github.com/LOWERTOP/Shadowrocket/blob/main/README.md "README in English via Google Translate")
 [![Telegram Shadowrocket](https://img.shields.io/static/v1?label=Telegram&message=Shadowrocket&color=blue&logo=telegram&logoColor=white&labelColor=grey&messageColor=white)](https://t.me/ShadowrocketApp "官方频道")
 
+本复刻来自于 [官方文档](https://github.com/wlxuf/Shadowrocket) ，对其中未及时修复的内容做了微调
+
 ------
 
 ```
