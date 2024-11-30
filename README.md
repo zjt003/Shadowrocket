@@ -75,6 +75,7 @@ Shadowrocket快速使用方法：
     * [定位权限](#定位权限)
     * [编译原因](#编译原因)
     * [下载Shadowrocket](#下载shadowrocket)
+    * [URL-Schemes](#url-schemes)
 ### 添加节点
 * 首页 - 右上角➕ - 类型Subscribe - URL栏输入机场订阅链接 - 保存。
 
@@ -778,3 +779,36 @@ Shadowrocket只有iOS/iPadOS/tvOS版本和M系列芯片的Mac才能下载，开�
 [Apple官网购买礼品卡方法](https://blog.skylershu.com/post/apple-gift-card)
 
 [Shadowrocket下载链接](https://apps.apple.com/app/shadowrocket/id932747118)
+
+### URL-Schemes
+
+```ruby
+启动 VPN 隧道
+shadowrocket://connect
+shadowrocket://open
+
+停止 VPN 隧道
+shadowrocket://disconnect
+shadowrocket://close
+
+切换 VPN 隧道
+shadowrocket://toggle
+
+添加 订阅/节点
+shadowrocket://add/{url}
+
+安装/使用 配置
+shadowrocket://config/add/{url}
+
+安装/使用 模块
+shadowrocket://install?module={url}
+
+切换路由（代理/配置/直连/场景）
+shadowrocket://route/proxy
+shadowrocket://route/config
+shadowrocket://route/direct
+shadowrocket://route/scene
+
+安装/使用 配色
+shadowrocket://color?{配色设置}
+```
