@@ -791,8 +791,11 @@ shadowrocket://open
 shadowrocket://disconnect
 shadowrocket://close
 
-切换 VPN 隧道
+切换 VPN 开关状态
 shadowrocket://toggle
+
+使用特定节点
+shadowrocket://select?s=节点名称
 
 添加 订阅/节点
 shadowrocket://add/{url}
