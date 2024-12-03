@@ -1,0 +1,26 @@
+name: Translate README to English
+on:
+  push:
+    paths:
+      - "README.md"  # 监听 README.md 文件的任何变更
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install translate-readme tool
+      run: |
+        npm install -g translate-readme
+
+    - name: Translate README to English
+      run: |
+        translate-readme
