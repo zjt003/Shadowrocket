@@ -1,6 +1,6 @@
 {
-  "source": "README.md",  # 原文件为 README.md
-  "output": "README_en.md",  # 翻译后的文件名
+  "source": "README.md",  # 源文件为 README.md
+  "output": "README.en.md",  # 翻译后的文件名为 README.en.md
   "languages": ["en"],  # 目标语言为英文
   "useGitHubActions": true  # 使用 GitHub Actions 自动更新
 }
