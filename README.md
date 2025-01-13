@@ -801,6 +801,8 @@ Shadowrocket只有iOS/iPadOS/tvOS版本和M系列芯片的Mac才能下载，开�
 
 ### URL-Schemes
 
+请使用相应内容替换代码中的大括号及其内容
+
 ```ruby
 启动 VPN 隧道
 shadowrocket://connect
