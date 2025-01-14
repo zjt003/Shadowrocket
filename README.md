@@ -802,38 +802,56 @@ Shadowrocket只有iOS/iPadOS/tvOS版本和M系列芯片的Mac才能下载，开�
 
 ### URL-Schemes
 
-请使用相应内容替换代码中的大括号及其内容
+请使用相应内容直接替换代码中的大括号及其内容
 
-```ruby
-启动 VPN 隧道
-shadowrocket://connect
-shadowrocket://open
-
-停止 VPN 隧道
-shadowrocket://disconnect
-shadowrocket://close
-
-切换 VPN 开关状态
-shadowrocket://toggle
-
-使用特定节点
-shadowrocket://select?s=节点名称
-
-添加 订阅/节点
-shadowrocket://add/{url}
-
-安装/使用 配置
-shadowrocket://config/add/{url}
-
-安装/使用 模块
-shadowrocket://install?module={url}
-
-切换路由（代理/配置/直连/场景）
-shadowrocket://route/proxy
-shadowrocket://route/config
-shadowrocket://route/direct
-shadowrocket://route/scene
-
-安装/使用 配色
-shadowrocket://color?{配色设置}
-```
+> `启动 VPN 隧道` 
+> ```ruby
+> shadowrocket://connect
+> ```
+> ```ruby
+> shadowrocket://open
+> ```
+>  `停止 VPN 隧道` 
+> ```ruby
+> shadowrocket://disconnect
+> ```
+> ```ruby
+> shadowrocket://close
+> ```
+>  `切换 VPN 开关状态` 
+> ```ruby
+> shadowrocket://toggle
+> ```
+>  `使用特定节点` 
+> ```ruby
+> shadowrocket://select?s={节点名称}
+> ```
+>  `添加 订阅/节点` 
+> ```ruby
+> shadowrocket://add/{url}
+> ```
+>  `安装/使用 配置` 
+> ```ruby
+> shadowrocket://config/add/{url}
+> ```
+>  `安装/使用 模块` 
+> ```ruby
+> shadowrocket://install?module={url}
+> ```
+>  `切换全局路由（代理/配置/直连/场景）` 
+> ```ruby
+> shadowrocket://route/proxy
+> ```
+> ```ruby
+> shadowrocket://route/config
+> ```
+> ```ruby
+> shadowrocket://route/direct
+> ```
+> ```ruby
+> shadowrocket://route/scene
+> ```
+> `安装/使用 配色` 
+> ```ruby
+> shadowrocket://color?{配色设置}
+> ```
