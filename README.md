@@ -325,17 +325,18 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 * 替换策略
 * 测试规则
 
-配置文件的纯文本编写方法，请参考：
-* [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
-
-* [懒人配置（含策略组）](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
-
 ### 使用配置
 点击“使用配置”可以启用该配置文件。若点击当前配置文件的“使用配置”，则可以对该配置文件包含的远程规则集、脚本等远程资源进行更新
 ### 编辑配置
 使用UI交互界面对配置文件的可设置项进行调整
 ### 编辑纯文本
 使用纯文本模式对配置文件的可设置项进行调整
+
+配置文件的纯文本编写方法，请参考：
+* [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
+
+* [懒人配置（含策略组）](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
+
 ### 预览配置
 查看配置文件的纯文本格式
 ### 更新配置
