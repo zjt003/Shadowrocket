@@ -1013,10 +1013,3 @@ Shadowrocket只有iOS/iPadOS/tvOS版本和M系列芯片的Mac才能下载，开�
 > ```ruby
 > shadowrocket://color?{配色设置}
 > ```
-
-> <details>
->   <summary>点击展开</summary>
->   
->   这里是折叠内容。
->   
-> </details>
