@@ -86,6 +86,8 @@ Shadowrocket快速使用方法：
     * [下载Shadowrocket](#下载shadowrocket)
     * [URL-Schemes](#url-schemes)
 
+------
+
 ### 添加节点
 
 * 首页 - 右上角➕ - 类型Subscribe - URL栏输入机场订阅链接 - 保存。
