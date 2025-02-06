@@ -375,9 +375,9 @@ Shadowrocket内置了一个配置文件`default.conf`，其中包含了国内外
 使用纯文本模式对配置文件的可设置项进行调整
 
 配置文件的纯文本编写方法，请参考：
-* [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf)
+* [懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)
 
-* [懒人配置（含策略组）](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf)
+* [懒人配置（含策略组）](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)
 
 ### 预览配置
 
