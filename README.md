@@ -3,7 +3,9 @@
 [![README in English](https://img.shields.io/static/v1?label=README&message=in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "README in English via Google Translate")
 [![Telegram Shadowrocket](https://img.shields.io/static/v1?label=Telegram&message=Shadowrocket&color=blue&logo=telegram&logoColor=white&labelColor=grey&messageColor=white)](https://t.me/ShadowrocketApp "官方频道")
 
-> Shadowrocket 使用手册原始仓库已不可达，本仓库继承其最终文件进行后续维护
+> [!NOTE]
+> 
+> Shadowrocket 懒人配置及关键词列表的原始仓库已不可达，本仓库继承其最终文件进行后续维护
 > 
 > 如有其他需求请访问 [配色与配置](https://github.com/LOWERTOP/Shadowrocket-First) 仓库
 
@@ -61,8 +63,8 @@ Shadowrocket快速使用方法：
     * [微信转圈](#微信转圈)
 * 数据
     * [代理日志](#代理日志)
-    * [DNS日志](#DNS日志)
-    * [iCloud自动同步](#iCloud自动同步)
+    * [DNS日志](#dns日志)
+    * [iCloud自动同步](#icloud自动同步)
     * [节点数据管理](#节点数据管理)
     * [流量统计信息](#流量统计信息)
 * 设置
