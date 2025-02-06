@@ -11,7 +11,7 @@
 
 ------
 
-# Shadowrocket 使用手册
+# [Shadowrocket 使用手册](https://lowertop.github.io/Shadowrocket)
 
 ```
 Shadowrocket快速使用方法：
