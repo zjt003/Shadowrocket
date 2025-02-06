@@ -5,7 +5,7 @@
 
 > [!NOTE]
 > 
-> Shadowrocket 懒人配置及关键词列表的原始仓库已不可达，本仓库继承其最终文件进行后续维护
+> Shadowrocket 原懒人配置文件及关键词列表的原始仓库已不可达，本仓库继承其最终文件进行后续维护
 > 
 > 如有其他需求请访问 [配色与配置](https://github.com/LOWERTOP/Shadowrocket-First) 仓库
 
