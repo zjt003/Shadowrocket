@@ -3,6 +3,8 @@
 [![README in English](https://img.shields.io/static/v1?label=README&message=in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "README in English via Google Translate")
 [![Telegram Shadowrocket](https://img.shields.io/static/v1?label=Telegram&message=Shadowrocket&color=blue&logo=telegram&logoColor=white&labelColor=grey&messageColor=white)](https://t.me/ShadowrocketApp "官方频道")
 
+Shadowrocket 使用手册原始仓库已不可达，本仓库继承其最终文件进行后续维护
+
 ------
 
 ```
