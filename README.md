@@ -7,7 +7,7 @@
 > 
 > 原懒人配置文件及提供关键词列表的仓库已不可达，本仓库将继承其最终文件进行后续维护
 > 
-> 如有其他需求请访问 [配色与配置](https://github.com/LOWERTOP/Shadowrocket-First) 仓库或 [官方群组](https://t.me/ShadowrocketApp)
+> 如有其他需求请访问 [配色与配置](https://github.com/LOWERTOP/Shadowrocket-First) 仓库查看相关内容或移步 [官方群组](https://t.me/ShadowrocketApp) 交流沟通
 
 ------
 
