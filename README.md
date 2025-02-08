@@ -5,14 +5,14 @@
 
 > [!NOTE]
 > 
-> 原懒人配置文件及关键词列表的原作者因故退出维护，其仓库已不可达，本仓库现基于其最终版本文件进行后续基本维护。[Johnshall仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever)的版本也将以本仓文件为基础继续更新。本仓以普通用户的身份对原作者以及[Johnshall](https://github.com/Johnshall)等所有对相关项目做出过贡献的人表示由衷的感谢！
+> 原懒人配置文件及关键词列表的原作者因故退出维护，其仓库已不可达，本仓库现基于其最终版本文件进行后续基本维护。[Johnshall仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也将以本仓文件为基础继续更新。本仓以普通用户的身份对原作者以及 [Johnshall](https://github.com/Johnshall) 等所有对相关项目做出过贡献的人表示由衷的感谢！
 > 
 > 如有其他需求请访问 [配色与配置](https://github.com/LOWERTOP/Shadowrocket-First) 仓库查看相关内容或移步 [官方群组](https://t.me/ShadowrocketApp) 交流沟通
 
 ------
 
 # [Shadowrocket 懒人配置](#shadowrocket-懒人配置)
-> 懒人配置顾名思义是专为“懒人”打造的开箱即用配置文件，该系列配置包含两个文件：一个是[基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)，另一个在此基础上增加了[代理分组/策略组](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是[官方群组](https://t.me/ShadowrocketApp)首推的准官方配置文件，适合各阶段用户使用
+> 懒人配置顾名思义是专为“懒人”打造的开箱即用配置文件，该系列配置包含两个文件：一个是 [基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)，另一个在此基础上增加了 [代理分组/策略组](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是 [官方群组](https://t.me/ShadowrocketApp) 首推的准官方配置文件，适合各阶段用户使用
 > 
 > 使用懒人配置可复制下方地址添加或点击相应徽章一键安装
 >   ```
