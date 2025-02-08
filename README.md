@@ -5,86 +5,101 @@
 
 > [!NOTE]
 > 
-> 原懒人配置文件及提供关键词列表的仓库已不可达，本仓库将继承其最终文件进行后续维护
+> 原懒人配置文件及提供关键词列表的原作者因故退出维护，原仓库已不可达，本仓库现基于其最终版本文件进行后续基本维护。[Johnshall仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever)的版本也将以本仓版本为蓝本进行更新。本人以一名普通用户的身份对原作者以及Johnshall等所有对相关项目做出过贡献的人表示由衷的感谢！
 > 
 > 如有其他需求请访问 [配色与配置](https://github.com/LOWERTOP/Shadowrocket-First) 仓库查看相关内容或移步 [官方群组](https://t.me/ShadowrocketApp) 交流沟通
 
 ------
 
+# [Shadowrocket 懒人配置](#shadowrocket-懒人配置)
+> 懒人配置顾名思义是专为“懒人”打造的开箱即用配置文件，该系列配置包含两个文件：一个是[基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)，另一个在此基础上增加了[代理分组/策略组](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是[官方群组](https://t.me/ShadowrocketApp)首推的准官方配置文件，适合各阶段用户使用
+> 
+> 使用懒人配置可复制下方地址添加或点击相应徽章一键安装
+>   ```
+>   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf
+>   ```
+> [![安装配置 懒人配置](https://img.shields.io/static/v1?label=安装配置&message=懒人配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf "一键安装本配置文件")
+>   ```
+>   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
+>   ```
+> [![安装配置 懒人分流](https://img.shields.io/static/v1?label=安装配置&message=懒人分流&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
+
+------
+
 # [Shadowrocket 使用手册](https://lowertop.github.io/Shadowrocket)
 
-```
-Shadowrocket快速使用方法：
-1.首页 - 添加节点。
-2.设置 - 延迟测试方法，选择CONNECT。
-3.首页 - 连通性测试，选择可用节点连接。
+__Shadowrocket 快速使用方法__
+> 
+> * 首页 - 添加节点<br>
+> * 设置 - 延迟测试方法，选择 CONNECT<br>
+> * 首页 - 连通性测试，选择可用节点连接
+> 
+> 首次启动会提示【安装VPN配置文件】<br>
+> 请点击【好】和【允许】才能正常使用
 
-首次启动会提示【安装VPN配置文件】
-请点击【好】和【允许】才能正常使用
-```
-### 关键词列表
-* 首页
-   * [添加节点](#添加节点)
-   * [添加WireGuard节点](#添加wireguard节点)
-   * [更新订阅节点](#更新订阅节点)
-   * [节点排序](#节点排序)
-   * [SSL错误](#ssl错误)
-   * [节点旗帜](#节点旗帜)
-   * [节点感叹号](#节点感叹号)
-   * [节点分享与整理](#节点分享与整理)
-   * [订阅节点筛选](#订阅节点筛选)
-   * [代理通过/代理链](#代理通过代理链)
-   * [全局路由区别](#全局路由区别)
-   * [连通性测试](#连通性测试)
-   * [修改测试地址](#修改测试地址)
-   * [场景](#场景)
-   * [简单模式](#简单模式)
-   * [启用回退](#启用回退)
-* 配置
-    * [配置文件](#配置文件)
-    * [扩展配置](#扩展配置)
-    * [通用参数](#通用参数)
-    * [添加规则](#添加规则)
-    * [规则类型](#规则类型)
-    * [规则策略](#规则策略)
-    * [app分流](#app分流)
-    * [更新规则集](#更新规则集)
-    * [修改DNS](#修改dns)
-    * [no-resolve的作用](#no-resolve的作用)
-    * [代理分组/策略组](#代理分组策略组)
-    * [代理分组类型](#代理分组类型)
-    * [自动切换节点](#自动切换节点)
-    * [HTTPS解密](#https解密)
-    * [负载均衡](#负载均衡)
-    * [模块](#模块)
-    * [证书模块](#证书模块)
-    * [模块消失](#模块消失)
-    * [身份证书密码](#身份证书密码)
-    * [微信转圈](#微信转圈)
-* 数据
-    * [代理日志](#代理日志)
-    * [DNS日志](#dns日志)
-    * [iCloud自动同步](#icloud自动同步)
-    * [节点数据管理](#节点数据管理)
-    * [流量统计信息](#流量统计信息)
-* 设置
-    * [延迟测试方法](#延迟测试方法)
-    * [小组件](#小组件)
-    * [按需求连接](#按需求连接)
-    * [VPN自动断开](#vpn自动断开)
-    * [前置代理](#前置代理)
-    * [代理共享](#代理共享)
-    * [检测代理](#检测代理)
-    * [代理类型](#代理类型)
-    * [开启UDP转发](#开启udp转发)
-    * [隐藏VPN图标](#隐藏vpn图标)
-    * [GEOIP数据库](#geoip数据库)
-    * [自动更新](#自动更新)
-* 其他
-    * [定位权限](#定位权限)
-    * [编译原因](#编译原因)
-    * [下载Shadowrocket](#下载shadowrocket)
-    * [URL-Schemes](#url-schemes)
+## [关键词列表](#关键词列表)
+> * 首页
+>    * [添加节点](#添加节点)
+>    * [添加WireGuard节点](#添加wireguard节点)
+>    * [更新订阅节点](#更新订阅节点)
+>    * [节点排序](#节点排序)
+>    * [SSL错误](#ssl错误)
+>    * [节点旗帜](#节点旗帜)
+>    * [节点感叹号](#节点感叹号)
+>    * [节点分享与整理](#节点分享与整理)
+>    * [订阅节点筛选](#订阅节点筛选)
+>    * [代理通过/代理链](#代理通过代理链)
+>    * [全局路由区别](#全局路由区别)
+>    * [连通性测试](#连通性测试)
+>    * [修改测试地址](#修改测试地址)
+>    * [场景](#场景)
+>    * [简单模式](#简单模式)
+>    * [启用回退](#启用回退)
+> * 配置
+>     * [配置文件](#配置文件)
+>     * [扩展配置](#扩展配置)
+>     * [通用参数](#通用参数)
+>     * [添加规则](#添加规则)
+>     * [规则类型](#规则类型)
+>     * [规则策略](#规则策略)
+>     * [app分流](#app分流)
+>     * [更新规则集](#更新规则集)
+>     * [修改DNS](#修改dns)
+>     * [no-resolve的作用](#no-resolve的作用)
+>     * [代理分组/策略组](#代理分组策略组)
+>     * [代理分组类型](#代理分组类型)
+>     * [自动切换节点](#自动切换节点)
+>     * [HTTPS解密](#https解密)
+>     * [负载均衡](#负载均衡)
+>     * [模块](#模块)
+>     * [证书模块](#证书模块)
+>     * [模块消失](#模块消失)
+>     * [身份证书密码](#身份证书密码)
+>     * [微信转圈](#微信转圈)
+> * 数据
+>     * [代理日志](#代理日志)
+>     * [DNS日志](#dns日志)
+>     * [iCloud自动同步](#icloud自动同步)
+>     * [节点数据管理](#节点数据管理)
+>     * [流量统计信息](#流量统计信息)
+> * 设置
+>     * [延迟测试方法](#延迟测试方法)
+>     * [小组件](#小组件)
+>     * [按需求连接](#按需求连接)
+>     * [VPN自动断开](#vpn自动断开)
+>     * [前置代理](#前置代理)
+>     * [代理共享](#代理共享)
+>     * [检测代理](#检测代理)
+>     * [代理类型](#代理类型)
+>     * [开启UDP转发](#开启udp转发)
+>     * [隐藏VPN图标](#隐藏vpn图标)
+>     * [GEOIP数据库](#geoip数据库)
+>     * [自动更新](#自动更新)
+> * 其他
+>     * [定位权限](#定位权限)
+>     * [编译原因](#编译原因)
+>     * [下载Shadowrocket](#下载shadowrocket)
+>     * [URL-Schemes](#url-schemes)
 
 ------
 
