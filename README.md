@@ -34,7 +34,7 @@
 
 ------
 
-# [Shadowrocket 使用手册](shadowrocket-使用手册)
+# [Shadowrocket 使用手册](#shadowrocket-使用手册)
 
 **Shadowrocket 快速使用方法**
 > 
