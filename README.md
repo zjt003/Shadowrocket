@@ -2,8 +2,8 @@
 
 [![README in English](https://img.shields.io/static/v1?label=&message=English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "README in English via Google Translate")
 [![App Introduction](https://img.shields.io/static/v1?label=&message=Introduction&color=blue&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://shadowlaunch.com "Shadowrocket 介绍页面")
-[![App Author](https://img.shields.io/static/v1?label=&message=Author&color=blue&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://liguangming.com/Shadowrocket "作者主页")
-[![Official Group](https://img.shields.io/static/v1?label=&message=Group&color=blue&logo=telegram&logoColor=white&labelColor=blue&messageColor=white)](https://t.me/ShadowrocketApp "官方交流群组")
+[![App Author](https://img.shields.io/static/v1?label=&message=Author&color=blue&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://liguangming.com/Shadowrocket "Shadowrocket 作者主页")
+[![Official Group](https://img.shields.io/static/v1?label=&message=Group&color=blue&logo=telegram&logoColor=white&labelColor=blue&messageColor=white)](https://t.me/ShadowrocketApp "Shadowrocket 官方群组")
 
 > [!NOTE]
 > 
