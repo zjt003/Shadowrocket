@@ -4,6 +4,7 @@
 [![App Intro](https://img.shields.io/static/v1?label=&message=Intro&color=blue&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://shadowlaunch.com "Shadowrocket 介绍页面")
 [![App Author](https://img.shields.io/static/v1?label=&message=Author&color=blue&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://liguangming.com/Shadowrocket "Shadowrocket 作者主页")
 [![Official Group](https://img.shields.io/static/v1?label=&message=Group&color=blue&logo=telegram&logoColor=white&labelColor=blue&messageColor=white)](https://t.me/ShadowrocketApp "Shadowrocket 官方群组")
+[![Official Advanced](https://img.shields.io/static/v1?label=&message=Advanced&color=blue&logo=github&logoColor=white&labelColor=blue&messageColor=white)](https://github.com/LOWERTOP/Shadowrocket-First "Shadowrocket 配色与配置仓库")
 
 > [!NOTE]
 > 
