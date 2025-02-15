@@ -461,6 +461,12 @@
 > 💡 **dns-direct-fallback-proxy**：直连域名解析失败后使用代理。false表示不启用
 > 
 > 💡 **udp-policy-not-supported-behaviour**：当UDP流量匹配到规则里不支持UDP转发的节点策略时重新选择回退行为，可选行为包括DIRECT、REJECT。DIRECT表示直连转发UDP流量，REJECT表示拒绝转发UDP流量
+>
+> 💡 **stun-response-ip**：此选项包含两个命令：`stun-response-ip`和`stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如“stun-response-ip=1.1.1.1”、“stun-response-ipv6=::1”，目的是防止真实IP地址泄漏，提高WebRTC的隐私和安全性
+>
+> 💡 **compatibility-mode**：网络兼容模式。`0 - 禁用`；`1 - Proxy with Loopback Address`；`2 - Proxy Only`；`3 - TUN Only`。当参数的值设定为3时的效果等同于：设置 - 代理 - 代理类型 - None
+>
+> 💡 **always-ip-address**：强制所有域名使用本地DNS解析。设置为true表示启用。（此参数为隐藏属性，建议谨慎设置，可能导致相关域名的CDN失效。）
 > 
 > `带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有UI操作选项`
 
