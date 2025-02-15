@@ -81,7 +81,7 @@
 >     * [更新规则集](#更新规则集)
 >     * [预览规则集](#预览规则集)
 >     * [修改DNS](#修改dns)
->     * [DNS代理通过](#dns代理通过)
+>     * [DNS-over-PROXY](#dns-over-proxy)
 >     * [no-resolve的作用](#no-resolve的作用)
 >     * [代理分组/策略组](#代理分组策略组)
 >     * [代理分组类型](#代理分组类型)
@@ -595,13 +595,12 @@
 
 ### 修改DNS
 
-> * 点击配置文件ⓘ - 通用 - DNS覆写，删除`system`，添加 `223.5.5.5,119.29.29.29`。也可以使用[DNS代理通过](#dns代理通过)以及加密DNS，如`DNS-over-TLS`、`DNS-over-HTTPS`、`DNS-over-QUIC`
+> * 点击配置文件ⓘ - 通用 - DNS覆写，删除`system`，添加 `223.5.5.5,119.29.29.29`。也可以使用[通过代理使用DNS](#dns-over-proxy)以及加密DNS，如`DNS-over-TLS`、`DNS-over-HTTPS`、`DNS-over-QUIC`
 > 
 > * **备用DNS**：当覆写的DNS查询失败后回退备用DNS进行查询。如需指定多个DNS，可用逗号分隔。`system`表示回退到系统DNS
 
-### DNS代理通过
+### DNS-over-PROXY
 
-> DNS-over-PROXY<br>
 > 通过代理连接 DNS 服务器
 >
 > * **proxy=name**
