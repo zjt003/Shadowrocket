@@ -604,7 +604,7 @@
 > DNS-over-PROXY<br>
 > 通过代理连接 DNS 服务器
 >
-> * proxy=name
+> * **proxy=name**
 > 
 > > 需要注意此处的代理名称仅支持http编码<br>
 > > 以“香港 01”示例：
@@ -612,11 +612,11 @@
 > > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
 > > ```
 > 
-> * ecs=子网范围
+> * **ecs=子网范围**
 > 
 > > ecs 参数用于设置 EDNS Client Subnet (ECS)，向 DNS 服务器传递客户端的子网信息。ECS 允许 DNS 服务器根据指定的子网范围（而非实际客户端 IP）来返回最优结果
 > 
-> * ecs-override=true
+> * **ecs-override=true**
 > 
 > > ecs 参数的强制覆盖。即使客户端的实际 IP 提供了不同的地理位置，查询会强制使用 ecs 指定的子网范围
 > > 
