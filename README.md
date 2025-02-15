@@ -81,6 +81,7 @@
 >     * [更新规则集](#更新规则集)
 >     * [预览规则集](#预览规则集)
 >     * [修改DNS](#修改dns)
+>     * [DNS代理通过](#dns代理通过)
 >     * [no-resolve的作用](#no-resolve的作用)
 >     * [代理分组/策略组](#代理分组策略组)
 >     * [代理分组类型](#代理分组类型)
@@ -589,9 +590,38 @@
 
 ### 修改DNS
 
-> * 点击配置文件ⓘ - 通用 - DNS覆写，删除`system`，添加 `223.5.5.5,119.29.29.29`。也可以使用加密DNS，如`DNS-over-TLS`、`DNS-over-HTTPS`、`DNS-over-QUIC`
+> * 点击配置文件ⓘ - 通用 - DNS覆写，删除`system`，添加 `223.5.5.5,119.29.29.29`。也可以使用[DNS代理通过](#dns代理通过)以及加密DNS，如`DNS-over-TLS`、`DNS-over-HTTPS`、`DNS-over-QUIC`
 > 
 > * **备用DNS**：当覆写的DNS查询失败后回退备用DNS进行查询。如需指定多个DNS，可用逗号分隔。`system`表示回退到系统DNS
+
+### DNS代理通过
+
+> DNS-over-PROXY<br>
+> 通过代理连接 DNS 服务器
+>
+> * proxy=name
+> 
+> > 需要注意此处的代理名称仅支持http编码<br>
+> > 以“香港 01”示例：
+> > ```
+> > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
+> > ```
+> 
+> * ecs=子网范围
+> 
+> > ecs 参数用于设置 EDNS Client Subnet (ECS)，向 DNS 服务器传递客户端的子网信息。ECS 允许 DNS 服务器根据指定的子网范围（而非实际客户端 IP）来返回最优结果
+> 
+> * ecs-override=true
+> 
+> > ecs 参数的强制覆盖。即使客户端的实际 IP 提供了不同的地理位置，查询会强制使用 ecs 指定的子网范围
+> > 
+> > 示例：
+> > ```
+> > dns-server=https://dns.google/dns-query#ecs=120.76.0.0/14|2620:149:af0::10/56&ecs-override=true
+> > ```
+> > ```
+> > dns-server=https://dns.google/dns-query#proxy=name&ecs=1.1.0.0/14|2620:149:af0::10/56&ecs-override=true
+> > ```
 
 ### no-resolve的作用
 
