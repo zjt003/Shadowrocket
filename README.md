@@ -1,9 +1,6 @@
-[![README in English](https://img.shields.io/static/v1?label=&message=English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "README in English via Google Translate")
-[![App Introduction](https://img.shields.io/static/v1?label=&message=Introduction&color=blue&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://shadowlaunch.com "Shadowrocket 介绍页面")
-[![Official Group](https://img.shields.io/static/v1?label=&message=Group&color=blue&logo=telegram&logoColor=white&labelColor=blue&messageColor=white)](https://t.me/ShadowrocketApp "Shadowrocket 官方群组")
-[![Shadowrocketl Modules](https://img.shields.io/static/v1?label=&message=Modules&color=blue&logo=github&logoColor=white&labelColor=blue&messageColor=white)](https://github.com/LOWERTOP/Shadowrocket-First "Shadowrocket 配色与配置仓库")
-
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C+%E4%B8%8E+%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE&description=1&font=Rokkitt&forks=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&stargazers=1&theme=Light)](https://lowertop.github.io/Shadowrocket "发布页面")
+
+[![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
 
 > [!NOTE]
 > 
