@@ -184,9 +184,9 @@
 > * 长按屏幕的应用图标 - 更新订阅
 > ```
 > 添加/更新订阅时异常原因：
-> `forbidden` 表示订阅被重置或令牌 `token` 错误
-> `not found` 表示路径信息错误
-> `service unavailable` 表示域名信息错误或域名被运营商屏蔽
+> forbidden 表示订阅被重置或令牌 token 错误
+> not found 表示路径信息错误
+> service unavailable 表示域名信息错误或域名被运营商屏蔽
 > ```
 
 ### [节点排序](#使用目录)
