@@ -140,11 +140,11 @@
 > 
 > * 首页 - 右上角 `➕` - 类型 `Subscribe` - URL 栏输入服务器订阅链接 - 保存
 > 
->   `订阅链接后面加上 #1、#2、#3…，可以重复添加同一个订阅`
+>   `订阅链接后面加上 `#1` `#2` `#3` 等，可以重复添加同一个订阅`
 > 
 > * 首页 - 右上角 `➕`，选择对应节点类型，填写节点配置信息并保存
 > 
->   `Shadowrocket 已支持的类型：Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、TUIC、Juicity、WireGuard、Snell、Brook、Lua`
+>   **Shadowrocket 已支持的协议类型**：`Shadowsocks` `ShadowsocksR` `Subscribe（订阅）` `Vmess` `VLESS` `Relay` `Socks5` `Socks5 Over TLS` `HTTP` `HTTPS` `HTTP2` `Trojan` `Hysteria` `Hysteria2` `TUIC` `Juicity` `WireGuard` `Snell` `Brook` `Lua`
 
 ### [添加WireGuard节点](#使用目录)
 
@@ -434,7 +434,7 @@
 > 
 > **TUN旁路路由（tun-excluded-routes）**：Shadowrocket `TUN接口`只能处理 `TCP 协议`。使用此选项可以绕过指定的IP范围，让其他协议通过
 > 
-> **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如doh、doq、dot等）覆盖默认的系统 DNS。有些 `dns over https` 支持 `http3`，所以尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`
+> **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。有些 `dns over https` 支持 `http3`，所以尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`
 > 
 > **备用DNS（fallback-dns-server）**：当覆写 DNS 查询失败或查询时间超过2秒，Shadowrocket 会自动回退备用 DNS。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS
 > 
