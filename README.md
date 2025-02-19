@@ -134,7 +134,7 @@
 
 > * 首页 - 左上角 - 扫码添加
 >   
-> * 复制节点链接，如 `trojan://*`、`vmess://*`、`vless://*` 等，打开 Shadowrocket 时会自动识别导入
+> * 复制节点链接，如 `trojan://*` `vmess://*` `vless://*` 等，打开 Shadowrocket 时会自动识别导入
 >   
 >   `须开启剪贴板读取权限`
 > 
@@ -298,14 +298,14 @@
 
 > 场景是根据不同的网络连接类型（Wi-Fi、蜂窝数据）自动切换到预先设置的路由模式，并选择对应的配置文件和节点连接
 > > * 首页 - 全局路由 - 设置的 `场景` - 添加场景
-> > * 为指定的网络连接类型设置对应的路由模式（`配置`、`直连`、`代理`），类型（`节点`、`分组`），`配置文件`，`备注`
+> > * 为指定的网络连接类型设置对应的路由模式（`配置` `直连` `代理`），类型（`节点` `分组`），`配置文件`，`备注`
 > > * 网络连接类型分别为：Wi-Fi、蜂窝数据、默认。选择Wi-Fi类型时，SSID需填写Wi-Fi名称
 >> * 首页 - 全局路由 - 选择 `场景`
 >
 > 软件支持添加蜂窝数据场景，支持以 `网络接口` 作为匹配条件
 > > * 默认（留空）代表接口 `pdp_ip0`
 > > * 当设备启用了多个蜂窝数据网络时，可在 Shadowrocket 的 设置 > 诊断 > 网络 中查看对应的接口信息
-> > * 输入格式：`pdp_ip1`、`pdp_ip2`、`pdp_ip3` 等
+> > * 输入格式：`pdp_ip1` `pdp_ip2` `pdp_ip3` 等
 > 
 > 首次添加场景，可能会弹出申请权限的对话框，具体原因请看[定位权限](#定位权限)。当没有允许定位权限时，场景列表的☑️标记不会随着网络类型的切换而自动切换，但这不影响场景功能的正常生效
 > 
@@ -460,9 +460,9 @@
 > 
 > 💡 **dns-direct-fallback-proxy**：直连域名解析失败后使用代理。`false` 表示不启用
 > 
-> 💡 **udp-policy-not-supported-behaviour**：当 UDP 流量匹配到规则里不支持 UDP 转发的节点策略时重新选择回退行为，可选行为包括 `DIRECT`、`REJECT`。`DIRECT` 表示直连转发 UDP 流量，`REJECT` 表示拒绝转发 UDP 流量
+> 💡 **udp-policy-not-supported-behaviour**：当 UDP 流量匹配到规则里不支持 UDP 转发的节点策略时重新选择回退行为，可选行为包括 `DIRECT` `REJECT`。`DIRECT` 表示直连转发 UDP 流量，`REJECT` 表示拒绝转发 UDP 流量
 >
-> 💡 **stun-response-ip**：此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1` 、 `stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性
+> 💡 **stun-response-ip**：此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1`  `stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性
 >
 > 💡 **compatibility-mode**：网络兼容模式。`0 - 禁用`；`1 - Proxy with Loopback Address`；`2 - Proxy Only`；`3 - TUN Only`。当参数的值设定为3时的效果等同于：设置 - 代理 - 代理类型 - None
 >
@@ -492,11 +492,11 @@
 
 > **DOMAIN-SUFFIX**：匹配请求域名的后缀
 > 
-> > 如 `DOMAIN-SUFFIX,example.com,DIRECT` 可以匹配到 `a.example.com`、`a.b.example.com`
+> > 如 `DOMAIN-SUFFIX,example.com,DIRECT` 可以匹配到 `a.example.com` `a.b.example.com`
 > 
 > **DOMAIN-KEYWORD**：匹配请求域名的关键词
 > 
-> > 如 `DOMAIN-KEYWORD,exa,DIRECT` 可以匹配到 `a.example.com`、`a.b.example.com`
+> > 如 `DOMAIN-KEYWORD,exa,DIRECT` 可以匹配到 `a.example.com` `a.b.example.com`
 > 
 > **DOMAIN**：匹配请求的完整域名
 > 
@@ -574,7 +574,7 @@
 > 
 > **REJECT-NO-DROP**：拒绝。返回 ICMP 端口不可达
 > 
-> 除此之外，规则策略还可以选择 `代理分组`、`订阅名称`、`分组`、`服务器节点`
+> 除此之外，规则策略还可以选择 `代理分组` `订阅名称` `分组` `服务器节点`
 
 ### [APP分流](#使用目录)
 
@@ -601,7 +601,7 @@
 
 ### [修改DNS](#使用目录)
 
-> * 点击配置文件 `ⓘ` - 通用 - DNS 覆写，删除 `system`，添加 `223.5.5.5,119.29.29.29`。也可以使用[通过代理使用DNS](#dns-over-proxy)以及加密DNS，如 `DNS-over-TLS`、`DNS-over-HTTPS`、`DNS-over-QUIC`
+> * 点击配置文件 `ⓘ` - 通用 - DNS 覆写，删除 `system`，添加 `223.5.5.5,119.29.29.29`。也可以使用[通过代理使用DNS](#dns-over-proxy)以及加密DNS，如 `DNS-over-TLS` `DNS-over-HTTPS` `DNS-over-QUIC`
 > 
 > * **备用DNS**：当覆写的 DNS 查询失败后回退备用 DNS 进行查询。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS
 
@@ -1087,7 +1087,7 @@
 
 ### [VPN自动断开](#使用目录)
 
-> 系统版本低于 `iOS 15`、处理复杂请求、加解密数据、运行脚本等因素相互作用之下可能导致 NE 内存占用过高，从而造成 VPN 自动断开，解决方法：
+> 系统版本低于 `iOS 15` 处理复杂请求、加解密数据、运行脚本等因素相互作用之下可能导致 NE 内存占用过高，从而造成 VPN 自动断开，解决方法：
 > 
 > `设置` - `按需求连接` - 打开 `始终开启`
 
