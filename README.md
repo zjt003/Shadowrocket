@@ -144,7 +144,7 @@
 > 
 > * 首页 - 右上角 `➕`，选择对应节点类型，填写节点配置信息并保存
 > 
->   **Shadowrocket 已支持的协议类型**：`Shadowsocks` `ShadowsocksR` `Subscribe（订阅）` `Vmess` `VLESS` `Relay` `Socks5` `Socks5 Over TLS` `HTTP` `HTTPS` `HTTP2` `Trojan` `Hysteria` `Hysteria2` `TUIC` `Juicity` `WireGuard` `Snell` `Brook` `Lua`
+>   **Shadowrocket 已支持的协议类型**：`Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、TUIC、Juicity、WireGuard、Snell v2、Brook、Lua`
 
 ### [添加WireGuard节点](#使用目录)
 
