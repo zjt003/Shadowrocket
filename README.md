@@ -180,8 +180,9 @@
 > * Shadowrocket 提供了 `更新订阅` 的快捷指令，可以实现自动化操作
 > 
 > * 长按屏幕的应用图标 - 更新订阅
+>   
 > ```
-> 添加/更新订阅时异常原因：
+> 添加/更新订阅时异常的原因：
 > forbidden 表示订阅被重置或令牌 token 错误
 > not found 表示路径信息错误
 > service unavailable 表示域名信息错误或域名被运营商屏蔽
@@ -219,51 +220,53 @@
 > 
 > > 首页 - 订阅后面 `ⓘ` - 过滤
 > > 
+> > `分组、代理分组的正则写法与以下命令相同，但需删除前后 "/" 符号`
+> > 
 > > * 保留节点名称含有关键词 A 和 B 的节点：
-> > ```
-> > /(?=.*(A))^(?=.*(B))^.*$/
-> > ```
+> >   ```
+> >   /(?=.*(A))^(?=.*(B))^.*$/
+> >   ```
 > > * 保留节点名称含有关键词 A 或 B 的节点：
-> > ```
-> > A|B
-> > ```
+> >   ```
+> >   A|B
+> >   ```
 > > * 排除节点名称含有关键词 A 或 B 的节点：
-> > ```
-> > /^((?!(A|B)).)*$/
-> > ```
+> >   ```
+> >   /^((?!(A|B)).)*$/
+> >   ```
 > > * 保留节点名称含有关键词 A 并排除含有关键词 B 的节点：
-> > ```
-> > /(?=.*(A))^((?!(B)).)*$/
-> > ```
-> > `分组、代理分组的正则写法与此相同，但需删除前后 "/" 符号`
+> >   ```
+> >   /(?=.*(A))^((?!(B)).)*$/
+> >   ```
 > 
 > **批量整理**
 > 
 > > 节点订阅筛选功能支持使用脚本代码批量整理和修改相应订阅中节点的功能选项及节点名称
 > > 
 > > * 节点中的关键词 a 替换成 b：
-> > ```
-> > $server.title=$server.title.replace(/关键词a/g,'关键词b')
-> > ```
+> >   ```
+> >   $server.title=$server.title.replace(/关键词a/g,'关键词b')
+> >   ```
 > > * 批量给节点名称增加 abc 开头的关键词：
-> > ```
-> > $server.title='abc'+$server.title
-> > ```
+> >   ```
+> >   $server.title='abc'+$server.title
+> >   ```
 > > * 开启全部节点的片段：
-> > ```
-> > $server.reserved="1,40-60,30-50"
-> > ```
+> >   ```
+> >   $server.reserved="1,40-60,30-50"
+> >   ```
 > > * 开启全部节点的多路复用：
-> > ```
-> > $server.mux=1
-> > ```
-> > * 设置全部订阅节点的 `代理链/链式代理/代理通过`
-> > > ```
-> > > $server['dialer-proxy']="UUID值"
-> > > ```
-> > > `其中所用的 UUID 值需要在中转节点 JSON 文本中复制。该设置方式后期可能会再做调整`
+> >   ```
+> >   $server.mux=1
+> >   ```
+> > * 设置全部订阅节点的 代理链/链式代理/代理通过
+> >   ```
+> >   $server['dialer-proxy']="UUID值"
+> >   ```
+> >   `其中所用的 UUID 值需要在中转节点 JSON 文本中复制。该设置方式后期可能会再做调整`
 > > 
-> **其他示例**：[参阅此处](https://github.com/LOWERTOP/Shadowrocket-First#%E7%AD%9B%E9%80%89%E8%AE%A2%E9%98%85%E8%84%9A%E6%9C%AC)
+> **其他命令**
+> > 该功能也支持更复杂的脚本指令，可以参阅 [此处示例](https://github.com/LOWERTOP/Shadowrocket-First#%E7%AD%9B%E9%80%89%E8%AE%A2%E9%98%85%E8%84%9A%E6%9C%AC)
 
 ### [代理通过/代理链](#使用目录)
 
@@ -595,9 +598,9 @@
 > 示例：YouTube App 分流走代理
 > 
 > * 复制 YouTube 的规则集链接
-> ```
-> https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list
-> ```
+>   ```
+>   https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list
+>   ```
 > * 点击配置文件 `ⓘ` - 规则 - 右上角 `➕`，类型选择 `RULE-SET`，策略选择 `PROXY`，输入框内粘贴 `规则集链接`，保存完成（策略可以根据需求使用其他选项）
 > 
 > iOS系统没有常规分应用代理的操作，只能通过 `域名` / `ip` / `ua` 规则实现app分流效果。可自行抓包，或者订阅 [blackmatrix7](https://github.com/blackmatrix7) 的 [规则集](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)。如果引用的链接是域名集，添加规则时，类型请选择 `DOMAIN-SET`
@@ -650,9 +653,9 @@
 > * 当域名请求遇到 IP 类规则时，Shadowrocket 会向本地DNS服务器发送查询请求，以判断主机 IP 是否匹配规则
 > 
 > * 若IP类规则加 `no-resolve`，则域名请求将会跳过此规则，不触发本地 DNS 查询。如：
-> ```
-> IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-> ```
+>   ```
+>   IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+>   ```
 
 ### [代理分组/策略组](#使用目录)
 
@@ -738,9 +741,9 @@
 > 模块是指为 Shadowrocket 提供额外功能的插件或者扩展项，一般是以增强或自定义软件的使用体验为出发点。模块的写法与配置文件相同，且模块的优先级高于配置文件，可以在模块里设置通用设置以及添加规则、Hosts、重写、脚本、证书内容、解密主机名等
 >
 > 模块 `[MITM]` 部分需要加 `%APPEND%`，表示把内容插入到配置中，不加时会覆盖配置中对应内容，并影响其他模块功能
->  ```
+> ```
 > hostname = %APPEND% 主机名
->  ```
+> ```
 > 
 > **下载远程模块**
 > > * 配置 - 模块 - 右上角 `➕` - 填写链接 - 下载
@@ -763,16 +766,16 @@
 > 
 >   软件 ` 配置 ` 页面 - ` 模块 ` - ` 新建模块 `，粘贴并自行修改以下内容：
 >   
-> ```
-> #!name=证书（名字可更改）
-> [MITM]
-> enable=true
-> ca-passphrase=证书密码（即「已安装证书的配置文件」的证书密码，默认密码是Shadowrocket）
-> ca-p12=证书内容（即剪贴板复制的内容）
-> ```
-> 原本是可以省略 `ca-passphrase` 这行参数。但由于引用的配置文件可能已经包含了证书密码，且证书密码可能不是 Shadowrocket，为防止出错，因此才增加 `ca-passphrase` 参数来覆盖引用的配置文件的证书密码
+>   ```
+>   #!name=证书（名字可更改）
+>   [MITM]
+>   enable=true
+>   ca-passphrase=证书密码（即「已安装证书的配置文件」的证书密码，默认密码是Shadowrocket）
+>   ca-p12=证书内容（即剪贴板复制的内容）
+>   ```
+>   原本是可以省略 `ca-passphrase` 这行参数。但由于引用的配置文件可能已经包含了证书密码，且证书密码可能不是 Shadowrocket，为防止出错，因此才增加 `ca-passphrase` 参数来覆盖引用的配置文件的证书密码
 > 
-> `enable=true` 忽略当前配置文件内的HTTPS解密状态，使用该模块的证书进行HTTPS解密
+>   `enable=true` 忽略当前配置文件内的HTTPS解密状态，使用该模块的证书进行HTTPS解密
 
 ### [身份证书密码](#使用目录)
 
@@ -1001,22 +1004,22 @@
 > 方法二
 > * 关注 GitHub 的 IP 数据库项目，复制 mmdb 格式的下载链接，粘贴在国家/ASN 对应的 URL 位置，点击`更新`按钮。当点击`重置`时，可以恢复为系统自带的数据库
 > 
-> [Loyalsoldier](https://github.com/Loyalsoldier/geoip) 的 IP 数据库：
-> ```
-> https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
-> ```
-> [Hackl0us](https://github.com/Hackl0us/GeoIP2-CN) 的 IP 数据库：
-> ```
-> https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
-> ```
-> [Masaiki](https://github.com/Masaiki/GeoIP2-CN) 的 IP 数据库：
-> ```
-> https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
-> ```
-> [P3TERX](https://github.com/P3TERX/GeoLite.mmdb) 的 ASN 数据库：
-> ```
-> https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
-> ```
+>   [Loyalsoldier](https://github.com/Loyalsoldier/geoip) 的 IP 数据库：
+>   ```
+>   https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+>   ```
+>   [Hackl0us](https://github.com/Hackl0us/GeoIP2-CN) 的 IP 数据库：
+>   ```
+>   https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
+>   ```
+>   [Masaiki](https://github.com/Masaiki/GeoIP2-CN) 的 IP 数据库：
+>   ```
+>   https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+>   ```
+>   [P3TERX](https://github.com/P3TERX/GeoLite.mmdb) 的 ASN 数据库：
+>   ```
+>   https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
+>   ```
 
 ### [自动更新](#使用目录)
 
@@ -1126,14 +1129,14 @@
 > * Shadowrocket 是买断制的付费软件<br>
 > * 美区价格：2.99 美元<br>
 > * 使用美区 ID 时，地址建议填免税州
-> ```
-> 五个免税州：
-> 俄勒冈州（Oregon）
-> 蒙大拿州（Montana）
-> 特拉华州（Delaware）
-> 新罕布什尔州（New Hampshire）
-> 阿拉斯加州（Alaska）部分区域
-> ```
+>   ```
+>   五个免税州：
+>   俄勒冈州（Oregon）
+>   蒙大拿州（Montana）
+>   特拉华州（Delaware）
+>   新罕布什尔州（New Hampshire）
+>   阿拉斯加州（Alaska）部分区域
+>   ```
 > 
 > [美国地址生成器](https://www.meiguodizhi.com)<br>
 > [美区 Apple ID 注册方法](https://blog.skylershu.com/post/apple-id-us-2022)<br>
