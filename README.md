@@ -262,7 +262,7 @@
 > > ```
 > > $server['dialer-proxy']="UUID值"
 > > ```
-> > > `其中所用的 UUID 值需要在节点 JSON 文本中复制`
+> > > `其中所用的 UUID 值需要在节点 JSON 文本中复制。该设置方式后期可能有变动`
 > > 
 > > * 其他示例：[参阅此处](https://github.com/LOWERTOP/Shadowrocket-First#%E7%AD%9B%E9%80%89%E8%AE%A2%E9%98%85%E8%84%9A%E6%9C%AC)
 
