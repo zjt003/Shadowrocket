@@ -12,7 +12,7 @@
 # [Shadowrocket 懒人配置](#shadowrocket-懒人配置)
 > [!NOTE]
 >
-> 懒人配置顾名思义是专为 `懒人` 打造的开箱即用配置文件，该系列配置包含两个文件：一个是 [基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)，另一个在此基础上增加了 [代理分组/策略组](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是 [官方群组](https://t.me/ShadowrocketApp) 除默认配置外首推的配置文件，适合各阶段用户使用
+> 懒人配置顾名思义是专为 `懒人` 打造的开箱即用[配置文件](#配置文件)，该系列配置包含两个文件：一个是 [基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)，另一个在此基础上增加了 [代理分组/策略组](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是 [官方群组](https://t.me/ShadowrocketApp) 除默认配置外首推的配置文件，适合各阶段用户使用
 
 > 如需使用该系列配置文件，可复制下方相应地址 [添加配置](#配置文件) 或点击徽章一键安装
 > 
