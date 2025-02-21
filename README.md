@@ -10,6 +10,7 @@
 ------
 
 # [Shadowrocket 懒人配置](#shadowrocket-懒人配置)
+
 > [!NOTE]
 >
 > 懒人配置顾名思义是专为 `懒人` 打造的开箱即用[配置文件](#配置文件)，该系列配置包含两个文件：一个是 [基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)，另一个在此基础上增加了 [代理分组/策略组](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是 [官方群组](https://t.me/ShadowrocketApp) 除默认配置外首推的配置文件，适合各阶段用户使用
@@ -33,6 +34,7 @@
 # [Shadowrocket 使用手册](#shadowrocket-使用手册)
 
 > [!NOTE]
+> 
 > Shadowrocket（常被用户称为“小火箭”）是一款专为 iOS 设备设计的网络代理工具，同时也支持 Apple TV 和 Mac 设备（M系列芯片）。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器，帮助用户绕过特定网络环境、访问被限制的内容，并提升在线隐私保护，满足不同用户的需求
 
 > [!TIP]
