@@ -458,7 +458,7 @@
 > 
 > **跳过代理（skip-proxy）**：此选项强制域名或IP的连接范围由 Shadowrocket `TUN 接口` 来处理，而不是 Shadowrocket 代理服务器。此选项用于解决一些应用程序的一些兼容性问题
 > 
-> **TUN旁路路由（tun-excluded-routes）**：Shadowrocket `TUN接口`只能处理 `TCP 协议`。使用此选项可以绕过指定的IP范围，让其他协议通过
+> **TUN旁路路由（tun-excluded-routes）**：Shadowrocket `TUN接口` 只能处理 `TCP 协议`。使用此选项可以绕过指定的IP范围，让其他协议通过
 > 
 > **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。有些 `dns over https` 支持 `http3`，所以尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`
 > 
