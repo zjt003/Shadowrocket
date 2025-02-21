@@ -4,15 +4,16 @@
 
 > [!NOTE]
 > 
-> 原懒人系列配置文件及关键词列表的仓库因故失活，本仓将在其最终版本的基础上进行持续维护，以确保懒人系列配置文件和 Shadowrocket 使用手册的正常使用。如需进一步支持，请参阅 [配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First) 或移步 [官方群组](https://t.me/ShadowrocketApp)<br>
+> 原懒人系列配置文件及关键词列表的仓库因故失活，本仓将在其最终版本的基础上进行持续维护，以确保懒人系列配置文件和 Shadowrocket 使用手册的正常使用。如需进一步支持，请参阅 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)** 或移步 **[官方群组](https://t.me/ShadowrocketApp)**<br>
 > [Johnshall 仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的版本也将以本仓文件为基础继续更新。本仓以普通用户的身份对原作者及 [Johnshall](https://github.com/Johnshall) 等所有对相关项目做出贡献的人表示由衷的感谢！
 
 ------
 
 # [Shadowrocket 懒人配置](#shadowrocket-懒人配置)
+
 > [!NOTE]
 >
-> 懒人配置顾名思义是专为 `懒人` 打造的开箱即用配置文件，该系列配置包含两个文件：一个是 [基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)，另一个在此基础上增加了 [代理分组/策略组](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是 [官方群组](https://t.me/ShadowrocketApp) 除默认配置外首推的配置文件，适合各阶段用户使用
+> 懒人配置顾名思义是专为 `懒人` 打造的开箱即用 [配置文件](#配置文件)，该系列配置包含两个文件：一个是 **[基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)**，另一个是在此基础上增加了代理分组的 **[分流配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是 [官方群组](https://t.me/ShadowrocketApp) 除默认配置外首推的配置文件，适合各阶段用户使用
 
 > 如需使用该系列配置文件，可复制下方相应地址 [添加配置](#配置文件) 或点击徽章一键安装
 > 
@@ -31,6 +32,10 @@
 ------
 
 # [Shadowrocket 使用手册](#shadowrocket-使用手册)
+
+> [!NOTE]
+> 
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 和 Mac 设备（M系列芯片）。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器，帮助用户绕过特定网络环境、访问被限制的内容，并提升在线隐私保护，满足不同用户的需求
 
 > [!TIP]
 > 
@@ -195,6 +200,7 @@
 ### [节点分享与整理](#使用目录)
 
 > **节点分享**
+> 
 > > * 长按节点 - 拷贝，可以把节点链接分享给其他设备
 > > 
 > > * 左滑节点 - 二维码，其他设备可以通过扫码添加节点（二维码页面点击右上角的 `分享` 按钮，可以选择其他形式传送二维码）
@@ -206,6 +212,7 @@
 > > * 展开节点列表，点击连通性测试下方的编辑按钮 `•••`，勾选需要分享的节点，点击左上角的 `复制`，可以把多个节点链接同时分享给其他设备
 > 
 > **节点整理**
+> 
 > > * **调整顺序**：点击编辑按钮 `•••`，按住订阅后面的 `≡`图标可以调整订阅之间的上下顺序（本地节点默认置顶位置）
 > > 
 > > * **节点分类**：非订阅形式添加的节点，默认会归类为 `本地节点`。如果需要重新对本地节点进行分类，可以使用 `折叠` 功能。点击编辑按钮 `•••`，勾选节点，点击左上角的 `折叠`，为新分类的节点组命名（`折叠` 功能可以选择本地节点或者订阅节点）
@@ -261,11 +268,15 @@
 > >   ```
 > > * 批量设置全部订阅节点的 代理链/链式代理/代理通过
 > >   ```
+> >   $server.chain="订阅名称/节点名称"
+> >   ```
+> >   ```
 > >   $server['dialer-proxy']="UUID值"
 > >   ```
-> >   `其中所用的 UUID 值需要在中转节点 JSON 文本中复制。该设置方式后期可能会再做调整`
-> > 
+> >   `第一种为正式命令，第二种为临时命令，过度期内两种方式以生效者为准。其中”UUID 值”可在中转节点或订阅的 JSON 文本中复制，第一种命令的“订阅名称/节点名称”也可以使用 UUID 值`
+> 
 > **其他命令**
+> 
 > > 该功能也支持更复杂的脚本指令，可以参阅 [此处示例](https://github.com/LOWERTOP/Shadowrocket-First#%E7%AD%9B%E9%80%89%E8%AE%A2%E9%98%85%E8%84%9A%E6%9C%AC)
 
 ### [代理通过/代理链](#使用目录)
@@ -668,15 +679,15 @@
 
 ### [代理分组类型](#使用目录)
 
-> **select**：手动切换节点
+> **select**：手动指定所用代理
 > 
-> **url-test**：自动切换延迟最低节点
+> **url-test**：根据设定的自动测试周期和结果自动切换延迟最低节点
 > 
-> **fallback**：节点挂掉时自动切换其他可用节点
+> **fallback**：节点不可用时自动切换其他可用节点，可用节点范围被上次自动测试结果所限
 > 
 > **load-balance**：不同规则的请求使用分组里的不同节点进行连接，相同的域名会使用同一个节点
 > 
-> **random**：随机使用分组里的不同节点进行连接
+> **random**：随机使用分组里的不同节点进行连接，相同的域名可能使用不同的节点
 
 ### [脚本URL](#使用目录)
 
