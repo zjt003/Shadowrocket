@@ -630,27 +630,55 @@
 
 ### [修改DNS](#使用目录)
 
-> * 点击配置文件的 `ⓘ` 图标 > 通用 > DNS 覆写，删除 `system`，添加 `223.5.5.5,119.29.29.29`。也可以使用 [通过代理使用DNS](#dns-over-proxy) 以及加密DNS，如 `DNS-over-TLS` `DNS-over-HTTPS` `DNS-over-QUIC`
+> **DNS覆写**
+>   
+> >   点击配置文件的 `ⓘ` 图标 > 通用 > DNS 覆写<br>
+> >   使用普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）覆盖默认的系统 DNS。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)
+> >   
+> >   **普通 DNS 示例**<br>
+> >   ```
+> >   dns-server = 223.5.5.5,119.29.29.29
+> >   ```
+> >   
+> >   **加密 DNS 示例**<br>
+> >   1、DNS-over-HTTPS（DoH）
+> >   ```
+> >   dns-server = https://dns.alidns.com/dns-query
+> >   ```
+> >   2、DNS-over-HTTP/3（DoH3）
+> >   ```
+> >   dns-server = h3://dns.alidns.com/dns-query
+> >   ```
+> >   3、DNS-over-QUIC（DoQ）
+> >   ```
+> >   dns-server = quic://223.5.5.5
+> >   ```
+> >   4、DNS-over-TLS（DoT）
+> >   ```
+> >   dns-server = tls://223.5.5.5
+> >   ```
 > 
-> * **备用DNS**：当覆写的 DNS 查询失败后回退备用 DNS 进行查询。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS
+> **备用DNS**
+>   
+> >   当覆写的 DNS 查询失败后回退备用 DNS 进行查询。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS
 
 ### [DNS-over-PROXY](#使用目录)
 
-> 通过代理连接 DNS 服务器
+> 通过代理转发 DNS 查询请求
 >
-> * **proxy=name**
+> **proxy=name**
 > 
-> > 需要注意此处的代理名称仅支持 http 编码<br>
+> > 需要注意此处的代理名称仅支持 URL 编码<br>
 > > 以 `香港 01` 示例：
 > > ```
 > > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
 > > ```
 > 
-> * **ecs=子网范围**
+> **ecs=子网范围**
 > 
 > > ecs 参数用于设置 EDNS Client Subnet (ECS)，向 DNS 服务器传递客户端的子网信息。ECS 允许 DNS 服务器根据指定的子网范围（而非实际客户端 IP）来返回最优结果
 > 
-> * **ecs-override=true**
+> **ecs-override=true**
 > 
 > > ecs 参数的强制覆盖。即使客户端的实际 IP 提供了不同的地理位置，查询会强制使用 ecs 指定的子网范围
 > > 
