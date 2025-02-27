@@ -18,15 +18,15 @@
 > 如需使用该系列配置文件，可复制下方相应地址 [添加配置](#配置文件) 或点击徽章一键安装<br>
 > 
 > **懒人配置**
-> >   ```
+> >   ```ruby
 > >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf
-> >   ```
+> >   
 > > [![安装配置 懒人配置](https://img.shields.io/static/v1?label=安装配置&message=懒人配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf "一键安装本配置文件")
 > 
 > **懒人配置（含策略组）**
-> >   ```
+> >   ruby
 > >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
-> >   ```
+> >   
 > > [![安装配置 懒人分流](https://img.shields.io/static/v1?label=安装配置&message=懒人分流&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
 
 ------
@@ -159,7 +159,7 @@
 > 
 > * 复制如下格式的 `WireGuard` 配置信息，打开 Shadowrocket 时会自动弹出 `添加对话框`，点击添加
 >   
->   ```
+>   ```ruby
 >   [Interface]
 >   PrivateKey = xxxxxx
 >   Address = 172.16.0.2/32
@@ -232,19 +232,19 @@
 > > `分组、代理分组的正则写法与以下命令相同，但需删除前后 "/" 符号`
 > > 
 > > * 保留节点名称含有关键词 A 和 B 的节点：
-> >   ```
+> >   ```ruby
 > >   /(?=.*(A))^(?=.*(B))^.*$/
 > >   ```
 > > * 保留节点名称含有关键词 A 或 B 的节点：
-> >   ```
+> >   ```ruby
 > >   A|B
 > >   ```
 > > * 排除节点名称含有关键词 A 或 B 的节点：
-> >   ```
+> >   ```ruby
 > >   /^((?!(A|B)).)*$/
 > >   ```
 > > * 保留节点名称含有关键词 A 并排除含有关键词 B 的节点：
-> >   ```
+> >   ```ruby
 > >   /(?=.*(A))^((?!(B)).)*$/
 > >   ```
 > 
@@ -253,26 +253,26 @@
 > > 节点订阅筛选功能支持使用脚本代码批量整理和修改相应订阅中节点的功能选项及节点名称
 > > 
 > > * 批量给节点中的关键词 a 替换成 b：
-> >   ```
+> >   ```ruby
 > >   $server.title=$server.title.replace(/关键词a/g,'关键词b')
 > >   ```
 > > * 批量给节点名称增加 abc 开头的关键词：
-> >   ```
+> >   ```ruby
 > >   $server.title='abc'+$server.title
 > >   ```
 > > * 批量开启全部节点的片段：
-> >   ```
+> >   ```ruby
 > >   $server.reserved="1,40-60,30-50"
 > >   ```
 > > * 批量开启全部节点的多路复用：
-> >   ```
+> >   ```ruby
 > >   $server.mux=1
 > >   ```
 > > * 批量设置全部订阅节点的 代理链/链式代理/代理通过
-> >   ```
+> >   ```ruby
 > >   $server.chain="订阅名称/节点名称"
 > >   ```
-> >   ```
+> >   ```ruby
 > >   $server['dialer-proxy']="UUID值"
 > >   ```
 > >   `第一种为正式命令，第二种为临时命令，过度期内两种方式以生效者为准。其中 “UUID 值” 可在中转节点或订阅的 JSON 文本中复制，第一种命令的 “订阅名称/节点名称” 也可以使用 UUID 值`
@@ -609,7 +609,7 @@
 > 示例：YouTube App 分流走代理
 > 
 > * 复制 YouTube 的规则集链接
->   ```
+>   ```ruby
 >   https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list
 >   ```
 > * 点击配置文件的 `ⓘ` 图标 > 规则 > 右上角 `➕`，类型选择 `RULE-SET`，策略选择 `PROXY`，输入框内粘贴 `规则集链接`，保存完成（策略可以根据需求使用其他选项）
@@ -633,25 +633,25 @@
 > >   使用普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）覆盖默认的系统 DNS。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)
 > >   
 > >   **普通 DNS 示例**<br>
-> >   ```
+> >   ```ruby
 > >   dns-server = 223.5.5.5,119.29.29.29
 > >   ```
 > >   
 > >   **加密 DNS 示例**<br>
 > >   1、DNS-over-HTTPS（DoH）
-> >   ```
+> >   ```ruby
 > >   dns-server = https://dns.alidns.com/dns-query
 > >   ```
 > >   2、DNS-over-HTTP/3（DoH3）
-> >   ```
+> >   ```ruby
 > >   dns-server = h3://dns.alidns.com/dns-query
 > >   ```
 > >   3、DNS-over-QUIC（DoQ）
-> >   ```
+> >   ```ruby
 > >   dns-server = quic://223.5.5.5
 > >   ```
 > >   4、DNS-over-TLS（DoT）
-> >   ```
+> >   ```ruby
 > >   dns-server = tls://223.5.5.5
 > >   ```
 > 
@@ -667,7 +667,7 @@
 > 
 > > 需要注意此处的代理名称仅支持 URL 编码<br>
 > > 以 `香港 01` 示例：
-> > ```
+> > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
 > > ```
 > 
@@ -680,10 +680,10 @@
 > > ecs 参数的强制覆盖。即使客户端的实际 IP 提供了不同的地理位置，查询会强制使用 ecs 指定的子网范围
 > > 
 > > 示例：
-> > ```
+> > ```ruby
 > > dns-server=https://dns.google/dns-query#ecs=120.76.0.0/14|2620:149:af0::10/56&ecs-override=true
 > > ```
-> > ```
+> > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy=name&ecs=1.1.0.0/14|2620:149:af0::10/56&ecs-override=true
 > > ```
 
@@ -692,7 +692,7 @@
 > * 当域名请求遇到 IP 类规则时，Shadowrocket 会向本地DNS服务器发送查询请求，以判断主机 IP 是否匹配规则
 > 
 > * 若IP类规则加 `no-resolve`，则域名请求将会跳过此规则，不触发本地 DNS 查询。如：
->   ```
+>   ```ruby
 >   IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
 >   ```
 
@@ -787,7 +787,7 @@
 > > 
 > >   模块 `[MITM]` 部分需要加 `%APPEND%`，表示把内容插入到配置中，不加时会覆盖配置中对应内容，并影响其他模块功能
 > >   
-> >   ```
+> >   ```ruby
 > >   hostname = %APPEND% 主机名
 > >   ```
 > 
@@ -806,7 +806,7 @@
 > 
 >   软件 `配置 > 模块 > 新建模块`，粘贴并自行修改以下内容：
 >   
->   ```
+>   ```ruby
 >   #!name=证书（名字可更改）
 >   [MITM]
 >   enable=true
@@ -1050,19 +1050,19 @@
 > * 关注 GitHub 的 IP 数据库项目，复制 mmdb 格式的下载链接，粘贴在国家/ASN 对应的 URL 位置，点击 `更新` 按钮。当点击 `重置` 时，可以恢复为系统自带的数据库
 > 
 >   [Loyalsoldier](https://github.com/Loyalsoldier/geoip) 的 IP 数据库：
->   ```
+>   ```ruby
 >   https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 >   ```
 >   [Hackl0us](https://github.com/Hackl0us/GeoIP2-CN) 的 IP 数据库：
->   ```
+>   ```ruby
 >   https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
 >   ```
 >   [Masaiki](https://github.com/Masaiki/GeoIP2-CN) 的 IP 数据库：
->   ```
+>   ```ruby
 >   https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
 >   ```
 >   [P3TERX](https://github.com/P3TERX/GeoLite.mmdb) 的 ASN 数据库：
->   ```
+>   ```ruby
 >   https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 >   ```
 
@@ -1187,7 +1187,7 @@
 > * Shadowrocket 是买断制的付费软件<br>
 > * 美区价格：2.99 美元<br>
 > * 使用美区 ID 时，地址建议填免税州
->   ```
+>   ```ruby
 >   五个免税州：
 >   俄勒冈州（Oregon）
 >   蒙大拿州（Montana）
