@@ -20,13 +20,13 @@
 > **懒人配置**
 > >   ```ruby
 > >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf
-> >   
+> >   ```
 > > [![安装配置 懒人配置](https://img.shields.io/static/v1?label=安装配置&message=懒人配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf "一键安装本配置文件")
 > 
 > **懒人配置（含策略组）**
-> >   ruby
+> >   ```ruby
 > >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
-> >   
+> >   ```
 > > [![安装配置 懒人分流](https://img.shields.io/static/v1?label=安装配置&message=懒人分流&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
 
 ------
