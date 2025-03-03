@@ -17,17 +17,17 @@
 
 > 如需使用该系列配置文件，可复制下方相应地址 [添加配置](#配置文件) 或点击徽章一键安装<br>
 > 
-> **懒人配置**
+> **懒人配置 - 基础配置**
 > >   ```ruby
 > >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf
 > >   ```
-> > [![安装配置 懒人配置](https://img.shields.io/static/v1?label=安装配置&message=懒人配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf "一键安装本配置文件")
+> > [![安装配置 基础配置](https://img.shields.io/static/v1?label=安装配置&message=基础配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf "一键安装本配置文件")
 > 
-> **懒人配置（含策略组）**
+> **懒人配置 - 分流配置**
 > >   ```ruby
 > >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
 > >   ```
-> > [![安装配置 懒人分流](https://img.shields.io/static/v1?label=安装配置&message=懒人分流&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
+> > [![安装配置 分流配置](https://img.shields.io/static/v1?label=安装配置&message=分流配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
 
 ------
 
