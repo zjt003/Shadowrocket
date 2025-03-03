@@ -396,19 +396,19 @@
 
 ### [编辑配置](#使用目录)
 
-> 使用UI交互界面对配置文件的可设置项进行调整
+> 使用 UI 交互界面对配置文件的可设置项进行调整。部分设置或命令不提供 UI 编辑界面，如有需要可在 [纯文本编辑](#编辑纯文本) 中使用
 
 ### [编辑纯文本](#使用目录)
 
-> 使用纯文本模式对配置文件的可设置项进行调整
+> 使用纯文本模式对配置文件的可设置项进行调整。部分设置或命令不提供 UI 编辑界面，仅在纯文本模式下可以设置
 > 
 > 配置文件的纯文本编写方法，请参考：
-> * [懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)<br>
-> * [懒人配置（含策略组）](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)
+> > * [懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)<br>
+> > * [懒人配置（含策略组）](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)
 
 ### [预览配置](#使用目录)
 
-> 查看配置文件的纯文本格式
+> 查看配置文件的纯文本格式。该选项仅当配置文件是以远程配置文件的形式添加进来的才会出现
 
 ### [更新配置](#使用目录)
 
