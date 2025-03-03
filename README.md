@@ -1,33 +1,11 @@
-[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C+%E4%B8%8E+%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE%0AManual+%26+Configs&description=1&font=Rokkitt&forks=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&stargazers=1&theme=Light)](https://lowertop.github.io/Shadowrocket "发布页面")
+[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AManual&description=1&font=Rokkitt&forks=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&stargazers=1&theme=Light)](https://lowertop.github.io/Shadowrocket "发布页面")
 
 [![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
 
 > [!NOTE]
 > 
-> 原懒人系列配置文件及关键词列表的仓库因故失活，本仓将在其最终版本或可能的后续版本的基础上进行维护，并计划将原关键词列表逐步完善为使用手册以供参阅。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有原版文件，可进入查看。[Johnshall 仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的版本也将以本仓文件为基础继续更新。若有其他需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)** <br>
+> 原懒人系列配置文件及关键词列表的仓库因故失活，本仓将在其最终版本或可能的后续版本的基础上进行维护，并计划将原关键词列表逐步完善为使用手册以供参阅。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有原版文件，可进入查看。[Johnshall 仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。若有其他需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)** <br>
 > 本仓以普通用户的身份对原作者及所有对相关项目做出贡献的人表示由衷的感谢！
-
-------
-
-# [Shadowrocket 懒人配置](#shadowrocket-懒人配置)
-
-> [!NOTE]
->
-> **懒人配置**，顾名思义是专为 **`懒人`** 打造的开箱即用 [配置文件](#配置文件)，该系列配置包含两个文件：一个是 **[基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)**，另一个是在此基础上增加了代理分组的 **[分流配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是除默认配置外首推的配置文件，适合各阶段用户使用
-
-> 如需使用该系列配置文件，可复制下方相应地址 [添加配置](#配置文件) 或点击徽章一键安装<br>
-> 
-> **懒人配置 - 基础配置**
-> >   ```ruby
-> >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf
-> >   ```
-> > [![安装配置 基础配置](https://img.shields.io/static/v1?label=安装配置&message=基础配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf "一键安装本配置文件")
-> 
-> **懒人配置 - 分流配置**
-> >   ```ruby
-> >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
-> >   ```
-> > [![安装配置 分流配置](https://img.shields.io/static/v1?label=安装配置&message=分流配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
 
 ------
 
