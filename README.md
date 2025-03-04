@@ -1,33 +1,11 @@
-[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C+%E4%B8%8E+%E6%87%92%E4%BA%BA%E9%85%8D%E7%BD%AE%0AManual+%26+Configs&description=1&font=Rokkitt&forks=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&stargazers=1&theme=Light)](https://lowertop.github.io/Shadowrocket "发布页面")
+[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&forks=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&stargazers=1&theme=Light)](https://lowertop.github.io/Shadowrocket "发布页面")
 
 [![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
 
 > [!NOTE]
 > 
-> 原懒人系列配置文件及关键词列表的仓库因故失活，本仓将在其最终版本或可能的后续版本的基础上进行维护，并计划将原关键词列表逐步完善为使用手册以供参阅。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有原版文件，可进入查看。[Johnshall 仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的版本也将以本仓文件为基础继续更新。若有其他需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)** <br>
+> 原懒人系列配置文件及关键词列表的仓库因故失活，本仓将在其最终版本或可能的后续版本的基础上进行维护，并计划将原关键词列表逐步完善为使用手册以供参阅。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有原版文件，可进入查看。[Johnshall 仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。若有其他需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)** <br>
 > 本仓以普通用户的身份对原作者及所有对相关项目做出贡献的人表示由衷的感谢！
-
-------
-
-# [Shadowrocket 懒人配置](#shadowrocket-懒人配置)
-
-> [!NOTE]
->
-> **懒人配置**，顾名思义是专为 **`懒人`** 打造的开箱即用 [配置文件](#配置文件)，该系列配置包含两个文件：一个是 **[基础配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)**，另一个是在此基础上增加了代理分组的 **[分流配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**。懒人配置不仅内置了详尽的注释文本，且经过精心调整内置设置以适应绝大多数用户的需求，也是除默认配置外首推的配置文件，适合各阶段用户使用
-
-> 如需使用该系列配置文件，可复制下方相应地址 [添加配置](#配置文件) 或点击徽章一键安装<br>
-> 
-> **懒人配置**
-> >   ```ruby
-> >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf
-> >   ```
-> > [![安装配置 懒人配置](https://img.shields.io/static/v1?label=安装配置&message=懒人配置&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf "一键安装本配置文件")
-> 
-> **懒人配置（含策略组）**
-> >   ```ruby
-> >   https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
-> >   ```
-> > [![安装配置 懒人分流](https://img.shields.io/static/v1?label=安装配置&message=懒人分流&color=grey&logo=googledocs&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
 
 ------
 
@@ -42,8 +20,8 @@
 > **快速使用方法**
 > 
 > > * 首页 > 添加节点
-> > * 设置 > 延迟测试方法，选择 **`CONNECT`**
-> > * 首页 > 连通性测试，选择可用节点连接
+> > * 设置 > 延迟测试方法 > **`CONNECT`**
+> > * 首页 > 连通性测试，测试后选择可用节点连接
 > 
 > 首次启动会提示 **`安装VPN配置文件`**，请点击 **`好`** 和 **`允许`** 才能正常使用
 
@@ -312,11 +290,12 @@
 
 > **用于首页和分组节点的延迟测试**
 > 
-> > * 首页 > 全局路由 > 分组 > URL 测试设置
+> > * 设置 > 延迟测试方法 > URL 测试设置
+> > * 首页 > 连通性测试后面的圆形图标 > URL 测试设置
 > 
 > **用于代理分组节点的延迟测试**
 > 
-> > * 点击配置文件的 `ⓘ` 图标 > 代理分组 > 右上角 `➕` > 最下方URL栏
+> > * 点击配置文件的 `ⓘ` 图标 > 代理分组 > 编辑或添加包含自动测试类型的分组 > 最下方 URL 栏
 
 ### [场景](#使用目录)
 
@@ -413,23 +392,23 @@
 
 ### [使用配置](#使用目录)
 
-> 点击 `使用配置` 可以启用该配置文件。 `使用配置` 可以对该配置文件包含的远程规则集、脚本等远程资源进行更新
+> 点击 `使用配置` 可以启用该配置文件，也可以使用该按钮对当前生效的远程规则集、脚本等远程资源进行更新
 
 ### [编辑配置](#使用目录)
 
-> 使用UI交互界面对配置文件的可设置项进行调整
+> 使用 UI 交互界面对配置文件的可设置项进行调整。部分设置或命令不提供 UI 编辑界面，如有需要可在 [纯文本编辑](#编辑纯文本) 中使用
 
 ### [编辑纯文本](#使用目录)
 
-> 使用纯文本模式对配置文件的可设置项进行调整
+> 使用纯文本模式对配置文件的可设置项进行调整。部分设置或命令不提供 UI 编辑界面，仅在纯文本模式下可以设置
 > 
 > 配置文件的纯文本编写方法，请参考：
-> * [懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)<br>
-> * [懒人配置（含策略组）](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)
+> > * [懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf)<br>
+> > * [懒人配置（含策略组）](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)
 
 ### [预览配置](#使用目录)
 
-> 查看配置文件的纯文本格式
+> 查看配置文件的纯文本格式。该选项仅当配置文件是以远程配置文件的形式添加进来的才会出现
 
 ### [更新配置](#使用目录)
 
@@ -720,13 +699,13 @@
 
 > 配置 > 配置文件 > 编辑配置 > 脚本 URL
 > 
-> 当前使用的所有远程脚本资源的展示页面，`√` 表示当前脚本状态生效，`×` 表示当前脚本状态失效，点击脚本地址可重新拉取并弹出状态提示
+> 当前使用的所有远程脚本资源的展示页面，`√` 表示当前脚本状态生效，`×` 表示当前脚本状态失效，点击脚本地址可重新拉取并弹出状态提示，也可以点击 [使用配置](#使用配置)，对当前所有 URL 进行更新
 
 ### [规则集URL](#使用目录)
 
 > 配置 > 配置文件 > 编辑配置 > 规则集URL
 > 
-> 当前使用的所有远程规则集资源的展示页面，`√` 表示当前规则集状态生效，`×` 表示当前规则集状态失效，点击规则集地址可重新拉取并弹出状态提示
+> 当前使用的所有远程规则集资源的展示页面，`√` 表示当前规则集状态生效，`×` 表示当前规则集状态失效，点击规则集地址可重新拉取并弹出状态提示，也可以点击 [使用配置](#使用配置)，对当前所有 URL 进行更新
 
 ### [复制配置文件](#使用目录)
 
@@ -1067,7 +1046,7 @@
 
 ### [自动更新](#使用目录)
 
-> 现阶段软件的自动更新包含配置文件自动更新、服务器订阅自动更新以及 `GeoLite2 数据库` 自动更新。需要在 `系统设置 > 通用 > 后台App刷新` 中为 Shadowrocket 启用后台刷新
+> 现阶段软件的自动更新包含配置文件自动更新、服务器订阅自动更新以及 GeoLite2 数据库自动更新。需要在 `系统设置 > 通用 > 后台App刷新` 中为 Shadowrocket 启用后台刷新
 > 
 > * **配置**：自动 [更新配置](#更新配置) 功能。该功能可根据设置自动更新当前配置文件以及当前所用的规则集、脚本等远程资源。若当前配置文件使用的是从远程链接加载的，更新配置文件会使用原远程链接拉取全新配置替换当前配置，该操作会覆盖对该配置文件做过的所有自定义设置；若当前配置文件是默认配置或不含更新地址的配置文件，则自动更新功能仅会更新当前所用的规则集、脚本等远程资源
 > 
