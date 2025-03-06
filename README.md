@@ -9,7 +9,7 @@
 
 ------
 
-# [Shadowrocket 使用手册](#shadowrocket-使用手册)
+# [Shadowrocket 使用手册](https://github.com/LOWERTOP/Shadowrocket "本仓地址")
 
 > [!NOTE]
 > 
