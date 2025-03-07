@@ -1,4 +1,4 @@
-[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&forks=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&stargazers=1&theme=Light)](https://lowertop.github.io/Shadowrocket "发布页面")
+[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&forks=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&stargazers=1&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
 [![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
 
@@ -9,7 +9,7 @@
 
 ------
 
-# [Shadowrocket 使用手册](#shadowrocket-使用手册)
+# [Shadowrocket 使用手册](https://lowertop.github.io/Shadowrocket/ "发布页面")
 
 > [!NOTE]
 > 
@@ -264,7 +264,7 @@
 > 
 > * 使用节点 A 连接，点击节点 A 后面的 `ⓘ` 图标，`代理通过` 选择节点 B，流量走向：`Client > B > A > Web server`
 > * 支持使用整个订阅作为中转代理链，其生效节点是在该订阅的节点中随机选择。具体生效节点可在 VPN 日志搜索 `backend chain` 确认
-> * 支持批量修改订阅节点代理链，实现同时部署多个节点的代理链。具体命令可查看 [订阅节点筛选 > 批量整理](#订阅节点筛选) 中的相关指令
+> * 支持批量修改订阅节点代理链，可实现同时部署多个节点的链式代理。具体命令可查看 [订阅节点筛选 > 批量整理](#订阅节点筛选) 中的相关指令
 > * 取消代理通过/代理链：点击开启该功能节点后面的 `ⓘ` 图标，`代理通过` 选择右上角的 `取消` 后保存
 
 ### [全局路由区别](#使用目录)
@@ -310,7 +310,7 @@
 > > * 当设备启用了多个蜂窝数据网络时，可在 Shadowrocket 的 设置 > 诊断 > 网络 中查看对应的接口信息
 > > * 输入格式：`pdp_ip1` `pdp_ip2` `pdp_ip3` 等
 > 
-> 首次添加场景，可能会弹出申请权限的对话框，具体原因请看 [定位权限](#定位权限)。当没有允许定位权限时，场景列表的☑️标记不会随着网络类型的切换而自动切换，但这不影响场景功能的正常生效
+> 首次添加场景，可能会弹出申请权限的对话框，具体原因请看 [定位权限](#定位权限)。当没有允许定位权限时，场景列表的 ✅ 标记不会随着网络类型的切换而自动切换，但这不影响场景功能的正常生效
 > 
 > 设置 > 隧道/按需求连接 中的 `包含所有网络` 相关选项可能会对场景模式的生效造成影响
 
@@ -699,13 +699,13 @@
 
 > 配置 > 配置文件 > 编辑配置 > 脚本 URL
 > 
-> 当前使用的所有远程脚本资源的展示页面，`√` 表示当前脚本状态生效，`×` 表示当前脚本状态失效，点击脚本地址可重新拉取并弹出状态提示，也可以点击 [使用配置](#使用配置)，对当前所有 URL 进行更新
+> 当前使用的所有远程脚本资源的展示页面，✅ 表示当前脚本状态生效，❎ 表示当前脚本状态失效，点击脚本地址可重新拉取并弹出状态提示，也可以点击 [使用配置](#使用配置)，对当前所有 URL 进行更新
 
 ### [规则集URL](#使用目录)
 
 > 配置 > 配置文件 > 编辑配置 > 规则集URL
 > 
-> 当前使用的所有远程规则集资源的展示页面，`√` 表示当前规则集状态生效，`×` 表示当前规则集状态失效，点击规则集地址可重新拉取并弹出状态提示，也可以点击 [使用配置](#使用配置)，对当前所有 URL 进行更新
+> 当前使用的所有远程规则集资源的展示页面，✅ 表示当前规则集状态生效，❎ 表示当前规则集状态失效，点击规则集地址可重新拉取并弹出状态提示，也可以点击 [使用配置](#使用配置)，对当前所有 URL 进行更新
 
 ### [复制配置文件](#使用目录)
 
@@ -921,8 +921,6 @@
 
 > **始终开启**
 > > * VPN 保持连接状态。意外断开或者重启设备，也会自动连接
-> > 
-> > * 通过应用 `首页` 临时关闭连接。设备设置中的 VPN 状态以及小组件开关不能直接关闭
 > > 
 > > * `脚本 / 模块 / 解密` 等需求比较多时建议开启
 > 
