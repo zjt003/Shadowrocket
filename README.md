@@ -246,6 +246,10 @@
 > >   ```ruby
 > >   $server.title='abc'+$server.title
 > >   ```
+> > * 批量给节点名称增加 abc 结尾的关键词：
+> >   ```ruby
+> >   $server.title=$server.title+'abc'
+> >   ```
 > > * 批量开启全部节点的片段：
 > >   ```ruby
 > >   $server.reserved="1,40-60,30-50"
