@@ -116,16 +116,18 @@
 
 ## [软件首页](#使用目录)
 
-### [已支持的协议](#已支持的协议)
+### [已支持的协议](#使用目录)
 
 > 现阶段已支持的协议类型
 > 
-> > **Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、TUIC、Juicity、WireGuard、Snell v2、Brook、Lua**
+> > **Subscribe（订阅）、Shadowsocks、ShadowsocksR、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、TUIC、Juicity、WireGuard、Snell v2、Brook、Lua**
 >
 > 也可以在 首页 > 右上角 `➕` > 类型 中查看
 
 ### [添加节点](#使用目录)
 
+> Shadowrocket 兼容多种服务器订阅格式，以及支持多种 [代理协议](#已支持的协议) 包括 [WireGuard 节点](#添加wireguard节点)
+> 
 > * 首页 > 左上角 > 扫码添加
 >   
 > * 复制节点链接，如 `trojan://*` `vmess://*` `vless://*` 等，打开 Shadowrocket 时会自动识别导入
