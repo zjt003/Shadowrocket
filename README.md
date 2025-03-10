@@ -31,6 +31,7 @@
 > * 点击正文的 **蓝色标题** 可以快速回到目录
 
 > * [首页](#软件首页)
+>     * [已支持的协议](#已支持的协议)
 >     * [添加节点](#添加节点)
 >     * [添加WireGuard节点](#添加wireguard节点)
 >     * [更新订阅节点](#更新订阅节点)
@@ -115,6 +116,14 @@
 
 ## [软件首页](#使用目录)
 
+### [已支持的协议](#已支持的协议)
+
+> 现阶段已支持的协议类型
+> 
+> > **Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、TUIC、Juicity、WireGuard、Snell v2、Brook、Lua**
+>
+> 也可以在 首页 > 右上角 `➕` > 类型 中查看
+
 ### [添加节点](#使用目录)
 
 > * 首页 > 左上角 > 扫码添加
@@ -128,8 +137,6 @@
 >   `订阅链接后面加上 "#1"、"#2"、"#3" 等，可以重复添加同一个订阅`
 > 
 > * 首页 > 右上角 `➕`，选择对应节点类型，填写节点配置信息并保存
-> 
->   **Shadowrocket 已支持的协议类型**：`Shadowsocks、ShadowsocksR、Subscribe（订阅）、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、TUIC、Juicity、WireGuard、Snell v2、Brook、Lua`
 
 ### [添加WireGuard节点](#使用目录)
 
