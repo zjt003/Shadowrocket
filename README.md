@@ -1169,7 +1169,7 @@
 
 ### [下载Shadowrocket](#使用目录)
 
-> Shadowrocket 只有 `iOS / iPadOS / tvOS` 版本和 M 系列芯片的 Mac 才能下载，开发者是 `Shadow Launch Technology Limited`。**Shadowrocket没有 安卓 / Windows 版本！**
+> **Shadowrocket没有 安卓 / Windows 版本！** 只有 `iOS / iPadOS / tvOS /visionOS` 版本以及 M 系列芯片的 Mac 才能下载，开发者是 `Shadow Launch Technology Limited`
 > 
 > 下载方法：
 > * 非国区 ID 登陆 App Store，搜索 Shadowrocket，购买后下载<br>
