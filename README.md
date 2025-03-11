@@ -603,9 +603,9 @@
 >   ```ruby
 >   https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list
 >   ```
-> * 点击配置文件的 `ⓘ` 图标 > 规则 > 右上角 `➕`，类型选择 `RULE-SET`，策略选择 `PROXY`，输入框内粘贴 `规则集链接`，保存完成（策略可以根据需求使用其他选项）
+> * 点击配置文件的 `ⓘ` 图标 > 规则 > 右上角 `➕`，[规则类型](#规则类型) 选择 `RULE-SET`，策略选择 `PROXY`，输入框内粘贴 `规则集链接`，保存完成（策略可以根据需求使用其他选项）
 > 
-> iOS系统没有常规分应用代理的操作，只能通过 `域名 / ip / ua` 规则实现app分流效果。可自行抓包，或者订阅 [blackmatrix7](https://github.com/blackmatrix7) 的 [规则集](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)。如果引用的链接是域名集，添加规则时，类型请选择 `DOMAIN-SET`
+> iOS系统没有常规分应用代理的操作，只能通过 `域名 / ip / ua` 规则实现app分流效果。可自行抓包，或者订阅 [blackmatrix7](https://github.com/blackmatrix7) 的 [规则集](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)。如果引用的链接是域名集，添加规则时，[规则类型](#规则类型) 请选择 `DOMAIN-SET`
 
 ### [更新规则集](#使用目录)
 
