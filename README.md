@@ -1098,7 +1098,7 @@
 > * **forbidden** 表示订阅被重置或令牌 token 错误
 > * **not found** 表示路径信息错误
 > * **service unavailable** 表示域名信息错误或域名被运营商屏蔽
-> * **SSL 错误** [参见此处](#ssl错误)
+> * **SSL 错误** 参见下文 [SSL错误](#ssl错误) 条目
 
 ### [SSL错误](#使用目录)
 
