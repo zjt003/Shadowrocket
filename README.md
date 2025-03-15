@@ -621,8 +621,8 @@
 
 > **DNS覆写**
 >   
-> >   点击配置文件的 `ⓘ` 图标 > 通用 > DNS 覆写<br>
-> >   使用普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）覆盖默认的系统 DNS。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)
+> >   点击配置文件 `ⓘ` 图标 > 通用 > DNS 覆写<br>
+> >   支持普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)
 > >   
 > >   **普通 DNS 示例**<br>
 > >   ```ruby
