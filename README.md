@@ -480,7 +480,7 @@
 > 
 > 💡 **udp-policy-not-supported-behaviour**：当 UDP 流量匹配到规则里不支持 UDP 转发的节点策略时重新选择回退行为，可选行为包括 `DIRECT` `REJECT`。`DIRECT` 表示直连转发 UDP 流量，`REJECT` 表示拒绝转发 UDP 流量
 >
-> 💡 **stun-response-ip**：此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1`  `stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性。使用此命令将忽略软件内 `设置-UDP-禁用STUN` 的开启状态
+> 💡 **stun-response-ip**：此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1`  `stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性。使用此命令将忽略软件设置选项内的 [禁用STUN](#禁用STUN) 的开关状态
 >
 > 💡 **compatibility-mode**：网络兼容模式。`0 > 禁用`；`1 > Proxy with Loopback Address`；`2 > Proxy Only`；`3 > TUN Only`。当参数的值设定为3时的效果等同于：设置 > 代理 > 代理类型 > None
 >
@@ -1023,11 +1023,19 @@
 
 ### [开启UDP转发](#使用目录)
 
-> * 设置 > UDP > 开启转发 > 打开
+> * 设置 > UDP > 启用转发 > 打开
 > 
 > * 首页 > 订阅后面的 `ⓘ` 图标 > UDP转发 > 打开
 > 
 > * 首页 > 节点后面的 `ⓘ` 图标 > UDP转发 > 打开
+
+### [禁用STUN](#使用目录)
+
+> 设置 > UDP > 禁用STUN > 打开
+> 
+> 禁用 STUN（Session Traversal Utilities for NAT） 的意思是完全阻止 WebRTC 通过 STUN 服务器获取公网 IP，从而彻底杜绝 WebRTC IP 泄露的问题
+>
+> 若在配置文件 [通用参数](#通用参数) 中使用 `stun-response-ip` 的相关命令，则此处的开关状态将被忽略
 
 ### [隐藏VPN图标](#使用目录)
 
