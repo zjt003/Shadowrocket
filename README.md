@@ -449,9 +449,9 @@
 
 > **旁路系统（bypass-system）**：如果禁用此选项，可能会导致一些系统问题，如推送通知延迟
 > 
-> **跳过代理（skip-proxy）**：此选项强制域名或IP的连接范围由 Shadowrocket `TUN 接口` 来处理，而不是 Shadowrocket 代理服务器。此选项用于解决一些应用程序的一些兼容性问题
+> **跳过代理（skip-proxy）**：跳过代理接口，使用 TUN 接口接管。此选项强制列表中的域名或 IP 的连接范围交由 Shadowrocket `TUN 接口` 来处理，而不是 Shadowrocket 代理服务器。此选项用于解决一些应用程序的一些兼容性问题。若开启 [TUN 模式](#代理类型) 时，将强制使用 TUN 接管所有连接，此处地址列表可以忽略
 > 
-> **TUN旁路路由（tun-excluded-routes）**：Shadowrocket `TUN接口` 只能处理 `TCP 协议`。使用此选项可以绕过指定的IP范围，让其他协议通过
+> **TUN旁路路由（tun-excluded-routes）**：Shadowrocket `TUN 接口` 只能处理 `TCP 协议`。使用此选项可以绕过指定的 IP 范围，让其他协议通过
 > 
 > **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
 > 
@@ -1010,7 +1010,7 @@
 
 > 如果在使用 Shadowrocket 的时候，遇到某些 APP 提示需关闭代理才能使用，可以在 `Shadowrocket > 设置 > 代理类型 > 选择 None`
 >
-> 该设置将使用 [Tun 模式](#代理类型) 接管代理，能很大程度上缓解上述情况，但对于某些直接检测系统VPN状态的APP无效
+> 该设置将使用 [TUN 模式](#代理类型) 接管代理，能很大程度上缓解上述情况，但对于某些直接检测系统 VPN 状态的 APP 无效
 
 ### [代理类型](#使用目录)
 
@@ -1018,9 +1018,9 @@
 > 
 > * 设置 > 代理 > 代理类型
 > 
-> * **HTTP**：系统代理模式，对于不支持的程序会交给 tun 接管网络连接
+> * **HTTP**：系统代理模式，对于不支持的程序会交给 TUN 接管网络连接
 > 
-> * **None**：tun 模式，全部网络请求都将通过 tun 接口进行处理
+> * **None**：TUN 模式，全部网络请求都将通过 TUN 接口进行处理
 
 ### [开启UDP转发](#使用目录)
 
