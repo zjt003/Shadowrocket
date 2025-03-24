@@ -126,6 +126,8 @@
 > > **Subscribe（订阅）、Shadowsocks、ShadowsocksR、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、TUIC、Juicity、WireGuard、Snell v2、Brook、Lua**
 >
 > 也可以在 首页 > 右上角 `➕` > 类型 中查看
+>
+> 服务器各协议节点的纯文本格式参见 [内置本地节点](#内置本地节点)
 
 ### [添加节点](#使用目录)
 
