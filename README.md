@@ -78,6 +78,7 @@
 >     * [模块](#模块)
 >     * [证书模块](#证书模块)
 >     * [身份证书密码](#身份证书密码)
+>     * [内置本地节点](#内置本地节点)
 > * [数据](#数据页面)
 >     * [代理日志](#代理日志)
 >     * [DNS日志](#dns日志)
@@ -143,6 +144,8 @@
 >   _订阅链接后面加上 "#1"、"#2"、"#3" 等，可以重复添加同一个订阅_
 > 
 > * 首页 > 右上角 `➕`，选择对应节点类型，填写节点配置信息并保存
+>   
+> * Shadowrocket 为了兼容部分配置文件也支持在配置文件中编写 [内置本地节点](#内置本地节点) 信息，但不要当作添加节点的优先选择
 >
 >   _若添加或更新订阅时出现异常，请参见 [订阅异常](#订阅异常)_
 
@@ -370,7 +373,7 @@
 
 ### [配置文件](#使用目录)
 
-> Shadowrocket 的配置文件（通常以 .conf 格式存在）主要用于快速设置和调整软件的主要功能。配置文件还可以在多设备间同步以及分享配置文件给其他用户，以快速部署相同设置，简化用户手动配置的流程。用户可以在配置文件里设置 [通用参数](#通用参数) 以及 [添加规则](#添加规则)、[Hosts](#hosts)、[URL重写](#url重写)、[HTTPS解密](#https解密)、脚本等内容。[模块](#模块) 的写法与配置文件相同
+> Shadowrocket 的配置文件（通常以 .conf 格式存在）主要用于快速设置和调整软件的主要功能。配置文件还可以在多设备间同步以及分享配置文件给其他用户，以快速部署相同设置，简化用户手动配置的流程。用户可以在配置文件里设置 [通用参数](#通用参数) 以及 [添加规则](#添加规则)、[Hosts](#hosts)、[URL重写](#url重写)、[HTTPS解密](#https解密)、脚本等内容，同时 Shadowrocket 兼容在配置文件中 [内置本地节点](#内置本地节点)。[模块](#模块) 的写法与配置文件相同
 > 
 > Shadowrocket 内置了一个默认配置文件 `default.conf`，其中包含了国内外主要网站或服务的分流规则，一般可以满足大多数用户的基本需求。此配置文件的内容跟随应用更新而做不定期的调整。如果在使用过程中错误修改或误删配置文件，可以点击 `配置` > `恢复默认配置`。
 > 
@@ -827,6 +830,57 @@
 ### [身份证书密码](#使用目录)
 
 > Shadowrocket 安装 CA 证书时，如果遇到「输入证书 `身份证书` 的密码」页面，可以尝试输入：Shadowrocket
+
+### [内置本地节点](#使用目录)
+
+> 在配置文件中添加本地节点。该项目的节点解析是为了兼容部分配置文件，不能当作Shadowrocket添加节点的优先选择
+> 
+> **Shadowsocks类型**
+> > 
+> > 节点名称=ss,地址,端口,password=密码,其他参数(如method=aes-256-cfb,obfs=websocket,plugin=none)
+> 
+> **Vmess类型**
+> > 
+> > 节点名称=vmess,地址,端口,password=密码,其他参数(如alterId=0,method=auto,obfs=websocket,tfo=1)
+> 
+> **VLESS类型**
+> > 
+> > 节点名称=vless,地址,端口,password=密码,tls=true,其他参数(如obfs=websocket,peer=example.com)
+> 
+> **HTTP/HTTPS/Socks5/Socks5 Over TLS等类型**
+> > 
+> > 节点名称=http,地址,端口,用户,密码
+> > 节点名称=https,地址,端口,用户,密码
+> > 节点名称=socks5,地址,端口,用户,密码
+> > 节点名称=socks5-tls,地址,端口,用户,密码,skip-common-name-verify=true
+> 
+> **Trojan类型**
+> > 
+> > 节点名称=trojan,地址,端口,password=密码,其他参数(如allowInsecure=1,peer=example.com)
+> 
+> **Hysteria类型**
+> > 
+> > 节点名称=hysteria,地址,端口,auth=密码,obfsParam=混淆,protocol=协议,udp=1,其他参数(如peer=example.com,alpn=h2,upmbps=100,downmbps=100)
+> 
+> **Hysteria2类型**
+> > 
+> > 节点名称=hysteria2,地址,端口,auth=密码,obfsParam=混淆,udp=1,其他参数(如peer=example.com,alpn=h3)
+> 
+> **TUIC类型**
+> > 
+> > 节点名称=tuic,地址,端口,password=密码,udp=1,其他参数(如user=uuid值,peer=example.com,alpn=h2)
+> 
+> **Juicity类型**
+> > 
+> > 节点名称=juicity,地址,端口,password=密码,udp=1,其他参数(如user=uuid值,peer=example.com,alpn=h2)
+> 
+> **WireGuard类型**
+> > 
+> > 节点名称=wireguard,地址,端口,privateKey=私钥,publicKey=公钥,ip=子网IP,udp=1,其他参数(如dns=1.1.1.1,mtu=1350,keepalive=40,reserved=1/2/3)
+> 
+> **Snell v2 类型**
+> > 
+> > 节点名称=snell,地址,端口,password=密码,udp=1,其他参数(如obfs=http,obfs-host=example.com,obfs-uri=/abc)
 
 ------
 
