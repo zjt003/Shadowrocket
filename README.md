@@ -676,7 +676,7 @@
 > > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
 > > ```
-> > 此处解析节点域名使用的 DNS 默认是 system，可以通过 `proxy-dns-server =` 参数来指定其他 DNS
+> > 解析节点域名使用的 DNS 默认是 system，可以通过 `proxy-dns-server =` 参数来指定其他 DNS
 > 
 > **ecs=子网范围**
 > 
