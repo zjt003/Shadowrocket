@@ -492,6 +492,8 @@
 > 💡 **compatibility-mode**：网络兼容模式。`0 > 禁用`；`1 > Proxy with Loopback Address`；`2 > Proxy Only`；`3 > TUN Only`。当参数的值设定为3时的效果等同于启用 [Tun模式](#代理类型)：[设置](#设置页面) > 代理 > [代理类型](#代理类型) > None
 >
 > 💡 **always-ip-address**：强制所有域名使用本地 DNS 解析。设置为 `true` 表示启用。（此参数为隐藏属性，建议谨慎设置，可能导致相关域名的 CDN 失效。）
+>
+> 💡 **proxy-dns-server**：解析节点域名使用的 DNS 默认是 system，可以通过 proxy-dns-server = 参数来指定其他 DNS
 > 
 > `带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项`
 
