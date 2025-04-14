@@ -945,15 +945,15 @@
 > Shadowrocket 支持将服务器节点、配置文件、模块和脚本文件等数据类型自动同步至 iCloud 云端
 > * 数据 > iCloud > 自动同步 > 打开
 > 
-> * 设备 `设置 > 账号 > iCloud`，确保使用iCloud的APP列表中已经开启 Shadowrocket 和 `iCloud云盘` 项目，否则会出现 `iCloud自动同步失败` 的提示
+> * 设备 `设置 > 账号 > iCloud`，确保使用 iCloud 的 APP 列表中已经开启 Shadowrocket 和 `iCloud 云盘` 项目，否则会出现 `iCloud 自动同步失败` 的提示
 > 
-> * 同步成功时，点击 `iCloud文件` 可以看到存储云端的配置文件
+> * 同步成功时，点击 `iCloud 文件` 可以看到存储云端的配置文件
 > 
-> * `文件app > iCloud云盘 > Shadowrocket`，可以看到存储云端的所有数据。其中的 `shadowrocket.v2.model` 文件包含服务器节点的配置信息
+> * `文件app > iCloud 云盘 > Shadowrocket`，可以看到存储云端的所有数据。其中的 `shadowrocket.v2.model` 文件包含服务器节点的配置信息
 > 
-> * iCloud服务中断、网络连接问题以及其他复杂原因可能导致 iCloud 同步异常，这种情况建议选择手动删除iCloud备份并重新同步数据
+> * iCloud 服务中断、网络连接问题以及其他复杂原因可能导致 iCloud 同步异常，这种情况建议选择手动删除 iCloud 备份并重新同步数据
 > 
->   `如果用户删除首页某个节点后发现它又自动恢复，可以尝试以下解决方法：数据 > iCloud，服务器节点下面点击删除iCloud备份和同步服务器节点`
+>   `如果用户删除首页某个节点后发现它又自动恢复，可以尝试以下解决方法：数据 > iCloud，服务器节点下面点击删除 iCloud 备份和同步服务器节点`
 > 
 > * 添加的 `场景` 和 `分组` 不属于 iCloud 自动同步的数据类型，需要手动备份下载，才能在设备间共享数据
 
