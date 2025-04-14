@@ -842,7 +842,7 @@
 >   # 确认下方 “ca-passphrase=” 后面填写的「已安装证书的配置文件」的证书密码是否正确，默认密码是：Shadowrocket
 >   ca-passphrase=Shadowrocket
 >   
->   # 在下方 “ca-p12=”后面粘贴证书内容
+>   # 在下方 “ca-p12=” 后面粘贴证书内容
 >   ca-p12=
 >   ```
 >   原本是可以省略 `ca-passphrase` 这行参数。但由于引用的配置文件可能已经包含了证书密码，且证书密码可能不是 Shadowrocket，为防止出错，因此才增加 `ca-passphrase` 参数来覆盖引用的配置文件的证书密码
