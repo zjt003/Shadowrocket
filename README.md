@@ -506,7 +506,7 @@
 >
 > 💡 **always-ip-address**：强制所有域名使用本地 DNS 解析。设置为 `true` 表示启用。（此参数为隐藏属性，建议谨慎设置，可能导致相关域名的 CDN 失效。）
 >
-> 💡 **proxy-dns-server**：通过 `proxy-dns-server =` 参数来指定特定 DNS 解析所有节点域名，若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析。此选项适用于 [DNS-over-PROXY](#dns-over-proxy)
+> 💡 **proxy-dns-server**：通过 `proxy-dns-server =` 参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
 > 
 > `带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项`
 
