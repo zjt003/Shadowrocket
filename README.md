@@ -547,7 +547,7 @@
 > 
 > > 如 `DOMAIN,www.example.com,DIRECT` 只能匹配到 `www.example.com`
 > 
-> **USER-AGENT**：匹配用户代理字符串，支持使用通配符`*`
+> **USER-AGENT**：匹配用户代理字符串，支持使用通配符 `*`
 > 
 > > 如 `USER-AGENT,MicroMessenger*,DIRECT` 可以匹配到 `MicroMessenger Client`
 > 
