@@ -4,7 +4,12 @@
 
 > [!NOTE]
 > 
-> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表为基础进行编写，同时收录并同步更新 **[懒人配置文件](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**，以帮助用户能够更好的理解和使用 Shadowrocket 软件。[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 同时保有原始文件，其他需求可查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表为基础进行编写，同时收录并同步更新来自官方群组的 **[懒人配置文件](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**，以帮助用户能够更好的理解和使用 Shadowrocket 软件。[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。另外，懒人配置现仅推荐包含策略组的版本，无策略组版本的所有功能均包含在含策略组的版本内，**如有条件请 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本**。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 同时保有原始文件，可自由查看使用，其他需求可访问 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 
+> > **懒人配置 含策略组：**
+> > ```ruby
+> > https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
+> > ```
 > 
 > **本仓以普通用户的身份对原作者及所有对相关项目做出贡献的人表示由衷的感谢！**
 
