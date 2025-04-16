@@ -4,7 +4,7 @@
 
 > [!NOTE]
 > 
-> 本使用手册以 **Shadowrocket 官方群组** 使用的关键词列表为基础进行编写，同时收录并同步更新来自官方群组的懒人配置，以帮助用户能够更好的理解和使用 Shadowrocket 软件。[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。另外，懒人配置现仅推荐包含策略组的版本，无策略组版本的所有功能均包含在含策略组的版本内，可复制下方链接安装使用，如有条件推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有原始版本的文件，可自由查看，其他需求可访问 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册以 **Shadowrocket 官方群组** 使用的关键词列表为基础进行编写，同时收录并同步更新来自官方群组的懒人配置，以帮助用户能够更好的理解和使用 Shadowrocket 软件。懒人配置现仅推荐包含策略组的版本，无策略组版本的所有功能均包含在含策略组的版本内，可复制下方链接安装使用，如有条件推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本。[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有原始版本的文件，可自由查看，其他需求可访问 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 > 
 > > **懒人配置：**
 > > ```ruby
