@@ -689,14 +689,18 @@
 >
 > **proxy**
 > 
-> > 支持使用 **默认节点** 转发 DNS 查询请求
+> > 支持使用 **默认节点** 转发 DNS 查询请求，有以下两种写法：
+> > 
 > > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy
+> > ```
+> > ```ruby
+> > dns-server=https://dns.google/dns-query#proxy=proxy
 > > ```
 > 
 > **proxy=name**
 > 
-> > 支持使用 **指定节点** 转发 DNS 查询请求，需要注意此处的代理名称仅支持 URL 编码，以 `香港 01` 示例：<br>
+> > 支持使用 **指定节点** 转发 DNS 查询请求，需要注意此处的代理名称仅支持 URL 编码，以 `香港 01` 示例：
 > > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
 > > ```
