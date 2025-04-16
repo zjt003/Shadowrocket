@@ -543,6 +543,10 @@
 > 
 > > 如 `DOMAIN-KEYWORD,exa,DIRECT` 可以匹配到 `a.example.com` `a.b.example.com`
 > 
+> **DOMAIN-WILDCARD**：匹配请求域名，支持使用通配符 `*`、`?`
+> 
+> > 如 `DOMAIN-WILDCARD,a*c.example*.com,DIRECT` 可以匹配到 `abc.example123.com、aqwec.example456.com`
+> 
 > **DOMAIN**：匹配请求的完整域名
 > 
 > > 如 `DOMAIN,www.example.com,DIRECT` 只能匹配到 `www.example.com`
