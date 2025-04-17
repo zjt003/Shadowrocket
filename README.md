@@ -4,7 +4,12 @@
 
 > [!NOTE]
 > 
-> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表为基础进行编写，同时收录并同步更新 [懒人配置文件](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)，以帮助用户能够更好的理解和使用 Shadowrocket 软件。[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 同时保有原始文件，其他需求可查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册以 **Shadowrocket 官方群组** 使用的关键词列表为基础进行编写，同时收录并同步更新来自官方群组的懒人配置，以帮助用户能够更好的理解和使用 Shadowrocket 软件。懒人配置现仅推荐包含策略组的版本，无策略组版本的所有功能均包含在含策略组的版本内，可复制下方链接安装使用，如有条件推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本。[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有原始版本的文件，可自由查看，其他需求可访问 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 
+> > **懒人配置：**
+> > ```ruby
+> > https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
+> > ```
 > 
 > **本仓以普通用户的身份对原作者及所有对相关项目做出贡献的人表示由衷的感谢！**
 
@@ -223,8 +228,6 @@
 > 
 > > 首页 > 订阅后面的 `ⓘ` 图标 > 过滤
 > > 
-> > `分组、代理分组的正则写法与以下命令相同，但需删除前后 "/" 符号`
-> > 
 > > * 保留节点名称含有关键词 A 和 B 的节点：
 > >   ```ruby
 > >   /(?=.*(A))^(?=.*(B))^.*$/
@@ -241,6 +244,8 @@
 > >   ```ruby
 > >   /(?=.*(A))^((?!(B)).)*$/
 > >   ```
+> > 
+> > `分组、代理分组中的正则写法与上述【过滤】中使用的命令相同，但需删除前后 "/" 符号`
 > 
 > **批量整理**
 > 
@@ -266,14 +271,22 @@
 > >   ```ruby
 > >   $server.mux=1
 > >   ```
-> > * 批量设置全部订阅节点的 代理链/链式代理/代理通过
+> > * 批量设置全部订阅节点的 代理链/链式代理/代理通过，以下两种方式以生效者为准
+> >   
+> >   `其中 “UUID 值” 可在中转节点或订阅的 JSON 文本中复制，第一种命令的 “订阅名称/节点名称” 也可以使用 UUID 值`
 > >   ```ruby
 > >   $server.chain="订阅名称/节点名称"
 > >   ```
 > >   ```ruby
 > >   $server['dialer-proxy']="UUID值"
 > >   ```
-> >   `第一种为正式命令，第二种为临时命令，过度期内两种方式以生效者为准。其中 “UUID 值” 可在中转节点或订阅的 JSON 文本中复制，第一种命令的 “订阅名称/节点名称” 也可以使用 UUID 值`
+> > * 当节点名称不包含地区标识，且节点地址有可以分辨地区的关键词时，可以使用以下脚本为节点名称批量添加地区关键词或旗帜标识
+> >   ```ruby
+> >   if (/节点地址关键词/i.test($server.host)) {
+> >     $server.title = '需要添加的关键词或旗帜'+ $server.title
+> >     return true;
+> >   }
+> >   ```
 > 
 > **其他命令**
 > 
@@ -498,7 +511,7 @@
 >
 > 💡 **always-ip-address**：强制所有域名使用本地 DNS 解析。设置为 `true` 表示启用。（此参数为隐藏属性，建议谨慎设置，可能导致相关域名的 CDN 失效。）
 >
-> 💡 **proxy-dns-server**：通过 `proxy-dns-server =` 参数来指定特定 DNS 解析所有节点域名，若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析。此选项适用于 [DNS-over-PROXY](#dns-over-proxy)
+> 💡 **proxy-dns-server**：通过 `proxy-dns-server =` 参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
 > 
 > `带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项`
 
@@ -530,11 +543,15 @@
 > 
 > > 如 `DOMAIN-KEYWORD,exa,DIRECT` 可以匹配到 `a.example.com` `a.b.example.com`
 > 
+> **DOMAIN-WILDCARD**：匹配请求域名，支持使用通配符 `*`、`?`
+> 
+> > 如 `DOMAIN-WILDCARD,a*c.example*.com,DIRECT` 可以匹配到 `abc.example123.com、aqwec.example456.com`
+> 
 > **DOMAIN**：匹配请求的完整域名
 > 
 > > 如 `DOMAIN,www.example.com,DIRECT` 只能匹配到 `www.example.com`
 > 
-> **USER-AGENT**：匹配用户代理字符串，支持使用通配符`*`
+> **USER-AGENT**：匹配用户代理字符串，支持使用通配符 `*`
 > 
 > > 如 `USER-AGENT,MicroMessenger*,DIRECT` 可以匹配到 `MicroMessenger Client`
 > 
@@ -672,14 +689,18 @@
 >
 > **proxy**
 > 
-> > 支持使用 **默认节点** 转发 DNS 查询请求
+> > 支持使用 **默认节点** 转发 DNS 查询请求，有以下两种写法：
+> > 
 > > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy
+> > ```
+> > ```ruby
+> > dns-server=https://dns.google/dns-query#proxy=proxy
 > > ```
 > 
 > **proxy=name**
 > 
-> > 支持使用 **指定节点** 转发 DNS 查询请求，需要注意此处的代理名称仅支持 URL 编码，以 `香港 01` 示例：<br>
+> > 支持使用 **指定节点** 转发 DNS 查询请求，需要注意此处的代理名称仅支持 URL 编码，以 `香港 01` 示例：
 > > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
 > > ```
@@ -834,7 +855,7 @@
 >   # 确认下方 “ca-passphrase=” 后面填写的「已安装证书的配置文件」的证书密码是否正确，默认密码是：Shadowrocket
 >   ca-passphrase=Shadowrocket
 >   
->   # 在下方 “ca-p12=”后面粘贴证书内容
+>   # 在下方 “ca-p12=” 后面粘贴证书内容
 >   ca-p12=
 >   ```
 >   原本是可以省略 `ca-passphrase` 这行参数。但由于引用的配置文件可能已经包含了证书密码，且证书密码可能不是 Shadowrocket，为防止出错，因此才增加 `ca-passphrase` 参数来覆盖引用的配置文件的证书密码
@@ -945,15 +966,15 @@
 > Shadowrocket 支持将服务器节点、配置文件、模块和脚本文件等数据类型自动同步至 iCloud 云端
 > * 数据 > iCloud > 自动同步 > 打开
 > 
-> * 设备 `设置 > 账号 > iCloud`，确保使用iCloud的APP列表中已经开启 Shadowrocket 和 `iCloud云盘` 项目，否则会出现 `iCloud自动同步失败` 的提示
+> * 设备 `设置 > 账号 > iCloud`，确保使用 iCloud 的 APP 列表中已经开启 Shadowrocket 和 `iCloud 云盘` 项目，否则会出现 `iCloud 自动同步失败` 的提示
 > 
-> * 同步成功时，点击 `iCloud文件` 可以看到存储云端的配置文件
+> * 同步成功时，点击 `iCloud 文件` 可以看到存储云端的配置文件
 > 
-> * `文件app > iCloud云盘 > Shadowrocket`，可以看到存储云端的所有数据。其中的 `shadowrocket.v2.model` 文件包含服务器节点的配置信息
+> * `文件app > iCloud 云盘 > Shadowrocket`，可以看到存储云端的所有数据。其中的 `shadowrocket.v2.model` 文件包含服务器节点的配置信息
 > 
-> * iCloud服务中断、网络连接问题以及其他复杂原因可能导致 iCloud 同步异常，这种情况建议选择手动删除iCloud备份并重新同步数据
+> * iCloud 服务中断、网络连接问题以及其他复杂原因可能导致 iCloud 同步异常，这种情况建议选择手动删除 iCloud 备份并重新同步数据
 > 
->   `如果用户删除首页某个节点后发现它又自动恢复，可以尝试以下解决方法：数据 > iCloud，服务器节点下面点击删除iCloud备份和同步服务器节点`
+>   `如果用户删除首页某个节点后发现它又自动恢复，可以尝试以下解决方法：数据 > iCloud，服务器节点下面点击删除 iCloud 备份和同步服务器节点`
 > 
 > * 添加的 `场景` 和 `分组` 不属于 iCloud 自动同步的数据类型，需要手动备份下载，才能在设备间共享数据
 
