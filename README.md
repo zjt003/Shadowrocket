@@ -8,7 +8,7 @@
 > 
 > > **懒人配置：**
 > > ```ruby
-> > https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
+> > https://lowertop.github.io/Shadowrocket/lazy_group.conf
 > > ```
 > 
 > **本仓以普通用户的身份对原作者及所有对相关项目做出贡献的人表示由衷的感谢！**
