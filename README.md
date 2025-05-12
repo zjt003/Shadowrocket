@@ -123,7 +123,6 @@
 >     * [检测代理](#检测代理)
 >     * [定位权限](#定位权限)
 >     * [编译原因](#编译原因)
->     * [下载Shadowrocket](#下载shadowrocket)
 >     * [URL-Schemes](#url-schemes)
 
 ------
@@ -1364,29 +1363,6 @@
 > 2023年4月份以后，苹果官方要求开发者在提交应用到 App Store 时必须至少使用 Xcode 14 编译，所以 iOS12 以下系统无法使用
 > 
 > Shadowrocket 在版本 `2.2.30` 之后设置最低安装要求 iOS12，然后停止 `2.2.29` 版本，iOS 低版本用户可以安装 `2.2.28` 版本
-
-### [下载Shadowrocket](#使用目录)
-
-> **Shadowrocket没有 安卓 / Windows 版本！** 只有 `iOS / iPadOS / tvOS /visionOS` 版本以及 M 系列芯片的 Mac 才能下载，开发者是 `Shadow Launch Technology Limited`
-> 
-> 下载方法：
-> * 非国区 ID 登陆 App Store，搜索 Shadowrocket，购买后下载<br>
-> * Shadowrocket 是买断制的付费软件<br>
-> * 美区价格：2.99 美元<br>
-> * 使用美区 ID 时，地址建议填免税州
->   ```ruby
->   五个免税州：
->   俄勒冈州（Oregon）
->   蒙大拿州（Montana）
->   特拉华州（Delaware）
->   新罕布什尔州（New Hampshire）
->   阿拉斯加州（Alaska）部分区域
->   ```
-> 
-> [美国地址生成器](https://www.meiguodizhi.com)<br>
-> [美区 Apple ID 注册方法](https://blog.skylershu.com/post/apple-id-us-2022)<br>
-> [Apple 官网购买礼品卡方法](https://blog.skylershu.com/post/apple-gift-card)<br>
-> [Shadowrocket 下载链接](https://apps.apple.com/app/shadowrocket/id932747118)
 
 ### [URL-Schemes](#使用目录)
 
