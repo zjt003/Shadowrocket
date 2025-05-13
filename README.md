@@ -83,6 +83,7 @@
 >     * [测试规则](#测试规则)
 >     * [Hosts](#hosts)
 >     * [URL重写](#url重写)
+>     * [头部重写](#头部重写)
 >     * [HTTPS解密](#https解密)
 >     * [脚本](#脚本)
 >     * [模块](#模块)
@@ -424,6 +425,7 @@
 > > * [规则](#添加规则)
 > > * [Hosts](#hosts)
 > > * [URL重写](#url重写)
+> > * [头部重写](#头部重写)
 > > * [HTTPS解密](#https解密)
 > > * [脚本](#脚本)
 > > * [代理分组](#代理分组)
@@ -846,6 +848,26 @@
 > > * 反追踪：移除 URL 中的跟踪参数
 > > * 路径修正：调整 API 请求路径以适配不同服务器
 > > * 调试工具：将生产环境请求转发到测试服务器
+
+### [头部重写](#使用目录)
+
+> 支持请求/响应头部重写功能，包含 `del`、`add`、`replace`、`replace-regex` 几种操作
+>
+> **类型：**
+> > `http-request`：作用于请求头<br>
+> > `http-response`：作用于响应头
+>
+> **行为：**
+> > `header-del`：从请求头或响应头中删除指定字段<br>
+> > `header-add`：向请求头或响应头中添加字段及其对应的值<br> 
+> > `header-replace`：在请求头或响应头中替换指定字段的值<br>
+> > `header-replace-regex`：使用正则表达式在请求头或响应头中替换字段的值
+> 
+> **表达式：**
+> > 正则表达式用于匹配目标网站的 URL
+> 
+> **常用字段：**
+> > `Content-Type`、`User-Agent`、`Accept-Language`、`Authorization`、`Host`、`Referer`、`Cookie`、`X-Forwarded-For`、`Location` 等
 
 ### [HTTPS解密](#使用目录)
 
