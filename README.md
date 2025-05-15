@@ -84,6 +84,7 @@
 >     * [Hosts](#hosts)
 >     * [URL重写](#url重写)
 >     * [头部重写](#头部重写)
+>     * [正文重写](#正文重写)
 >     * [HTTPS解密](#https解密)
 >     * [脚本](#脚本)
 >     * [模块](#模块)
@@ -426,6 +427,7 @@
 > > * [Hosts](#hosts)
 > > * [URL重写](#url重写)
 > > * [头部重写](#头部重写)
+> > * [正文重写](#正文重写)
 > > * [HTTPS解密](#https解密)
 > > * [脚本](#脚本)
 > > * [代理分组](#代理分组)
@@ -868,6 +870,19 @@
 > 
 > **常用字段：**
 > > `Content-Type`、`User-Agent`、`Accept-Language`、`Authorization`、`Host`、`Referer`、`Cookie`、`X-Forwarded-For`、`Location` 等
+
+### [正文重写](#使用目录)
+
+> 支持请求/响应正文重写功能
+>
+> **类型：**
+> > `http-request`：作用于请求体<br>
+> > `http-response`：作用于响应体<br>
+> > `http-request-jq`：使用 `jq` 语法处理请求体<br>
+> > `http-response-jq`：使用 `jq` 语法处理响应体
+> 
+> **表达式：**
+> > 正则表达式用于匹配目标网站的 URL
 
 ### [HTTPS解密](#使用目录)
 
