@@ -857,7 +857,7 @@
 
 ### [头部重写](#使用目录)
 
-> 支持请求/响应头部重写功能，包含 `del`、`add`、`replace`、`replace-regex` 几种操作
+> 支持请求/响应头部重写功能，即标头重写，包含 `del`、`add`、`replace`、`replace-regex` 几种操作
 >
 > **类型：**
 > > `http-request`：作用于请求头<br>
