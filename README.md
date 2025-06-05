@@ -37,9 +37,9 @@
 > * 点击正文的 **蓝色标题** 可以快速回到目录
 
 > * [首页](#软件首页)
->     * [已支持的协议](#已支持的协议)
 >     * [添加节点](#添加节点)
 >     * [添加WireGuard节点](#添加wireguard节点)
+>     * [协议类型](#协议类型)
 >     * [更新订阅节点](#更新订阅节点)
 >     * [节点排序](#节点排序)
 >     * [节点分享与整理](#节点分享与整理)
@@ -132,19 +132,9 @@
 
 ## [软件首页](#使用目录)
 
-### [已支持的协议](#使用目录)
-
-> 现阶段已支持的协议类型
-> 
-> > **Subscribe（订阅）、Shadowsocks、ShadowsocksR、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、AnyTLS、TUIC、Juicity、WireGuard、Snell v2、Brook、Lua**
->
-> 也可以在 首页 > 右上角 `➕` > 类型 中查看
->
-> 各协议节点的纯文本格式参见 [编写本地节点](#编写本地节点)
-
 ### [添加节点](#使用目录)
 
-> Shadowrocket 兼容多种服务器订阅格式，以及支持多种 [代理协议](#已支持的协议) 包括 [WireGuard 节点](#添加wireguard节点)
+> Shadowrocket 兼容多种服务器订阅格式，以及支持多种 [代理协议类型](#协议类型) 包括 [WireGuard 节点](#添加wireguard节点)
 > 
 > * 首页 > 左上角 > 扫码添加
 >   
@@ -184,6 +174,16 @@
 >   Reserved = 12,34,56
 >   ```
 >   如果没有自动弹出对话框，可能是因为设置中的 **允许检测剪贴板** 被关闭了，您可以重新打开，或者点击首页 **连通性测试** 下方的 **粘贴** 按钮，手动添加配置信息
+
+### [协议类型](#使用目录)
+
+> 现阶段已支持的协议类型
+> 
+> > **Subscribe（订阅）、Shadowsocks、ShadowsocksR、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、AnyTLS、TUIC、Juicity、SSH、WireGuard、Snell v2、Brook、Lua**
+>
+> 也可以在 首页 > 右上角 `➕` > 类型 中查看
+>
+> 各协议节点的纯文本格式参见 [编写本地节点](#编写本地节点)
 
 ### [更新订阅节点](#使用目录)
 
