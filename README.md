@@ -1,6 +1,9 @@
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
 [![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
+[![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=Stars&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/stargazers "已被星标")
+[![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=Forks&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/forks "已被复刻")
+[![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=Update&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/activity "更新记录")
 
 > [!NOTE]
 > 
@@ -537,7 +540,7 @@
 >
 > 💡 **proxy-dns-server**：通过 `proxy-dns-server =` 参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
 > 
-> 💡 **close-if-proxy-chain-missing**：代理链丢失关闭连接。当设置为 `true` 时等同于不设置该选项，即若 [代理链](#代理通过代理链) 中的中转节点丢失或失效则 `Reject` 代理连接；当设置为 `false` 时，若 [代理链](#代理通过代理链) 中的中转节点丢失或失效则跳过中转节点直接连接落地节点使用
+> 💡 **close-if-proxy-chain-missing**：代理链丢失关闭连接。当设置为 `true` 时，若 [代理链](#代理通过代理链) 中的中转节点丢失则 `Reject` 代理连接；当设置为 `false` 时等同于不设置该命令，即若 [代理链](#代理通过代理链) 中的中转节点丢失则跳过中转节点直接连接落地节点使用
 > 
 > _带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项_
 
