@@ -504,7 +504,7 @@
 > 
 > **TUN旁路路由（tun-excluded-routes）**：Shadowrocket **TUN 接口** 只能处理 **TCP 协议**。使用此选项可以绕过指定的 IP 范围，让其他协议通过
 > 
-> **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
+> **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。**DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析**，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
 > 
 > **备用DNS（fallback-dns-server）**：当覆写 DNS 查询失败或查询时间超过2秒，Shadowrocket 会自动回退备用 DNS。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS，清空备用 DNS 等于将其设置为 `system`
 > 
@@ -682,7 +682,7 @@
 > **DNS覆写**
 >   
 > >   点击配置文件 `ⓘ` 图标 > 通用 > DNS 覆写<br>
-> >   支持普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)
+> >   支持普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)<br>
 > >   DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析
 > > 
 > >   **普通 DNS 示例**<br>
