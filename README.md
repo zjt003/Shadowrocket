@@ -1,6 +1,5 @@
+[![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")<br>
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
-
-[![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
 [![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=Stars&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/stargazers "已被星标")
 [![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=Forks&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/forks "已被复刻")
 [![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=Update&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/activity "更新记录")
@@ -504,7 +503,7 @@
 > 
 > **TUN旁路路由（tun-excluded-routes）**：Shadowrocket **TUN 接口** 只能处理 **TCP 协议**。使用此选项可以绕过指定的 IP 范围，让其他协议通过
 > 
-> **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
+> **DNS覆写（dns-server）**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。**DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析**，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
 > 
 > **备用DNS（fallback-dns-server）**：当覆写 DNS 查询失败或查询时间超过2秒，Shadowrocket 会自动回退备用 DNS。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS，清空备用 DNS 等于将其设置为 `system`
 > 
@@ -553,6 +552,11 @@
 > * 数据 > 代理 > 启用日志记录，产生网络活动后回到该页面，从最近的日志中查看网络活动记录，点击任一记录查看详情，点击右上角 `•••` 选择类型添加规则
 > 
 > * 规则匹配需要着重注意 [规则的优先级](#规则优先级) 顺序
+>
+> **规则管理**
+> > * 配置 > 配置文件 > 编辑配置 > 规则 > 规则区域右上角 `···`
+> >   
+> >   可批量选择并删除规则
 
 ### [规则优先级](#使用目录)
 
@@ -682,8 +686,9 @@
 > **DNS覆写**
 >   
 > >   点击配置文件 `ⓘ` 图标 > 通用 > DNS 覆写<br>
-> >   支持普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)
-> >   
+> >   支持普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)<br>
+> >   DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析
+> > 
 > >   **普通 DNS 示例**<br>
 > >   ```ruby
 > >   dns-server = 223.5.5.5,119.29.29.29
@@ -815,13 +820,13 @@
 
 > 配置 > 配置文件 > 编辑配置 > 规则集 URL
 > 
-> 当前使用的所有远程规则资源的展示页面，其后显示的数字为当前生效的数量和总共包含的数量。进入后所显示的 ✅ 表示当前规则状态生效，❎ 表示当前规则状态失效。点击相应地址可重新拉取并弹出状态提示，但不会重新编译更新配置文件，点击 [使用配置](#使用配置) / [编译配置](#编译配置)，可以对当前所有 URL 进行更新并重新编译更新配置文件
+> 当前使用的所有远程规则资源的展示页面，其后显示的数字为当前生效的数量和总共包含的数量。进入后所显示的 ✅ 表示当前规则下载成功，❎ 表示当前规则下载失败。点击相应地址可重新拉取并弹出状态提示，但不会重新编译更新配置文件，点击 [使用配置](#使用配置) / [编译配置](#编译配置)，可以对当前所有 URL 进行更新并重新编译更新配置文件
 
 ### [脚本URL](#使用目录)
 
 > 配置 > 配置文件 > 编辑配置 > 脚本 URL
 > 
-> 当前使用的所有远程脚本资源的展示页面，其后显示的数字为当前生效的数量和总共包含的数量。进入后所显示的 ✅ 表示当前脚本状态生效，❎ 表示当前脚本状态失效。点击相应地址可重新拉取并弹出状态提示，但不会重新编译更新配置文件，点击 [使用配置](#使用配置) / [编译配置](#编译配置)，可以对当前所有 URL 进行更新并重新编译更新配置文件
+> 当前使用的所有远程脚本资源的展示页面，其后显示的数字为当前生效的数量和总共包含的数量。进入后所显示的 ✅ 表示当前脚本下载成功，❎ 表示当前脚本下载失败。点击相应地址可重新拉取并弹出状态提示，但不会重新编译更新配置文件，点击 [使用配置](#使用配置) / [编译配置](#编译配置)，可以对当前所有 URL 进行更新并重新编译更新配置文件
 
 ### [复制配置文件](#使用目录)
 
@@ -966,7 +971,7 @@
 > **模块管理**
 > > * 配置 > 模块 > 模块区域右上角 `···`
 > >   
-> >   可批量选择并删除已选择模块
+> >   可批量选择并删除模块
 > 
 > **备注**
 > > * 对正在使用的配置 [开启 HTTPS 解密](#https解密) 或使用 [证书模块](#证书模块)，才能使包含 MITM 的模块完整生效，不包含 MITM 的模块除外
