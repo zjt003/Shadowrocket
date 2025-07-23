@@ -13,9 +13,9 @@
  > [!TIP]
 > 
 > **[懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**
-> > ```ruby
-> > https://lowertop.github.io/Shadowrocket/lazy_group.conf
-> > ```
+> ```ruby
+> https://lowertop.github.io/Shadowrocket/lazy_group.conf
+> ```
 
 ------
 
