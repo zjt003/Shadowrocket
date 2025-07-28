@@ -23,7 +23,7 @@
 
 > [!NOTE]
 > 
-> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等 ARM 设备，**Shadowrocket 2.2.70 (2712)** 版本开始已经添加支持 macOS 支持，同时支持 x86/64 和 arm64。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器帮助用户提升网络体验
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等 ARM 设备，**[Shadowrocket 2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本开始已经添加支持 macOS 支持，同时支持 x86/64 和 arm64。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器帮助用户提升网络体验
 
 ## [使用目录](#使用目录)
 
