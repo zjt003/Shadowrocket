@@ -6,14 +6,16 @@
 
 > [!NOTE]
 > 
-> 本使用手册以 **Shadowrocket 官方群组** 曾使用的关键词列表文件为基础进行完善，以帮助用户能够更好的理解和使用 Shadowrocket 软件。本仓同时收录并同步更新来自官方群组的懒人配置，用户可复制下方链接安装使用，如有条件推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本，[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也将以本仓文件为基础继续更新。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有相关文件的原始版本，可自由进入查看，其他需求可访问 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
-> 
-> > **懒人配置：**
-> > ```ruby
-> > https://lowertop.github.io/Shadowrocket/lazy_group.conf
-> > ```
-> 
 > **本仓以普通用户的身份对原作者及所有对相关项目做出贡献的人表示由衷的感谢！**
+> 
+> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善，以帮助用户能够更好的理解和使用 Shadowrocket 软件。同时本仓同步更新来自官方群组的懒人配置，用户可复制下方链接安装使用，亦可 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本，[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也以本仓文件为基础进行同步更新。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有相关文件的原始版本，其他需求可访问 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+
+ > [!TIP]
+> 
+> **[懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**
+> ```ruby
+> https://lowertop.github.io/Shadowrocket/lazy_group.conf
+> ```
 
 ------
 
@@ -21,24 +23,15 @@
 
 > [!NOTE]
 > 
-> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 和使用 M 系列芯片的 Mac 等设备。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器帮助用户提升网络体验
-
-> [!TIP]
-> 
-> **[快速使用方法](#shadowrocket-使用手册)**
-> 
-> > * [首页](#软件首页) > [添加节点](#添加节点)
-> > * [设置](#设置页面) > [延迟测试方法](#延迟测试方法) > **CONNECT**
-> > * [首页](#软件首页) > [连通性测试](#连通性测试) > 选可用节点连接
-> 
-> 首次启动会提示 **安装VPN配置文件**，请点击 **好** 和 **允许** 才能正常使用
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等 ARM 设备，**[Shadowrocket 2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本开始已经添加支持 macOS 支持，同时支持 x86/64 和 arm64。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器帮助用户提升网络体验
 
 ## [使用目录](#使用目录)
-> [!TIP]
-> * 点击 **目录标题** 可以快速定位到相关正文
-> * 点击正文的 **蓝色标题** 可以快速回到目录
+
+> 点击 **目录标题** 可以快速定位到相关正文<br>
+> 点击正文的 **蓝色标题** 可以快速回到目录
 
 > * [首页](#软件首页)
+>     * [快速使用方法](#快速使用方法)
 >     * [添加节点](#添加节点)
 >     * [添加WireGuard节点](#添加wireguard节点)
 >     * [协议类型](#协议类型)
@@ -134,6 +127,14 @@
 ------
 
 ## [软件首页](#使用目录)
+
+### [快速使用方法](#使用目录)
+> 
+> * [首页](#软件首页) > [添加节点](#添加节点)
+> * [设置](#设置页面) > [延迟测试方法](#延迟测试方法) > **CONNECT**
+> * [首页](#软件首页) > [连通性测试](#连通性测试) > 选可用节点连接
+>   
+> * 首次启动会提示 **安装VPN配置文件**，请点击 **好** 和 **允许** 才能正常使用
 
 ### [添加节点](#使用目录)
 
@@ -556,7 +557,7 @@
 > **规则管理**
 > > * 配置 > 配置文件 > 编辑配置 > 规则 > 规则区域右上角 `···`
 > >   
-> >   可批量选择并删除规则
+> >   可选择并批量删除规则
 
 ### [规则优先级](#使用目录)
 
@@ -971,7 +972,7 @@
 > **模块管理**
 > > * 配置 > 模块 > 模块区域右上角 `···`
 > >   
-> >   可批量选择并删除模块
+> >   可选择并批量删除模块
 > 
 > **备注**
 > > * 对正在使用的配置 [开启 HTTPS 解密](#https解密) 或使用 [证书模块](#证书模块)，才能使包含 MITM 的模块完整生效，不包含 MITM 的模块除外
