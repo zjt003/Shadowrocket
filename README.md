@@ -1,18 +1,21 @@
 [![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")<br>
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
-[![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=Stars&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/stargazers "已被星标")
-[![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=Forks&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/forks "已被复刻")
-[![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=Update&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket-First/activity "更新记录")
+[![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被星标&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/stargazers "已被星标")
+[![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被复刻&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/forks "已被复刻")
+[![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=更新时间&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/activity "更新记录")
+
+> [!IMPORTANT]
+> 
+> **本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！**
 
 > [!NOTE]
 > 
-> **本仓以普通用户的身份对原作者及所有对相关项目做出贡献的人表示由衷的感谢！**
-> 
-> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善，以帮助用户能够更好的理解和使用 Shadowrocket 软件。同时本仓同步更新来自官方群组的懒人配置，用户可复制下方链接安装使用，亦可 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本，[Johnshall 的仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 提供的懒人配置也以本仓文件为基础进行同步更新。本仓 [Original 分支](https://github.com/LOWERTOP/Shadowrocket/tree/Original) 存有相关文件的原始版本，其他需求可访问 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善更新，以帮助用户能够更好的理解和使用 Shadowrocket 软件。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
- > [!TIP]
+> [!TIP]
 > 
-> **[懒人配置](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf)**
+> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)**，发布于 [官方群组](https://t.me/ShadowrocketApp)，是专为 **懒人** 打造的开箱即用的配置文件，它对每条命令都进行了详细的注释说明，内置了几乎完整的使用手册，适合几乎任何阶段的用户使用，是除默认配置外首推的配置文件。本仓将同步保持更新，[Johnshall 仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也以本仓文件为基础保持同步，用户亦可 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
+> 
 > ```ruby
 > https://lowertop.github.io/Shadowrocket/lazy_group.conf
 > ```
@@ -23,7 +26,7 @@
 
 > [!NOTE]
 > 
-> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等 ARM 设备，**[Shadowrocket 2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本开始已经添加支持 macOS 支持，同时支持 x86/64 和 arm64。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器帮助用户提升网络体验
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，[Shadowrocket 2.2.70 (2712)](https://t.me/ShadowrocketNews/1047) 版本已正式支持 macOS，同时支持 x86/64 和 arm64。Shadowrocket 提供了灵活的配置选项，它通过将设备的网络流量转发至代理服务器帮助用户提升网络体验
 
 ## [使用目录](#使用目录)
 
@@ -469,16 +472,10 @@
 
 ### [更新配置](#使用目录)
 
-> 该选项仅当配置文件是以远程配置文件的形式添加进来时才会出现。该功能一般适用于在远端维护的配置文件或远程配置需要恢复时使用，更新将使用远程配置对本地配置进行完整的更新替换，除配置设置外该功能还会同时更新该配置所用的 [规则集](#规则集url)、[脚本](#脚本url) 等远程资源。软件同时提供自动更新功能，参见 [自动更新](#自动更新) 词条
+> 使用当前配置文件的远程版本对当前文件进行覆盖更新。该选项仅当配置文件是以远程配置文件的形式添加进来时才会出现，该功能一般适用于在远端维护的配置文件或远程配置需要恢复时使用。除更新配置设置外该功能还会同时更新该配置所用的 [规则集](#规则集url)、[脚本](#脚本url) 等远程资源，若仅需要更新规则集等远程资源，请使用 [使用配置](#使用配置) / [编译配置](#编译配置) 功能。软件同时提供自动更新功能，相关说明及其他技巧请点击查看 [自动更新](#自动更新) 词条
 
 > [!CAUTION]
 > **更新配置会覆盖在本地对配置文件所做的修改，对于在本地修改过的远程配置而言需要谨慎使用此功能**
-
-> [!TIP]
-> * **若仅需要更新规则集等远程资源，请使用 [使用配置](#使用配置) / [编译配置](#编译配置) 功能**
-> * **若要禁用更新配置功能，进入 [纯文本编辑](#编辑纯文本) 删除或注释掉 `update-url = *`**
-> * **自动更新相关技巧请参考：[自动更新](#自动更新)**
-  
 
 ### [重新命名](#使用目录)
 
