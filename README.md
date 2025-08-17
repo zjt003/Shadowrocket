@@ -1463,7 +1463,7 @@
 
 > Shadowrocket 支持 `X-callback-urls`，允许其他应用程序在 Shadowrocket 中触发某些操作
 > 
-> 添加 `autoclose=true` 查询值，当动作触发后，退出 Shadowrocket
+> 支持添加 `autoclose=true` 查询值，可在动作触发后退出 Shadowrocket
 
 > `启动 VPN 隧道` 
 > ```ruby
