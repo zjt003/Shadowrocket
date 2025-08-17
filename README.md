@@ -1479,6 +1479,10 @@
 > ```ruby
 > shadowrocket://toggle
 > ```
+>  `连通性测试` 
+> ```ruby
+> shadowrocket://connectivity-test
+> ```
 >  `使用特定节点` 
 > ```ruby
 > shadowrocket://select?s={节点名称}
@@ -1486,6 +1490,10 @@
 >  `添加 订阅/节点` 
 > ```ruby
 > shadowrocket://add/{url}
+> ```
+>  `更新 订阅` 
+> ```ruby
+> shadowrocket://update-subs
 > ```
 >  `安装/使用 配置` 
 > ```ruby
