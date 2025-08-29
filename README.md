@@ -4,17 +4,13 @@
 [![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被复刻&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/forks "已被复刻")
 [![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=更新时间&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/activity "更新记录")
 
-> [!IMPORTANT]
-> 
-> **本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！**
-
 > [!NOTE]
 > 
-> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善更新，以帮助用户能够更好的理解和使用 Shadowrocket 软件。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善更新，以帮助用户能够更好的理解和使用 Shadowrocket 软件。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
 > 
-> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)** 作者匿名，发布于 [官方群组](https://t.me/ShadowrocketApp)，是专为 **懒人** 打造的开箱即用的配置文件，它对每条命令都进行了详细的注释说明，内置了几乎完整的使用手册，适合几乎任何阶段的用户使用，是除默认配置外首推的配置文件。本仓与官方群组发布的版本保持同步更新，[Johnshall 仓库](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓配置保持同步，不过更推荐新手用户 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
+> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)** 作者匿名，发布于 [官方群组](https://t.me/ShadowrocketApp)，是专为 **懒人** 打造的开箱即用的配置文件，它对每条命令都进行了详细的注释说明，内置了几乎完整的使用手册，适合几乎任何阶段的用户使用，是除默认配置外首推的配置文件。本仓与官方群组发布的版本保持同步更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓配置保持同步，本仓更推荐新手用户 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
 > 
 > ```ruby
 > https://lowertop.github.io/Shadowrocket/lazy_group.conf
