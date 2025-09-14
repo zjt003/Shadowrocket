@@ -97,6 +97,7 @@
 > * [设置](#设置页面)
 >     * [延迟测试方法](#延迟测试方法)
 >     * [小组件](#小组件)
+>     * [颜色](#颜色)
 >     * [按需求连接](#按需求连接)
 >     * [隧道](#隧道)
 >     * [兼容模式](#兼容模式)
@@ -1200,6 +1201,53 @@
 > 更新 Shadowrocket 后，如果找不到小组件添加按钮，请尝试重启手机。如果小组件显示 `无法加载`，请尝试以下方法：
 > 
 > > * 系统设置 > 通用 > 语言与地区，添加或删除一种其他语言
+
+### [颜色](#使用目录)
+
+> Shadowrocket 支持自定义设置软件配色方案，可以根据个人喜好调整各个板块的颜色，并可以随时恢复默认颜色。同时支持分享和安装已有配色方案，配色案例参考 [此处](https://github.com/LOWERTOP/Shadowrocket-First#shadowrocket-%E9%85%8D%E8%89%B2%E6%96%87%E4%BB%B6)
+> > * **外观**：支持匹配系统的自动色彩方案，以及深色、浅色模式
+> > * **传统样式**：使用传统应用样式
+> > * **颜色**：自定义设置颜色，编码为 **十六进制颜色编码（Hex Color Code）**
+> > * **重设颜色**：恢复默认配色
+> > * **复制网址**：复制当前配色的 URL 地址，可用以分享或保存
+>
+> 以下为软件配色项目的名称及其中文译名，需要注意因系统限制，部分项目不可自定义
+> 
+> > ```ruby
+> > NavigationBarColor / 导航栏背景色
+> > NavigationBar2Color / 导航栏背景色2
+> > NavigationBarTextColor / 导航栏文字颜色
+> > NavigationBar2TextColor / 导航栏文字颜色2
+> > TabBarColor / 标签栏背景色
+> > TabBarBorderColor / 标签栏边框颜色
+> > TabBarSelectedColor / 标签栏选中项颜色
+> > TabBarUnselectedColor / 标签栏未选中项颜色
+> > TableBackgroundColor / 表格背景颜色
+> > TableCellBackgroundColor / 表格单元格背景颜色
+> > TableCellSelectedBackgroundColor / 表格单元格选中项背景颜色
+> > TableSeparatorColor / 表格分隔线颜色
+> > TextFieldTextColor / 文本框文字颜色
+> > PlaceholderColor / 占位符颜色
+> > TextLabelTextColor / 文本标签文字颜色
+> > DetailLabelTextColor / 详细标签文字颜色
+> > TextLabelDeleteColor / 文本标签删除文字颜色
+> > HeaderFooterTextColor / 页眉页脚文字颜色
+> > SearchFieldBackgroundColor / 搜索框背景颜色
+> > IndicatorColor / 指示器颜色
+> > ButtonIconColor / 按钮图标颜色
+> > ButtonNormalColor / 按钮正常状态颜色
+> > ButtonNormal2Color / 按钮正常状态颜色2
+> > ButtonNormal3Color / 按钮正常状态颜色3
+> > ButtonHighlightedColor / 按钮高亮状态颜色
+> > ButtonHighlighted2Color / 按钮高亮状态颜色2
+> > ButtonHighlighted3Color / 按钮高亮状态颜色3
+> > ButtonDisabledColor / 按钮禁用状态颜色
+> > ButtonDisabled2Color / 按钮禁用状态颜色2
+> > PingSuccessTextColor / 测试Ping成功文字颜色
+> > PingTimeoutTextColor / 测试Ping超时文字颜色
+> > DefaultDotColor / 默认指示点颜色
+> > HUDBackgroundColor / 弹窗HUD背景颜色
+> > ```
 
 ### [按需求连接](#使用目录)
 
