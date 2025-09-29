@@ -504,7 +504,7 @@
 > 
 > **备用DNS（fallback-dns-server）**：当覆写 DNS 查询失败或查询时间超过2秒，Shadowrocket 会自动回退备用 DNS。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS，清空备用 DNS 等于将其设置为 `system`
 > 
-> **启用IPv6支持（ipv6）**：`false` 表示不启用，`true` 表示启用。即使不启用此选项，当本地网络环境支持 IPv6，并且节点域名支持 IPv6 解析，Shadowrocket 也会使用节点的 IPv6 地址进行访问。解决方法是关闭节点域名的 IPv6 解析，或者在配置文件的 `[Host]` 项目下为节点域名指定 IP 地址。在部分地区启用 IPv6 支持可能存在 [微信转圈](#微信转圈) 之类的故障
+> **启用IPv6支持（ipv6）**：`false` 表示不启用，`true` 表示启用。即使不启用此选项，当本地网络环境支持 IPv6，并且节点域名支持 IPv6 解析，Shadowrocket 也会使用节点的 IPv6 地址进行访问。解决方法是关闭节点域名的 IPv6 解析，或者在配置文件的 `[Host]` 项目下为节点域名指定 IP 地址
 > 
 > **首选IPv6（prefer-ipv6）**：优先向 IPv6 的 DNS 服务器查询 `AAAA` 记录，优先使用 `AAAA` 记录。`false` 表示不启用
 > 
