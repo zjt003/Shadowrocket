@@ -540,7 +540,9 @@
 > 
 > 💡 **ipv6-only-if-no-ipv4-dns**：当设置为 `true` 时，如果设备在网络环境中仅获取到 IPv6 的 DNS 而未获取到 IPv4 的 DNS，此时软件将认为网络环境是 `IPv6 Only` 网络
 > 
-> _带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项_
+> 💡 **block-quic=all-proxy|all|always-allow**：QUIC协议屏蔽策略。支持使用 `all-proxy`、`all`、`always-allow`对 QUIC 传输层协议进行设置。其中 `all-proxy` 表示只对“走代理的连接”阻断 QUIC。也就是说，直连连接（DIRECT）不会被干预；`all` 表示对所有连接（包括直连与代理）都屏蔽 QUIC。这会完全禁止系统中一切 UDP/443 流量；`always-allow` 表示始终允许 QUIC，不做任何屏蔽，等同于“关闭 QUIC 屏蔽”。
+> 
+> > _带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项_
 
 ### [添加规则](#使用目录)
 
