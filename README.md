@@ -660,7 +660,7 @@
 > 
 > 除此之外，规则策略还可以选择 `分组` `代理分组` `订阅` `服务器节点` 等
 > 
-> **扩展参数开关**：此类开关选项适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD`、`DOMAIN-WILDCARD`、`DOMAIN-SET` 规则
+> **策略扩展参数**：此开关适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD`、`DOMAIN-WILDCARD`、`DOMAIN-SET` 规则
 >
 > > **Extended Matching**：扩展匹配。启用此参数后，该规则将尝试同时匹配 `SNI` 和 `HTTP` 主机标头
 > > 
