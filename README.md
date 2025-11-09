@@ -634,18 +634,7 @@
 > **PROTOCOL**：匹配传输协议类型
 > 
 > > `PROTOCOL` 类型不支持单独使用，只能作为子规则类型嵌套于逻辑规则当中。如 `AND,((PROTOCOL,UDP),(DST-PORT,443)),REJECT-NO-DROP`
-> 
-> **扩展参数开关**：此类开关选项适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD`、`DOMAIN-WILDCARD`、`DOMAIN-SET` 规则
->
-> > **Extended Matching**：扩展匹配。启用此参数后，该规则将尝试同时匹配 `SNI` 和 `HTTP` 主机标头
-> > 
-> > **Pre Matching**：预匹配。启用此参数的规则将在正常规则匹配过程之前生效，具有最高优先级
-> >
-> > 纯文本示例：
-> > ```
-> > [Rule]
-> > DOMAIN,ad.com,REJECT,extended-matching,pre-matching
-> > ```
+
 
 ### [规则策略](#使用目录)
 
@@ -670,6 +659,18 @@
 > **REJECT-NO-DROP**：拒绝。返回 ICMP 端口不可达
 > 
 > 除此之外，规则策略还可以选择 `分组` `代理分组` `订阅` `服务器节点` 等
+> 
+> **扩展参数开关**：此类开关选项适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD`、`DOMAIN-WILDCARD`、`DOMAIN-SET` 规则
+>
+> > **Extended Matching**：扩展匹配。启用此参数后，该规则将尝试同时匹配 `SNI` 和 `HTTP` 主机标头
+> > 
+> > **Pre Matching**：预匹配。启用此参数的规则将在正常规则匹配过程之前生效，具有最高优先级
+> >
+> > 纯文本示例：
+> > ```ruby
+> > [Rule]
+> > DOMAIN,ad.com,REJECT,extended-matching,pre-matching
+> > ```
 
 ### [APP分流](#使用目录)
 
