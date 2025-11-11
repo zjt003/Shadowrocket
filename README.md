@@ -660,7 +660,7 @@
 > 
 > 除此之外，规则策略还可以选择 `分组` `代理分组` `订阅` `服务器节点` 等
 > 
-> **REJECT 策略扩展参数**
+> **策略扩展参数**
 >
 > > **Extended Matching**：扩展匹配。启用此参数后，该规则将尝试同时匹配 `SNI` 和 `HTTP` 主机标头。适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等规则
 > > 
