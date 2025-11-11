@@ -660,11 +660,11 @@
 > 
 > 除此之外，规则策略还可以选择 `分组` `代理分组` `订阅` `服务器节点` 等
 > 
-> **策略扩展参数**：以下扩展参数开关适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD`、`DOMAIN-WILDCARD`、`DOMAIN-SET` 规则
+> **REJECT 策略扩展参数**
 >
-> > **Extended Matching**：扩展匹配。启用此参数后，该规则将尝试同时匹配 `SNI` 和 `HTTP` 主机标头
+> > **Extended Matching**：扩展匹配。启用此参数后，该规则将尝试同时匹配 `SNI` 和 `HTTP` 主机标头。适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等规则
 > > 
-> > **Pre Matching**：预匹配。启用此参数的规则将在正常规则匹配过程之前生效，具有最高优先级
+> > **Pre Matching**：预匹配功能，可以快速、低开销地拒绝请求。对于使用 REJECT 策略的规则，可以通过 pre-matching 标记启用此功能预匹配。启用此参数的规则将在正常规则匹配过程之前生效，具有最高优先级
 > >
 > > 纯文本示例：
 > > ```ruby
