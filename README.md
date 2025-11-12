@@ -662,7 +662,7 @@
 > 
 > **策略扩展参数**
 >
-> > **Extended Matching**：扩展匹配。启用此参数后，该规则将尝试同时匹配 `SNI` 和 `HTTP` 主机标头。适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等规则
+> > **Extended Matching**：扩展匹配。代表将尝试同时匹配 `SNI` 和 `HTTP` 主机标头。适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等域名规则。Shadowrocket 默认支持 `extended-matching`，已默认开启 `SNI` 匹配
 > > 
 > > **Pre Matching**：预匹配功能，可以快速、低开销地拒绝请求。对于使用 REJECT 策略的规则，可以通过 pre-matching 标记启用此功能预匹配。启用此参数的规则将在正常规则匹配过程之前生效，具有最高优先级
 > >
