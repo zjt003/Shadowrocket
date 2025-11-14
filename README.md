@@ -541,6 +541,8 @@
 > 💡 **ipv6-only-if-no-ipv4-dns**：当设置为 `true` 时，如果设备在网络环境中仅获取到 IPv6 的 DNS 而未获取到 IPv4 的 DNS，此时软件将认为网络环境是 `IPv6 Only` 网络
 > 
 > 💡 **block-quic**：QUIC协议屏蔽策略。支持使用 `all-proxy`、`all`、`always-allow` 对 QUIC 传输层协议进行设置。其中 `all-proxy` 表示只对“走代理的连接”阻断 QUIC，直连连接（DIRECT）不会被干预；`all` 表示对所有连接（包括直连与代理）都屏蔽 QUIC，这会完全禁止系统中一切 UDP/443 流量；`always-allow` 表示始终允许 QUIC，不做任何屏蔽，等同于“关闭 QUIC 屏蔽”。
+>
+> 💡 **use-local-host-item-for-proxy**：本地 HOST 映射对代理生效。在默认情况下，DNS 解析总是在远端进行，因为 Shadowrocket 向代理节点发送的请求始终携带域名。启用此选项后，对于命中了本地 DNS 映射规则的请求，Shadowrocket 会改为使用本地映射得到的 IP 地址向代理节点发起请求，而不是使用原始域名。此功能仅对使用 IP 地址的本地 DNS 映射记录有效
 > 
 > > _带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项_
 
