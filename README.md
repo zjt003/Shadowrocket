@@ -583,7 +583,7 @@
 > 
 > > 如 `DOMAIN-WILDCARD,a*c.example*.com,DIRECT` 可以匹配到 `abc.example123.com、aqwec.example456.com`
 > 
-> **DOMAIN**：匹配请求的完整域名
+> **DOMAIN**：匹配请求的完整域名。当为`DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等相似类型分别设置相同的值时，只有其中一种类型会生效
 > 
 > > 如 `DOMAIN,www.example.com,DIRECT` 只能匹配到 `www.example.com`
 > 
@@ -597,11 +597,11 @@
 > 
 > **IP-CIDR**：匹配 IPv4 或 IPv6 地址
 > 
-> > 如 `IP-CIDR,192.168.1.0/24,DIRECT` 可以匹配到IP段 `192.168.1.1～192.168.1.254`。当域名请求遇到IP类规则时，Shadowrocket会向本地DNS服务器发送查询请求，以判断主机IP是否匹配规则。若IP类规则加 `no-resolve`（如：`IP-CIDR,172.16.0.0/12,DIRECT,no-resolve`），则域名请求将会跳过此规则，不会触发本地DNS查询
+> > 如 `IP-CIDR,192.168.1.0/24,DIRECT` 可以匹配到 IP 段 `192.168.1.1～192.168.1.254`。当域名请求遇到IP类规则时，Shadowrocket 会向本地 DNS 服务器发送查询请求，以判断主机 IP 是否匹配规则。若 IP 类规则加 `no-resolve`（如：`IP-CIDR,172.16.0.0/12,DIRECT,no-resolve`），则域名请求将会跳过此规则，不会触发本地DNS查询
 > 
 > **IP-ASN**：匹配 IP 地址隶属的 ASN 编号
 > 
-> > 如 `IP-ASN,56040,DIRECT` 可以匹配到属于China Mobile Communications Corporation网络的IP地址
+> > 如 `IP-ASN,56040,DIRECT` 可以匹配到属于 China Mobile Communications Corporation 网络的 IP 地址
 > 
 > **RULE-SET**：匹配规则集内容。规则集的组成部分需包含规则类型
 > 
@@ -806,10 +806,17 @@
 > * 快捷进入代理分组
 >   * 首页下拉，可以快捷进入代理分组界面
 >   * 首页本地节点上方设有指示牌图标，点击该图标可以快捷进入代理分组界面，软件版本需大于等于 **2.2.65 (2614)**
+> 
+> * 代理分组其他设置参数
+>   * interval：测试周期。指定间隔多长时间后需要重新发起测试
+>   * timeout：超时时间。如果测试在超时前未完成，放弃测试
+>   * tolerance：公差。只有当新优胜者的分数高于旧优胜者的分数加上公差时，才会进行线路更换
+>   * url：测试地址。指定要测试的URL
+>   * hidden：[隐藏代理分组](#隐藏代理分组)
 
 ### [代理分组类型](#使用目录)
 
-> * **select**：允许用户手动选择一个子策略，可以指定其他代理分组或代理服务器
+> * **select**：允许用户手动选择一个子策略，可以指定其他代理分组或代理服务器。纯文本中设置为 `0` 表示第一个策略，`1` 表示第二个策略，`2` 表示第三个策略，以此类推
 > 
 > * **url-test**：根据设定的自动测试周期和结果自动切换延迟最低的节点
 > 
