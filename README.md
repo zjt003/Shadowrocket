@@ -544,7 +544,7 @@
 >
 > 💡 **use-local-host-item-for-proxy**：本地 HOST 映射对代理生效。设置为 `true` 表示启用。在默认情况下，DNS 解析总是在远端进行，因为 Shadowrocket 向代理节点发送的请求始终携带域名。启用此选项后，对于命中了本地 DNS 映射规则的请求，Shadowrocket 会改为使用本地映射得到的 IP 地址向代理节点发起请求，而不是使用原始域名。此功能仅对使用 IP 地址的本地 DNS 映射记录有效
 > 
-> 💡 **allow-dns-svcb**：允许 DNS SVCB 查询。系统在解析域名时可能会优先查询 SVCB（HTTPS / Type65）记录，而不是传统的 A/AAAA 记录。在这种情况下，Shadowrocket 将无法对该查询返回虚拟 IP，从而影响基于虚拟 IP 的相关功能。为确保系统发起标准的 A 记录查询并保证虚拟 IP 能正确返回，本选项默认关闭，即默认禁止系统进行 SVCB 查询。设置为 `true` 表示启用，Shadowrocket 将允许系统发起 SVCB 查询，但可能导致无法返回虚拟 IP
+> 💡 **allow-dns-svcb**：允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询
 > 
 > > _带💡符号的参数只能通过配置文件的纯文本模式进行设置，没有 UI 操作选项_
 
