@@ -25,7 +25,7 @@
 > **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件版本自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 起已正式支持 macOS，同时支持 x86/64 和 arm64
 > > 官方群组：[ShadowrocketApp](https://t.me/ShadowrocketApp)<br>
 > > 官方频道：[ShadowrocketNews](https://t.me/ShadowrocketNews)<br>
-> > 官方邮箱：buginapp@gmail.com
+> > 官方邮箱：[buginapp@gmail.com](mailto:buginapp@gmail.com)
 
 ## [使用目录](#使用目录)
 
@@ -554,7 +554,7 @@
 > 
 > 💡 **allow-dns-svcb**：允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询
 >
-> > _Shadowrocket 或还有其他支持的隐藏参数，此处可能未能完全列出，若有相关需求请联系 buginapp@gmail.com_
+> > _Shadowrocket 或还有其他支持的隐藏参数，此处可能未能完全列出，若有相关需求请联系 [buginapp@gmail.com](mailto:buginapp@gmail.com)_
 
 ### [添加规则](#使用目录)
 
