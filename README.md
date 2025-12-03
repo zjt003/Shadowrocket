@@ -1,8 +1,8 @@
-[![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")<br>
-[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
+[![README in English](https://img.shields.io/static/v1?label=README&message=in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
 [![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被星标&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/stargazers "已被星标")
 [![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被复刻&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/forks "已被复刻")
 [![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=更新时间&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/activity "更新记录")
+[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
 > [!NOTE]
 > 
