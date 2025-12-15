@@ -1,8 +1,9 @@
-[![README in English](https://img.shields.io/static/v1?label=&message=README%20in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=blue&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")<br>
-[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 [![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被星标&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/stargazers "已被星标")
 [![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被复刻&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/forks "已被复刻")
 [![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=更新时间&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/activity "更新记录")
+[![README in English](https://img.shields.io/static/v1?label=README&message=in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
+
+[![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
 > [!NOTE]
 > 
@@ -65,6 +66,7 @@
 >     * [规则优先级](#规则优先级)
 >     * [规则类型](#规则类型)
 >     * [规则策略](#规则策略)
+>     * [策略扩展参数](#策略扩展参数)
 >     * [APP分流](#app分流)
 >     * [更新规则集](#更新规则集)
 >     * [预览规则集](#预览规则集)
@@ -110,6 +112,7 @@
 >     * [代理类型](#代理类型)
 >     * [开启UDP转发](#开启udp转发)
 >     * [禁用STUN](#禁用stun)
+>     * [权限](#权限)
 >     * [隐藏VPN图标](#隐藏vpn图标)
 >     * [GEOIP数据库](#geoip数据库)
 >     * [自动更新](#自动更新)
@@ -124,7 +127,6 @@
 >     * [模块失效](#模块失效)
 >     * [VPN自动断开](#vpn自动断开)
 >     * [检测代理](#检测代理)
->     * [定位权限](#定位权限)
 >     * [编译原因](#编译原因)
 >     * [URL-Schemes](#url-schemes)
 
@@ -362,7 +364,7 @@
 > > * 当设备启用了多个蜂窝数据网络时，可在 Shadowrocket 的 设置 > 诊断 > 网络 中查看对应的接口信息
 > > * 输入格式：`pdp_ip1` `pdp_ip2` `pdp_ip3` 等
 > 
-> 首次添加场景，可能会弹出申请权限的对话框，具体原因请看 [定位权限](#定位权限)。当没有允许定位权限时，场景列表的 ✅ 标记不会随着网络类型的切换而自动切换，但这不影响场景功能的正常生效
+> 首次添加场景，可能会弹出申请权限的对话框，具体原因请看 [权限](#权限)。当没有允许定位权限时，场景列表的 ✅ 标记不会随着网络类型的切换而自动切换，但这不影响场景功能的正常生效
 > 
 > 设置 > 隧道/按需求连接 中的 **包含所有网络** 相关选项可能会对场景模式的生效造成影响
 
@@ -550,7 +552,7 @@
 > 
 > 💡 **block-quic**：QUIC协议屏蔽策略。支持使用 `all-proxy`、`all`、`always-allow` 对 QUIC 传输层协议进行设置。其中 `all-proxy` 表示只对“走代理的连接”阻断 QUIC，直连连接（DIRECT）不会被干预；`all` 表示对所有连接（包括直连与代理）都屏蔽 QUIC，这会完全禁止系统中一切 UDP/443 流量；`always-allow` 表示始终允许 QUIC，不做任何屏蔽，等同于“关闭 QUIC 屏蔽”
 >
-> 💡 **use-local-host-item-for-proxy**：本地 HOST 映射对代理生效。在默认情况下，DNS 解析始终在远端服务器上执行。当设置为 `true` 时，若存在本地 DNS 映射，Shadowrocket 将在代理连接中使用映射后的地址，而不是原始的主机名
+> 💡 **use-local-host-item-for-proxy**：本地 HOST 映射对代理生效。在默认情况下，对于代理类的 DNS 解析始终在远端服务器上执行。当设置为 `true` 时，若存在本地 DNS 映射，Shadowrocket 将在代理连接中使用映射后的地址，而不是原始的主机名
 > 
 > 💡 **allow-dns-svcb**：允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询
 >
@@ -674,17 +676,17 @@
 > 
 > 除此之外，规则策略还可以选择 `分组` `代理分组` `订阅` `服务器节点` 等
 > 
-> **策略扩展参数**
+### [策略扩展参数](#使用目录)
 >
-> > **Extended Matching**：扩展匹配。代表将尝试同时匹配 `SNI` 和 `HTTP` 主机标头。适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等域名规则。Shadowrocket 默认支持 `extended-matching`，已默认开启 `SNI` 匹配
-> > 
-> > **Pre Matching**：预匹配功能，可以快速、低开销地拒绝请求。对于使用 REJECT 策略的规则，可以通过 pre-matching 标记启用此功能预匹配。启用此参数的规则将在正常规则匹配过程之前生效，具有最高优先级
-> >
-> > 纯文本示例：
-> > ```ruby
-> > [Rule]
-> > DOMAIN,ad.com,REJECT,extended-matching,pre-matching
-> > ```
+> **Extended Matching**：扩展匹配。代表将尝试同时匹配 `SNI` 和 `HTTP` 主机标头。适用于 `DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等域名规则。Shadowrocket 默认支持 `extended-matching`，已默认开启 `SNI` 匹配
+> 
+> **Pre Matching**：预匹配功能，可以快速、低开销地拒绝请求。对于使用 REJECT 策略的规则，可以通过 pre-matching 标记启用此功能预匹配。启用此参数的规则将在正常规则匹配过程之前生效，具有最高优先级
+>
+> 纯文本示例：
+> ```ruby
+> [Rule]
+> DOMAIN,ad.com,REJECT,extended-matching,pre-matching
+> ```
 
 ### [APP分流](#使用目录)
 
@@ -1395,6 +1397,20 @@
 >
 > 若在配置文件 [通用参数](#通用参数) 中使用 `stun-response-ip` 的相关命令，则此处的开关状态将被忽略
 
+### [权限](#权限)
+
+> * **位置**
+>   
+>   iOS 系统要求必须开启位置权限才可以读取 Wi-Fi 网络的 SSID 名称。在 Shadowrocket 中，此权限仅在需要使用基于连接 Wi-Fi 网络触发特定配置的 **[场景](#场景)** 功能时才需要
+> 
+> * **通知**
+>   
+>   开启通知权限才可允许软件发送重要通知或警报，包括：脚本执行结果、订阅更新通知、VPN 断开通知等
+> 
+> * **剪贴板**
+>   
+>   开启剪贴板权限后，Shadowrocket 将在打开应用程序后尝试识别剪贴板中的内容是否是代理服务器的 URL，若是则会提示将其导入到应用。若未启用此权限，Shadowrocket 主页的本地节点上方将出现一个专用的粘贴按钮，以允许手动粘贴和导入剪贴板的内容
+
 ### [隐藏VPN图标](#使用目录)
 
 > 设置 > 排除路由 0.0.0.0/31 > 打开
@@ -1542,12 +1558,6 @@
 > 如果在使用 Shadowrocket 的时候，遇到某些 APP 提示需关闭代理才能使用，可以在 `Shadowrocket > 设置 > 代理类型 > 选择 None`
 >
 > 该设置将使用 [TUN 模式](#代理类型) 接管代理，能很大程度上缓解上述情况，但对于某些直接检测系统 VPN 状态的 APP 无效
-
-### [定位权限](#使用目录)
-
-> * iOS 系统的要求，开启定位权限才能获取 Wi-Fi 名称
-> 
-> * 如果不需要在 Shadowrocket 里看到 Wi-Fi 信息，那么就可以不用开启
 
 ### [编译原因](#使用目录)
 
