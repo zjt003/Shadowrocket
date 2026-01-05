@@ -1036,7 +1036,7 @@
 > ```ruby
 > #!name=证书模块
 > #!desc=需要以编辑参数的方式启用并填写完整
-> #!arguments=证书模块:false, 证书内容:此处粘贴有效的证书内容, 证书密码:Shadowrocket
+> #!arguments=证书模块:false, 证书内容:此处粘贴有效的证书内容, 证书密码:此处粘贴有效的证书密码
 > #!arguments-desc=证书模块：启用并填写证书内容方可生效\n\n证书内容：粘贴自有效证书\n\n证书密码：若默认密码是Shadowrocket则可不动
 > 
 > [MITM]
@@ -1058,8 +1058,8 @@
 >   [MITM]
 >   enable=true
 >   
->   # 确认下方 “ca-passphrase=” 后面填写的「已安装证书的配置文件」的证书密码是否正确，默认密码是：Shadowrocket
->   ca-passphrase=Shadowrocket
+>   # 在下方 “ca-passphrase=” 后面粘贴证书密码
+>   ca-passphrase=
 >   
 >   # 在下方 “ca-p12=” 后面粘贴证书内容
 >   ca-p12=
