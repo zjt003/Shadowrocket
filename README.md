@@ -1,7 +1,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被星标&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/stargazers "已被星标")
 [![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被复刻&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/forks "已被复刻")
 [![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=更新时间&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/activity "更新记录")
-[![README in English](https://img.shields.io/static/v1?label=README&message=in%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
+[![Translate to English](https://img.shields.io/static/v1?label=Translate&message=to%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket "Google Translate")
 
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
@@ -208,6 +208,8 @@
 > * Shadowrocket 提供了 **更新订阅** 的快捷指令，可以实现自动化操作
 > 
 > * 长按屏幕的应用图标 > 更新订阅
+>
+> * 软件提供 [自动更新](#自动更新) 服务
 >
 > 若添加或更新订阅时出现异常，请参见 [订阅异常](#订阅异常)
 
@@ -1005,7 +1007,7 @@
 > **本地新建模块**
 > > * 配置 > 模块 > 新建模块 > 编辑后保存
 > > 
-> >   模块 `[MITM]` 部分需要加 `%APPEND%`，表示把内容插入到配置中，不加时会覆盖配置中对应内容，并影响其他模块功能。域名默认仅解密443端口，若域名使用非标端口号需要此处写明
+> >   模块 `[MITM]` 部分需要加 `%APPEND%`，表示把内容插入到配置中，不加时会覆盖配置中对应内容，并影响其他模块功能
 > >   
 > >   ```ruby
 > >   [MITM]
@@ -1034,7 +1036,7 @@
 > ```ruby
 > #!name=证书模块
 > #!desc=需要以编辑参数的方式启用并填写完整
-> #!arguments=证书模块:false, 证书内容:此处粘贴有效的证书内容, 证书密码:Shadowrocket
+> #!arguments=证书模块:false, 证书内容:此处粘贴有效的证书内容, 证书密码:此处粘贴有效的证书密码
 > #!arguments-desc=证书模块：启用并填写证书内容方可生效\n\n证书内容：粘贴自有效证书\n\n证书密码：若默认密码是Shadowrocket则可不动
 > 
 > [MITM]
@@ -1056,8 +1058,8 @@
 >   [MITM]
 >   enable=true
 >   
->   # 确认下方 “ca-passphrase=” 后面填写的「已安装证书的配置文件」的证书密码是否正确，默认密码是：Shadowrocket
->   ca-passphrase=Shadowrocket
+>   # 在下方 “ca-passphrase=” 后面粘贴证书密码
+>   ca-passphrase=
 >   
 >   # 在下方 “ca-p12=” 后面粘贴证书内容
 >   ca-p12=
@@ -1465,7 +1467,16 @@
 >     * 更新提醒：开启后，更新时会弹出相应提醒。需要开启设备推送通知
 >     * 更新间隔：单位为  `天`，可选 1-7 天
 >   
-> * **订阅**：[参见此处](#更新订阅节点)
+> * **订阅**：根据设置自动更新服务器订阅，另外可 [参见此处](#更新订阅节点)
+> 
+>     * 自动后台更新：开启后可根据设置自动更新订阅
+>     * 更新提醒：开启后，更新时会弹出相应提醒。需要开启设备推送通知
+>     * 更新间隔：单位为  `小时`，可选 1-24 小时
+>     * DNS：使用指定的 HTTPS DNS 来解析订阅链接的域名，点击右侧的 `ⓘ` 可以挑选内置的 DNS
+>     * 根据 PING 排序：以连通性测试的结果从小到大排列服务器节点
+>     * 发送 HWID：开启该开关后，Shadowrocket 将在更新订阅时发送 X-HWID 标头
+>     * 显示删除确认：连通性测试结束后，显示是否删除超时节点的对话框
+> 
 > * **GeoLite2 数据库**：包含自动后台更新选项、更新提醒选项、更新间隔选项，其中更新间隔单位为 `天` 。其他设置 [参见此处](#geoip数据库)
 
 > [!TIP]
