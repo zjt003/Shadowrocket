@@ -8,7 +8,7 @@
 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善更新，以帮助用户能够更好的理解和使用 Shadowrocket 软件。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
-> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)** 是专为 **懒人** 打造的开箱即用的配置文件，作者匿名发布于 [官方群组](https://t.me/ShadowrocketApp)。它支持代理分组/策略组分流，并内置了常用的规则集和近乎完整的使用手册，用户可在纯文本模式下阅读每条命令的注释说明，适合几乎任何阶段的用户使用，是除默认配置外首推的配置文件
+> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)** 是专为 **懒人** 打造的开箱即用的配置文件，作者匿名发布于 [官方群组](https://t.me/ShadowrocketApp)。它内置了集成了常用的规则集和 代理分组/策略组，并内置了近乎完整的使用手册，用户可在纯文本模式下阅读每条命令的注释说明，是除默认配置外首推的配置文件，适合几乎任何阶段的用户使用
 > 
 > ```ruby
 > https://lowertop.github.io/Shadowrocket/lazy_group.conf
