@@ -22,7 +22,8 @@
 
 > [!NOTE]
 > 
-> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件版本自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 起已正式支持 macOS，同时支持 x86/64 和 arm64
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本起已正式支持 macOS
+> 
 > > 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
 > > 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
 > > 官方邮箱：[buginapp@gmail.com](mailto:buginapp@gmail.com)
@@ -508,63 +509,116 @@
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 通用
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[General]`
 > 
-> **旁路系统 `bypass-system`**：如果禁用此选项，可能会导致一些系统问题，如推送通知延迟
+> **旁路系统 `bypass-system`**
 > 
-> **跳过代理 `skip-proxy`**：跳过代理接口，使用 TUN 接口接管。此选项强制列表中的域名或 IP 的连接范围交由 Shadowrocket **TUN 接口** 来处理，而不是 Shadowrocket 代理接口。此选项用于提高部分应用程序对于代理环境的兼容性。若开启 [TUN 模式](#代理类型) 时，将强制使用 TUN 接管所有连接，此处地址列表可以忽略。需要注意，该选项并非将设定的地址使用直连进行连接，仅表示使用 TUN 接口处理
+> > 如果禁用此选项，可能会导致一些系统问题，如推送通知延迟
 > 
-> **TUN旁路路由 `tun-excluded-routes`**：Shadowrocket **TUN 接口** 只能处理 **TCP 协议**。使用此选项可以绕过指定的 IP 范围，让其他协议通过
+> **跳过代理 `skip-proxy`**
 > 
-> **DNS覆写 `dns-server`**：使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。**DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析**，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
+> > 跳过代理接口，使用 TUN 接口接管。此选项强制列表中的域名或 IP 的连接范围交由 Shadowrocket **TUN 接口** 来处理，而不是 Shadowrocket 代理接口。此选项用于提高部分应用程序对于代理环境的兼容性。若开启 [TUN 模式](#代理类型) 时，将强制使用 TUN 接管所有连接，此处地址列表可以忽略。需要注意，该选项并非将设定的地址使用直连进行连接，仅表示使用 TUN 接口处理
 > 
-> **备用DNS `fallback-dns-server`**：当覆写 DNS 查询失败或查询时间超过2秒，Shadowrocket 会自动回退备用 DNS。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS，清空备用 DNS 等于将其设置为 `system`
+> **TUN旁路路由 `tun-excluded-routes`**
 > 
-> **启用IPv6支持 `ipv6`**：`false` 表示不启用，`true` 表示启用。即使不启用此选项，当本地网络环境支持 IPv6，并且节点域名支持 IPv6 解析，Shadowrocket 也会使用节点的 IPv6 地址进行访问。解决方法是关闭节点域名的 IPv6 解析，或者在配置文件的 `[Host]` 项目下为节点域名指定 IP 地址
+> > Shadowrocket **TUN 接口** 只能处理 **TCP 协议**。使用此选项可以绕过指定的 IP 范围，让其他协议通过
 > 
-> **首选IPv6 `prefer-ipv6`**：优先向 IPv6 的 DNS 服务器查询 `AAAA` 记录，优先使用 `AAAA` 记录。`false` 表示不启用
+> **DNS覆写 `dns-server`**
 > 
-> **私有IP应答 `private-ip-answer`**：如果不启用该选项，域名解析返回私有 IP，Shadowrocket 会认为该域名被劫持而强制使用代理
+> > 使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。**DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析**，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
 > 
-> **TUN包含路由 `tun-included-routes`**：默认情况下，Shadowrocket 接口会声明自己为默认路由，但由于 Wi-Fi 接口的路由较小，有些流量可能不会通过 Shadowrocket 接口。使用此选项可以添加一个较小的路由表
+> **备用DNS `fallback-dns-server`**
 > 
-> **总是真实IP `always-real-ip`**：这个选项要求 Shadowrocket 在 `TUN` 处理 DNS 请求时返回一个真实的 IP 地址而不是假的IP地址
+> > 当覆写 DNS 查询失败或查询时间超过2秒，Shadowrocket 会自动回退备用 DNS。如需指定多个 DNS，可用逗号分隔。`system` 表示回退到系统 DNS，清空备用 DNS 等于将其设置为 `system`
 > 
-> **DNS劫持 `hijack-dns`**：有些设备或软件总是使用硬编码的 DNS 服务器，例如 Netflix 通过 Google DNS（`8.8.8.8` 或 `8.8.4.4`）发送请求，您可以使用此选项来劫持查询
+> **启用IPv6支持 `ipv6`**
 > 
-> **包含配置 `include`**：表示当前配置包含另一个配置的内容，当前配置的优先级高于被包含配置。该选项是对配置建立包含关系，以满足同时使用多个配置的需求
+> > `false` 表示不启用，`true` 表示启用。即使不启用此选项，当本地网络环境支持 IPv6，并且节点域名支持 IPv6 解析，Shadowrocket 也会使用节点的 IPv6 地址进行访问。解决方法是关闭节点域名的 IPv6 解析，或者在配置文件的 `[Host]` 项目下为节点域名指定 IP 地址
+> 
+> **首选IPv6 `prefer-ipv6`**
+> 
+> > 优先向 IPv6 的 DNS 服务器查询 `AAAA` 记录，优先使用 `AAAA` 记录。`false` 表示不启用
+> 
+> **私有IP应答 `private-ip-answer`**
+> 
+> > 如果不启用该选项，域名解析返回私有 IP，Shadowrocket 会认为该域名被劫持而强制使用代理
+> 
+> **TUN包含路由 `tun-included-routes`**
+> 
+> > 默认情况下，Shadowrocket 接口会声明自己为默认路由，但由于 Wi-Fi 接口的路由较小，有些流量可能不会通过 Shadowrocket 接口。使用此选项可以添加一个较小的路由表
+> 
+> **总是真实IP `always-real-ip`**
+> 
+> > 这个选项要求 Shadowrocket 在 `TUN` 处理 DNS 请求时返回一个真实的 IP 地址而不是假的IP地址
+> 
+> **DNS劫持 `hijack-dns`**
+> 
+> > 有些设备或软件总是使用硬编码的 DNS 服务器，例如 Netflix 通过 Google DNS（`8.8.8.8` 或 `8.8.4.4`）发送请求，您可以使用此选项来劫持查询
+> 
+> **包含配置 `include`**
+> 
+> > 表示当前配置包含另一个配置的内容，当前配置的优先级高于被包含配置。该选项是对配置建立包含关系，以满足同时使用多个配置的需求
 
 ### [隐藏参数](#使用目录)
-> 
+
+> [!CAUTION]
 > **以下参数为隐藏属性，建议谨慎设置。相关选项仅支持在配置文件 [纯文本编辑](#编辑纯文本) 模式中的 `[General]` 字段进行设置，不提供 UI 操作选项**
+
+> **`dns-direct-system`**
 > 
-> 💡 **`dns-direct-system`**：直连的域名类规则使用系统 DNS 进行查询。`false` 表示不启用
+> > 直连的域名类规则使用系统 DNS 进行查询。设置为 `true` 表示启用，设置为 `false` 表示不启用
 > 
-> 💡 **`icmp-auto-reply`**：ping 数据包自动回复
-> 
-> 💡 **`always-reject-url-rewrite`**：不开启时，「重写的REJECT策略」默认只有在配置模式下生效。开启后，可以令该策略在其他全局路由模式下都生效
-> 
-> 💡 **`dns-direct-fallback-proxy`**：直连域名解析失败后使用代理。`false` 表示不启用
-> 
-> 💡 **`udp-policy-not-supported-behaviour`**：当 UDP 流量匹配到规则里不支持 UDP 转发的节点策略时重新选择回退行为，可选行为包括 `DIRECT` `REJECT`。`DIRECT` 表示直连转发 UDP 流量，`REJECT` 表示拒绝转发 UDP 流量
+> **`icmp-auto-reply`**
 >
-> 💡 **`stun-response-ip`**：此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1`  `stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性。使用此命令将忽略软件设置选项内的 [禁用STUN](#禁用stun) 的启用状态
->
-> 💡 **`compatibility-mode`**：网络兼容模式。`0 > 自动/禁用`；`1 > Proxy with Loopback Address`；`2 > Proxy Only`；`3 > TUN Only`；`4 > Proxy without Loopback Address`；`5 > No Default Route`。本设置的优先级高于软件设置内的相关选项。当参数的值设定为3时的效果等同于启用 [Tun模式](#代理类型)：[设置](#设置页面) > 代理 > [代理类型](#代理类型) > None。当参数的值设定为5时的效果等同于启用 [兼容模式](#兼容模式)：[设置](#设置页面) > 代理 > [兼容模式](#兼容模式)
->
-> 💡 **`always-ip-address`**：强制所有域名使用本地 DNS 解析。设置为 `true` 表示启用。（此参数为隐藏属性，建议谨慎设置，可能导致相关域名的 CDN 失效。）
->
-> 💡 **`proxy-dns-server`**：通过 `proxy-dns-server =` 参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
+> > ping 数据包自动回复。设置为 `true` 表示启用，设置为 `false` 表示不启用
 > 
-> 💡 **`close-if-proxy-chain-missing`**：代理链丢失关闭连接。当设置为 `true` 时，若 [代理链](#代理通过代理链) 中的中转节点丢失则 `Reject` 代理连接；当设置为 `false` 时等同于不设置该命令，即若 [代理链](#代理通过代理链) 中的中转节点丢失则跳过中转节点直接连接落地节点使用
-> 
-> 💡 **`ipv6-only-if-no-ipv4-dns`**：当设置为 `true` 时，如果设备在网络环境中仅获取到 IPv6 的 DNS 而未获取到 IPv4 的 DNS，此时软件将认为网络环境是 `IPv6 Only` 网络
-> 
-> 💡 **`block-quic`**：QUIC协议屏蔽策略。支持使用 `all-proxy`、`all`、`always-allow` 对 QUIC 传输层协议进行设置。其中 `all-proxy` 表示只对“走代理的连接”阻断 QUIC，直连连接（DIRECT）不会被干预；`all` 表示对所有连接（包括直连与代理）都屏蔽 QUIC，这会完全禁止系统中一切 UDP/443 流量；`always-allow` 表示始终允许 QUIC，不做任何屏蔽，等同于“关闭 QUIC 屏蔽”
+> **`always-reject-url-rewrite`**
 >
-> 💡 **`use-local-host-item-for-proxy`**：本地 HOST 映射对代理生效。在默认情况下，对于代理类的 DNS 解析始终在远端服务器上执行。当设置为 `true` 时，若存在本地 DNS 映射，Shadowrocket 将在代理连接中使用映射后的地址，而不是原始的主机名
+> > 不开启时，「重写的REJECT策略」默认只有在配置模式下生效。开启后，可以令该策略在其他全局路由模式下都生效。设置为 `true` 表示启用，设置为 `false` 表示不启用
 > 
-> 💡 **`allow-dns-svcb`**：允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询
+> **`dns-direct-fallback-proxy`**
 >
-> > _Shadowrocket 或还有其他支持的隐藏参数，此处可能未能完全列出，若有相关需求请联系 [buginapp@gmail.com](mailto:buginapp@gmail.com)_
+> > 直连域名解析失败后使用代理。设置为 `true` 表示启用，设置为 `false` 表示不启用
+> 
+> **`udp-policy-not-supported-behaviour`**
+>
+> > 当 UDP 流量匹配到规则里不支持 UDP 转发的节点策略时重新选择回退行为，可选行为包括 `DIRECT` `REJECT`。`DIRECT` 表示直连转发 UDP 流量，`REJECT` 表示拒绝转发 UDP 流量
+>
+> **`stun-response-ip`**
+>
+> > 此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1`  `stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性。使用此命令将忽略软件设置选项内的 [禁用STUN](#禁用stun) 的启用状态
+>
+> **`compatibility-mode`**
+>
+> > 网络兼容模式。`0 > 自动/禁用`；`1 > Proxy with Loopback Address`；`2 > Proxy Only`；`3 > TUN Only`；`4 > Proxy without Loopback Address`；`5 > No Default Route`。本设置的优先级高于软件设置内的相关选项。当参数的值设定为3时的效果等同于启用 [Tun模式](#代理类型)：[设置](#设置页面) > 代理 > [代理类型](#代理类型) > None。当参数的值设定为5时的效果等同于启用 [兼容模式](#兼容模式)：[设置](#设置页面) > 代理 > [兼容模式](#兼容模式)
+>
+> **`always-ip-address`**
+>
+> > 强制所有域名使用本地 DNS 解析。设置为 `true` 表示启用，设置为 `false` 表示不启用
+>
+> **`proxy-dns-server`**
+>
+> > 通过 `proxy-dns-server =` 参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
+> 
+> **`close-if-proxy-chain-missing`**
+> 
+> > 代理链丢失关闭连接。当设置为 `true` 时，若 [代理链](#代理通过代理链) 中的中转节点丢失则 `Reject` 代理连接；当设置为 `false` 时等同于不设置该命令，即若 [代理链](#代理通过代理链) 中的中转节点丢失则跳过中转节点直接连接落地节点使用
+> 
+> **`ipv6-only-if-no-ipv4-dns`**
+> 
+> > 当设置为 `true` 时，如果设备在网络环境中仅获取到 IPv6 的 DNS 而未获取到 IPv4 的 DNS，此时软件将认为网络环境是 `IPv6 Only` 网络。设置为 `false` 表示不启用
+> 
+> **`block-quic`**
+> 
+> > QUIC协议屏蔽策略。支持使用 `all-proxy`、`all`、`always-allow` 对 QUIC 传输层协议进行设置。其中 `all-proxy` 表示只对“走代理的连接”阻断 QUIC，直连连接（DIRECT）不会被干预；`all` 表示对所有连接（包括直连与代理）都屏蔽 QUIC，这会完全禁止系统中一切 UDP/443 流量；`always-allow` 表示始终允许 QUIC，不做任何屏蔽，等同于“关闭 QUIC 屏蔽”
+>
+> **`use-local-host-item-for-proxy`**
+> 
+> > 本地 HOST 映射对代理生效。在默认情况下，对于代理类的 DNS 解析始终在远端服务器上执行。当设置为 `true` 时，若存在本地 DNS 映射，Shadowrocket 将在代理连接中使用映射后的地址，而不是原始的主机名。设置为 `false` 表示不启用
+> 
+> **`allow-dns-svcb`**
+> 
+> > 允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询。设置为 `true` 表示启用，设置为 `false` 表示不启用
+>
+> _Shadowrocket 或还有其他支持的隐藏参数，此处可能未能完全列出，若有相关需求请联系 [buginapp@gmail.com](mailto:buginapp@gmail.com)_
 
 ### [添加规则](#使用目录)
 
