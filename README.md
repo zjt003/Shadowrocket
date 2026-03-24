@@ -604,7 +604,7 @@
 >
 > **`proxy-dns-server`**
 >
-> > 通过 `proxy-dns-server =` 参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
+> > 通过该参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
 > 
 > **`close-if-proxy-chain-missing`**
 > 
