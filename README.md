@@ -8,13 +8,13 @@
 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善更新，以帮助用户能够更好的理解和使用 Shadowrocket 软件。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
-> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)** 是专为 **懒人** 打造的开箱即用的配置文件，作者匿名发布于 [官方群组](https://t.me/ShadowrocketApp)。它内置了集成了常用的规则集和 代理分组/策略组，并内置了近乎完整的使用手册，用户可在纯文本模式下阅读每条命令的注释说明，是除默认配置外首推的配置文件，适合几乎任何阶段的用户使用
+> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)** 是专为 Shadowrocket 打造的开箱即用的配置文件，作者匿名发布于 [官方群组](https://t.me/ShadowrocketApp)。它优化了各项设置并内置了集成了常用的规则和 代理分组/策略组，同时包含详细的参数说明，用户可在纯文本模式下详细阅读，适合几乎任何阶段的用户使用
 > 
 > ```ruby
 > https://lowertop.github.io/Shadowrocket/lazy_group.conf
 > ```
 
-> 本仓与官方群组发布的版本同步更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓保持同步。对于新手用户而言更推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
+> 本仓与官方群组发布的版本同步更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓保持同步。对新手用户而言更推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
 
 ------
 
@@ -36,7 +36,6 @@
 > * [首页](#软件首页)
 >     * [快速使用方法](#快速使用方法)
 >     * [添加节点](#添加节点)
->     * [添加WireGuard节点](#添加wireguard节点)
 >     * [协议类型](#协议类型)
 >     * [更新订阅节点](#更新订阅节点)
 >     * [节点排序](#节点排序)
@@ -165,27 +164,27 @@
 > * Shadowrocket 为了兼容部分其他类型的配置文件，也支持在配置文件中 [编写本地节点](#编写本地节点) 信息，但不要当作 [添加节点](#添加节点) 的优先选择
 >
 > _若添加或更新订阅时出现异常，请参见 [订阅异常](#订阅异常)_
-
-### [添加WireGuard节点](#使用目录)
-
-> * 首页 > 右上角 `➕` > 类型选择 `WireGuard`，填写配置信息
 > 
-> * 复制如下格式的 `WireGuard` 配置信息，打开 Shadowrocket 时会自动弹出 **添加对话框**，点击添加
->   
->   ```ruby
->   [Interface]
->   PrivateKey = xxxxxx
->   Address = 172.16.0.2/32
->   DNS = 1.1.1.1
->   MTU = 1420
->   [Peer]
->   PublicKey = xxxxxx
->   AllowedIPs = 0.0.0.0/0
->   AllowedIPs = ::/0
->   Endpoint = engage.cloudflareclient.com:2408
->   Reserved = 12,34,56
->   ```
->   如果没有自动弹出对话框，可能是因为设置中的 **允许检测剪贴板** 被关闭了，您可以重新打开，或者点击首页 **连通性测试** 下方的 **粘贴** 按钮，手动添加配置信息
+> > **添加WireGuard节点**
+> > 
+> > * 首页 > 右上角 `➕` > 类型选择 `WireGuard`，填写配置信息
+> > 
+> > * 复制如下格式的 `WireGuard` 配置信息，打开 Shadowrocket 时会自动弹出 **添加对话框**，点击添加
+> >   
+> >   ```ruby
+> >   [Interface]
+> >   PrivateKey = xxxxxx
+> >   Address = 172.16.0.2/32
+> >   DNS = 1.1.1.1
+> >   MTU = 1420
+> >   [Peer]
+> >   PublicKey = xxxxxx
+> >   AllowedIPs = 0.0.0.0/0
+> >   AllowedIPs = ::/0
+> >   Endpoint = engage.cloudflareclient.com:2408
+> >   Reserved = 12,34,56
+> >   ```
+> >   如果没有自动弹出对话框，可能是因为设置中的 **允许检测剪贴板** 被关闭了，您可以重新打开，或者点击首页 **连通性测试** 下方的 **粘贴** 按钮，手动添加配置信息
 
 ### [协议类型](#使用目录)
 
@@ -247,10 +246,12 @@
 
 ### [订阅节点筛选](#使用目录)
 
+> Shadowrocket 支持通过脚本或正则表达式对订阅节点进行筛选，从而实现更灵活的节点过滤与管理
+> 
+> * 首页 > 订阅后面的 `ⓘ` 图标 > 过滤
+> 
 > **节点筛选**
 > 
-> > 首页 > 订阅后面的 `ⓘ` 图标 > 过滤
-> > 
 > > * 保留节点名称含有关键词 A 和 B 的节点：
 > >   ```ruby
 > >   /(?=.*(A))^(?=.*(B))^.*$/
@@ -508,6 +509,13 @@
 > 
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 通用
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[General]`
+> > 
+> > 配置行的纯文本设置语法格式为 `key = value`
+> > 
+> > ```ruby
+> > [General]
+> > key = value
+> > ```
 > 
 > **旁路系统 `bypass-system`**
 > 
@@ -561,6 +569,8 @@
 
 > [!CAUTION]
 > **隐式参数是指相关选项仅支持在配置文件 [纯文本编辑](#编辑纯文本) 模式中的 `[General]` 字段进行纯文本设置，不提供 UI 操作选项，属于 [通用参数](#通用参数) 的隐藏属性，建议谨慎设置。**
+> 
+> 隐式参数属于 [通用参数](#通用参数)，设置语法格式为 `key = value`
 
 > **`dns-direct-system`**
 > 
@@ -596,7 +606,7 @@
 >
 > **`proxy-dns-server`**
 >
-> > 通过 `proxy-dns-server =` 参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
+> > 通过该参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
 > 
 > **`close-if-proxy-chain-missing`**
 > 
