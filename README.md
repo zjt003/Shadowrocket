@@ -149,7 +149,7 @@
 >   
 >   _此操作须开启摄像头权限_
 >   
-> * 复制节点链接，如 `trojan://*` `vmess://*` `vless://*` 等，打开 Shadowrocket 时会自动识别导入
+> * 复制节点链接，如 `trojan://*`、`vmess://*`、`vless://*` 等，打开 Shadowrocket 时会自动识别导入
 >   
 >   _此操作须开启剪贴板读取权限_
 > 
@@ -367,7 +367,7 @@
 > 软件支持添加蜂窝数据场景，支持以 **网络接口** 作为匹配条件
 > > * 默认（留空）代表接口 `pdp_ip0`
 > > * 当设备启用了多个蜂窝数据网络时，可在 Shadowrocket 的 设置 > 诊断 > 网络 中查看对应的接口信息
-> > * 输入格式：`pdp_ip1` `pdp_ip2` `pdp_ip3` 等
+> > * 输入格式：`pdp_ip1`、`pdp_ip2`、`pdp_ip3` 等
 > 
 > 首次添加场景，可能会弹出申请权限的对话框，具体原因请看 [权限](#权限)。当没有允许定位权限时，场景列表的 ✅ 标记不会随着网络类型的切换而自动切换，但这不影响场景功能的正常生效
 > 
@@ -531,7 +531,7 @@
 > 
 > **DNS覆写 `dns-server`**
 > 
-> > 使用普通 DNS 或加密 DNS（如 `doh` `doq` `dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 `doh链接` 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。**DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析**，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
+> > 使用普通 DNS 或加密 DNS（如 `doh`、`doq`、`dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 **doh链接** 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。**DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析**，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
 > 
 > **备用DNS `fallback-dns-server`**
 > 
@@ -590,7 +590,7 @@
 > 
 > **`udp-policy-not-supported-behaviour`**
 >
-> > 当 UDP 流量匹配到规则里不支持 UDP 转发的节点策略时重新选择回退行为，可选行为包括 `DIRECT` `REJECT`。`DIRECT` 表示直连转发 UDP 流量，`REJECT` 表示拒绝转发 UDP 流量
+> > 当 UDP 流量匹配到规则里不支持 UDP 转发的节点策略时重新选择回退行为，可选行为包括 `DIRECT`、`REJECT`。`DIRECT` 表示直连转发 UDP 流量，`REJECT` 表示拒绝转发 UDP 流量
 >
 > **`stun-response-ip`**
 >
@@ -659,11 +659,11 @@
 
 > **DOMAIN-SUFFIX**：匹配请求域名的后缀
 > 
-> > 如 `DOMAIN-SUFFIX,example.com,DIRECT` 可以匹配到 `a.example.com` `a.b.example.com`
+> > 如 `DOMAIN-SUFFIX,example.com,DIRECT` 可以匹配到 `a.example.com`、`a.b.example.com`
 > 
 > **DOMAIN-KEYWORD**：匹配请求域名的关键词
 > 
-> > 如 `DOMAIN-KEYWORD,exa,DIRECT` 可以匹配到 `a.example.com` `a.b.example.com`
+> > 如 `DOMAIN-KEYWORD,exa,DIRECT` 可以匹配到 `a.example.com`、`a.b.example.com`
 > 
 > **DOMAIN-WILDCARD**：匹配请求域名，支持使用通配符 `*`、`?`
 > 
@@ -746,7 +746,7 @@
 > 
 > **REJECT-NO-DROP**：拒绝。返回 ICMP 端口不可达
 > 
-> 除此之外，规则策略还可以选择 `分组` `代理分组` `订阅` `服务器节点` 等
+> 除此之外，规则策略还可以选择 **分组**、**代理分组**、**订阅**、**服务器节点** 等
 > 
 ### [策略扩展参数](#使用目录)
 >
@@ -770,9 +770,9 @@
 >   ```ruby
 >   https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list
 >   ```
-> * 点击配置文件的 `ⓘ` 图标 > 规则 > 右上角 `➕`，[规则类型](#规则类型) 选择 `RULE-SET`，[规则策略](#规则策略) 选择 `PROXY`，输入框内粘贴 `规则集链接`，保存完成（规则策略可以根据需求使用其他选项或节点）
+> * 点击配置文件的 `ⓘ` 图标 > 规则 > 右上角 `➕`，[规则类型](#规则类型) 选择 `RULE-SET`，[规则策略](#规则策略) 选择 `PROXY`，输入框内粘贴 **规则集链接**，保存完成（规则策略可以根据需求使用其他选项或节点）
 > 
-> iOS系统没有常规分应用代理的操作，只能通过 `域名 / ip / ua` 规则实现app分流效果。可自行抓包，或者订阅 [blackmatrix7](https://github.com/blackmatrix7) 的 [规则集](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)。如果引用的链接是域名集，添加规则时，[规则类型](#规则类型) 请选择 `DOMAIN-SET`
+> iOS系统没有常规分应用代理的操作，只能通过 **域名 / ip / ua** 规则实现app分流效果。可自行抓包，或者订阅 [blackmatrix7](https://github.com/blackmatrix7) 的 [规则集](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket)。如果引用的链接是域名集，添加规则时，[规则类型](#规则类型) 请选择 `DOMAIN-SET`
 
 ### [更新规则集](#使用目录)
 
