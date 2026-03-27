@@ -531,7 +531,7 @@
 > 
 > **DNS覆写 `dns-server`**
 > 
-> > 使用普通 DNS 或加密 DNS（如 `doh`、`doq`、`dot` 等）覆盖默认的系统 DNS。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 **doh链接** 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。**DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析**，其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
+> > 使用普通 DNS 或加密 DNS（如 `doh`、`doq`、`dot` 等）覆盖默认的系统 DNS。DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析。DNS 覆写支持同时添加多个地址，Shadowrocket 采用并行查询的方式进行解析请求，最先返回的结果将被采用。有些 `dns over https` 支持 `http3`，所以将会尝试查询，如果支持就切换到 `http3`，可在 **doh链接** 后面加上 `#no-h3` 关闭。`doh` 强制通过 `h3` 查询的写法是将 `https` 改成 `h3`，如`h3://dns.alidns.com/dns-query`。其他示例或写法参见：[修改DNS](#修改dns)、[DNS-over-PROXY](#dns-over-proxy)
 > 
 > **备用DNS `fallback-dns-server`**
 > 
@@ -594,11 +594,20 @@
 >
 > **`stun-response-ip`**
 >
-> > 此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1`  `stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性。使用此命令将忽略软件设置选项内的 [禁用STUN](#禁用stun) 的启用状态
+> > 此选项包含两个命令：`stun-response-ip` 和 `stun-response-ipv6`。该选项允许返回一个虚假的IP地址，如 `stun-response-ip=1.1.1.1`、`stun-response-ipv6=::1`，目的是防止真实IP地址泄漏，提高 WebRTC 的隐私和安全性。使用此命令将忽略软件设置选项内的 [禁用STUN](#禁用stun) 的启用状态
 >
 > **`compatibility-mode`**
 >
-> > 网络兼容模式。`0 > 自动/禁用`；`1 > Proxy with Loopback Address`；`2 > Proxy Only`；`3 > TUN Only`；`4 > Proxy without Loopback Address`；`5 > No Default Route`。本设置的优先级高于软件设置内的相关选项。当参数的值设定为3时的效果等同于启用 [Tun模式](#代理类型)：[设置](#设置页面) > 代理 > [代理类型](#代理类型) > None。当参数的值设定为5时的效果等同于启用 [兼容模式](#兼容模式)：[设置](#设置页面) > 代理 > [兼容模式](#兼容模式)
+> > 网络兼容模式
+> > 
+> > `compatibility-mode = 0` > 自动/禁用<br>
+> > `compatibility-mode = 1` > Proxy with Loopback Address<br>
+> > `compatibility-mode = 2` > Proxy Only<br>
+> > `compatibility-mode = 3` > TUN Only<br>
+> > `compatibility-mode = 4` > Proxy without Loopback Address<br>
+> > `compatibility-mode = 5` > No Default Route
+> > 
+> > 本设置的优先级高于软件设置内的相关选项。当参数的值设定为 `3` 时的效果等同于启用 [Tun模式](#代理类型)：[设置](#设置页面) > 代理 > [代理类型](#代理类型) > None。当参数的值设定为 `5` 时的效果等同于启用 [兼容模式](#兼容模式)：[设置](#设置页面) > 代理 > [兼容模式](#兼容模式)
 >
 > **`always-ip-address`**
 >
