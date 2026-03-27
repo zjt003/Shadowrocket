@@ -787,34 +787,33 @@
 
 > **DNS覆写**
 >   
-> >   点击配置文件 `ⓘ` 图标 > 通用 > DNS 覆写<br>
-> >   DNS 覆写为并发查询，若填写多个 DNS 服务，则使用最快返回的解析结果<br>
-> >   支持普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）。填 system 表示使用系统 DNS。也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)<br>
-> >   DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析
+> >   点击 配置文件 `ⓘ` 图标 > 通用 > DNS 覆写
 > > 
+> >   DNS 覆写仅针对直连类域名进行解析，代理类域名将经由代理服务器进行解析。DNS 覆写为并发查询，若填写多个 DNS 服务，则使用最快返回的解析结果。填 `system` 表示使用系统 DNS，支持普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等），也支持使用 [通过代理转发 DNS 查询请求](#dns-over-proxy)
+> >   
 > >   **普通 DNS 示例**<br>
 > >   ```ruby
 > >   dns-server = 223.5.5.5,119.29.29.29
 > >   ```
 > >   
 > >   **加密 DNS 示例**<br>
-> >   1、DNS-over-HTTPS（DoH）
+> >   * DNS-over-HTTPS（DoH）
 > >   ```ruby
 > >   dns-server = https://dns.alidns.com/dns-query
 > >   ```
-> >   2、DNS-over-HTTP/3（DoH3）
+> >   * DNS-over-HTTP/3（DoH3）
 > >   ```ruby
 > >   dns-server = h3://dns.alidns.com/dns-query
 > >   ```
-> >   3、DNS-over-QUIC（DoQ）
+> >   * DNS-over-QUIC（DoQ）
 > >   ```ruby
 > >   dns-server = quic://223.5.5.5
 > >   ```
-> >   4、DNS-over-TLS（DoT）
+> >   * DNS-over-TLS（DoT）
 > >   ```ruby
 > >   dns-server = tls://223.5.5.5
 > >   ```
-> >   5、[DNS-over-PROXY](#dns-over-proxy)
+> >   * [DNS-over-PROXY](#dns-over-proxy)
 > 
 > **备用DNS**
 >   
