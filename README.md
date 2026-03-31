@@ -5,15 +5,15 @@
 
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
-本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 曾使用的关键词列表文件为基础进行完善更新，以帮助用户能够更好的理解和使用 Shadowrocket 软件。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件绝大多数功能的介绍和部分常见问题的解答，以期能够帮助用户更好的理解和使用 Shadowrocket 软件。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
-> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf)** 是专为 Shadowrocket 打造的开箱即用的配置文件，作者匿名发布于 [官方群组](https://t.me/ShadowrocketApp)。它优化了各项设置并内置了集成了常用的规则和 代理分组/策略组，同时包含详细的参数说明，用户可在纯文本模式下详细阅读，适合几乎任何阶段的用户使用
-> 
+> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf "含策略组版本")** <br>
 > ```ruby
 > https://lowertop.github.io/Shadowrocket/lazy_group.conf
 > ```
-
+> 懒人配置是专为 Shadowrocket 打造的开箱即用的配置文件，首发于 [官方群组](https://t.me/ShadowrocketApp)。该配置文件优化了各项设置并内置了常用的规则/规则集以及常用的代理分组/策略组，同时包含详细的参数说明，可在纯文本模式下详细查阅，适合几乎任何阶段的用户使用
+> 
 > 本仓与官方群组发布的版本同步更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓保持同步。对新手用户而言更推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
 
 ------
@@ -22,7 +22,7 @@
 
 > [!NOTE]
 > 
-> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为“小火箭”）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本起已正式支持 macOS
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为 **小火箭**）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本起已正式支持 macOS
 > 
 > > 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
 > > 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
@@ -155,9 +155,9 @@
 > 
 > * 首页 > 右上角 `➕` > 类型 `Subscribe` > URL 栏输入服务器订阅链接 > 保存
 > 
->   _订阅链接后面加上 "#1"、"#2"、"#3" 等，可以重复添加同一个订阅_
+>   _订阅链接后面加上 `#1`、`#2`、`#3` 等，可以重复添加同一个订阅_
 > 
->   _长按服务器订阅可选“隐藏”功能，启用后该订阅将默认不显示任何节点，该功能等同于在订阅编辑内的“最大值”填写数字“0”_
+>   _长按服务器订阅可选 **隐藏** 功能，启用后该订阅将默认不显示任何节点，该功能等同于在订阅编辑内的 **最大值** 填写数字 `0`_
 > 
 > * 首页 > 右上角 `➕`，选择对应节点类型，填写节点配置信息并保存
 >   
@@ -303,7 +303,7 @@
 > >   ```ruby
 > >   $server['dialer-proxy']="UUID值"
 > >   ```
-> >   _其中 “UUID 值” 可在中转节点或订阅的 JSON 文本中复制，第一种命令的 “订阅名称/节点名称” 也可以使用 UUID 值_
+> >   _其中 **UUID 值** 可在中转节点或订阅的 JSON 文本中复制，第一种命令的 **订阅名称/节点名称** 也可以使用 UUID 值_
 > >   
 > > * 当节点名称不包含地区标识，且节点地址有可以分辨地区的关键词时，可以使用以下脚本为节点名称批量添加地区关键词或旗帜标识
 > >   ```ruby
@@ -627,7 +627,7 @@
 > 
 > **`block-quic`**
 > 
-> > QUIC协议屏蔽策略。支持使用 `all-proxy`、`all`、`always-allow` 对 QUIC 传输层协议进行设置。其中 `all-proxy` 表示只对“走代理的连接”阻断 QUIC，直连连接（DIRECT）不会被干预；`all` 表示对所有连接（包括直连与代理）都屏蔽 QUIC，这会完全禁止系统中一切 UDP/443 流量；`always-allow` 表示始终允许 QUIC，不做任何屏蔽，等同于“关闭 QUIC 屏蔽”
+> > QUIC协议屏蔽策略。支持使用 `all-proxy`、`all`、`always-allow` 对 QUIC 传输层协议进行设置。其中 `all-proxy` 表示只对 **走代理的连接** 阻断 QUIC，直连连接（DIRECT）不会被干预；`all` 表示对所有连接（包括直连与代理）都屏蔽 QUIC，这会完全禁止系统中一切 UDP/443 流量；`always-allow` 表示始终允许 QUIC，不做任何屏蔽，等同于 **关闭 QUIC 屏蔽**
 >
 > **`use-local-host-item-for-proxy`**
 > 
@@ -662,7 +662,7 @@
 >   * 上面的规则优先于下面的规则
 >   * 域名类的规则优先于IP类规则
 >
-> > 此外，规则的优先级在自动编译配置时同时遵循“显式优先、推断其次、最终兜底”的原则。其中可被直接、精确匹配的显式规则（如 `DOMAIN`、`DOMAIN-SUFFIX`、`URL-REGEX` 等）具有最高优先级。而基于地域或数据库判断的推断类规则（如 `GeoIP`）会在自动编译过程中被放置在显式规则之后。`FINAL` 规则作为兜底项，始终位于整个规则集的最末尾
+> > 此外，规则的优先级在自动编译配置时同时遵循 **显式优先、推断其次、最终兜底** 的原则。其中可被直接、精确匹配的显式规则（如 `DOMAIN`、`DOMAIN-SUFFIX`、`URL-REGEX` 等）具有最高优先级。而基于地域或数据库判断的推断类规则（如 `GeoIP`）会在自动编译过程中被放置在显式规则之后。`FINAL` 规则作为兜底项，始终位于整个规则集的最末尾
 
 ### [规则类型](#使用目录)
 
@@ -1429,7 +1429,7 @@
 
 > 设置 > 代理 > 兼容模式
 > 
-> HomeKit 与摄像头建立连接时，会主动将本机 IP 发送给摄像头端逆向连接。部分情况下 iOS 可能并未处理 VPN 开启时的情况，会将 VPN 的内网地址发送给摄像头，导致 RTSP 数据回包无法发回到 iOS 设备上。若当前设备与家庭中枢设备处于同一局域网下且开启代理时，如果出现无法正常使用 “家庭” 应用查看流式传输的 HomeKit 实况影像时，可以尝试开启此项以提高相应的兼容性。此处的设置是配置文件通用隐式参数中 `compatibility-mode` 的一种，开启该选项效果等同于 [配置文件](#通用参数) 内设置 `compatibility-mode=5`
+> HomeKit 与摄像头建立连接时，会主动将本机 IP 发送给摄像头端逆向连接。部分情况下 iOS 可能并未处理 VPN 开启时的情况，会将 VPN 的内网地址发送给摄像头，导致 RTSP 数据回包无法发回到 iOS 设备上。若当前设备与家庭中枢设备处于同一局域网下且开启代理时，如果出现无法正常使用 **家庭** 应用查看流式传输的 HomeKit 实况影像时，可以尝试开启此项以提高相应的兼容性。此处的设置是配置文件通用隐式参数中 `compatibility-mode` 的一种，开启该选项效果等同于 [配置文件](#通用参数) 内设置 `compatibility-mode=5`
 
 ### [前置代理](#使用目录)
 
@@ -1454,7 +1454,7 @@
 > **备注**
 > > * 当 iOS 设备开启代理共享时，或需保持该设备屏幕常亮或连接充电器，以防意外退出
 > > * 如果配置文件开启了 HTTPS 解密，请确保其他设备已安装并信任相同的证书才能正常使用。当其他设备不需要使用解密功能时，可以在 **代理共享** 页面关闭「HTTPS解密」开关
-> > * 使用代理共享时需要对应的 APP 打开系统设置中的“本地网络”开关
+> > * 使用代理共享时需要对应的 APP 打开系统设置中的 **本地网络** 开关
 > > * Telegram 可能不被系统代理接管，可单独在应用内添加 SOCKS5 代理
 
 
