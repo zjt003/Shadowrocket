@@ -20,16 +20,14 @@
 
 # [Shadowrocket 使用手册](https://lowertop.github.io/Shadowrocket/ "发布页面")
 
+[![AppStore](https://shadowlaunch.com/static/appstore.svg)](https://apps.apple.com/us/app/shadowrocket/id932747118 "AppStore")
+
 > [!NOTE]
-> 
-> [![AppStore](https://shadowlaunch.com/static/appstore.svg)](https://apps.apple.com/us/app/shadowrocket/id932747118 "AppStore")
-> 
 > **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为 **小火箭**）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本起已正式支持 macOS
->
-> 
-> > 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
-> > 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
-> > 反馈邮箱：[buginapp@gmail.com](mailto:buginapp@gmail.com)
+
+> 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
+> 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
+> 反馈邮箱：[buginapp@gmail.com](mailto:buginapp@gmail.com)
 
 ## [使用目录](#使用目录)
 
