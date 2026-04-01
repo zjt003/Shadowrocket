@@ -1089,7 +1089,7 @@
 >
 > **类型：**
 > > `http-request`：使用脚本修改 HTTP 请求<br>
-> > `http-response`：使用脚本修改 HTTP 相应<br>
+> > `http-response`：使用脚本修改 HTTP 响应<br>
 > > `event`：在指定事件发生时运行脚本<br>
 > > `rule`：使用脚本作为规则使用<br>
 > > `dns`：使用脚本作为DNS 解析器<br>
