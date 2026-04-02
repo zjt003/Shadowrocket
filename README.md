@@ -20,13 +20,14 @@
 
 # [Shadowrocket 使用手册](https://lowertop.github.io/Shadowrocket/ "发布页面")
 
+[![AppStore](https://shadowlaunch.com/static/appstore.svg)](https://apps.apple.com/us/app/shadowrocket/id932747118 "AppStore")
+
 > [!NOTE]
-> 
 > **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为 **小火箭**）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本起已正式支持 macOS
-> 
-> > 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
-> > 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
-> > 官方邮箱：[buginapp@gmail.com](mailto:buginapp@gmail.com)
+
+> 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
+> 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
+> 反馈邮箱：[buginapp@gmail.com](mailto:buginapp@gmail.com)
 
 ## [使用目录](#使用目录)
 
@@ -1089,16 +1090,18 @@
 >
 > **类型：**
 > > `http-request`：使用脚本修改 HTTP 请求<br>
-> > `http-response`：使用脚本修改 HTTP 相应<br>
+> > `http-response`：使用脚本修改 HTTP 响应<br>
 > > `event`：在指定事件发生时运行脚本<br>
 > > `rule`：使用脚本作为规则使用<br>
 > > `dns`：使用脚本作为DNS 解析器<br>
 > > `cron`：在指定时间运行脚本
 > 
 > **引擎：**
-> > `auto`：自动<br>
+> > `auto`：自动选择脚本引擎<br>
 > > `jsc`：适用于小型、简单、频繁调用的脚本，例如规则、DNS等<br>
 > > `webview`：适用于复杂、高内存需求的脚本，例如解析 MB 级别的 JSON
+> > 
+> > 若脚本类型为 `http-request` 或 `http-response`，则在配置 `engine=auto` 参数时，系统将默认调用 `WebView` 引擎，而非 `JSC` 引擎。因此，从使用规范与一致性角度考虑，该参数建议明确指定类型，以确保行为符合预期
 > 
 > **其他参数：**
 > > 参见软件内的具体选项及释义
