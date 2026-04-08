@@ -5,7 +5,7 @@
 
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
-本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件绝大多数功能的介绍和部分常见问题的解答，以期能够帮助用户更好的理解和使用 Shadowrocket 软件。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答，本文及相关软件在使用时请通过合法的互联网出入口信道访问，并确保在使用过程中符合当地法律法规。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
 > **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf "含策略组版本")** <br>
