@@ -1204,8 +1204,10 @@
 
 ### [编写本地节点](#使用目录)
 
-> Shadowrocket 支持在 [配置文件](#配置文件) 中编写本地节点，但该操作方式仅是为了兼容部分其他类型的配置文件，不能当作 Shadowrocket [添加节点](#添加节点) 的优先选择
+> [!CAUTION]
 > 
+> Shadowrocket 支持在 [配置文件](#配置文件) 中编写本地节点，但该操作方式仅是为了兼容部分其他类型的配置文件，不能当作 Shadowrocket [添加节点](#添加节点) 的优先选择
+
 > **Shadowsocks类型**
 > > 
 > > 节点名称=ss,地址,端口,password=密码,其他参数(如method=aes-256-cfb,obfs=websocket,plugin=none)
