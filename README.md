@@ -115,6 +115,7 @@
 >     * [代理类型](#代理类型)
 >     * [开启UDP转发](#开启udp转发)
 >     * [禁用STUN](#禁用stun)
+>     * [Tailscale](#tailscale)
 >     * [权限](#权限)
 >     * [隐藏VPN图标](#隐藏vpn图标)
 >     * [GEOIP数据库](#geoip数据库)
