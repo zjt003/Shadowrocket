@@ -1556,7 +1556,7 @@
 > 
 > * **控制服务器 URL**
 >   
->   填写 **[控制服务器地址](https://discord.com/channels/1379528469859532931/1426960118247067689)**，默认使用初始的 Tailscale 控制服务器，其 URL 为 `https://controlplane.tailscale.com`
+>   填写 **[控制服务器地址](https://tailscale.com/docs/how-to/set-up-custom-control-server)**，默认使用初始的 Tailscale 控制服务器，其 URL 为 `https://controlplane.tailscale.com`
 >
 > * **出口节点**
 >   
