@@ -106,7 +106,7 @@
 > * [设置](#设置页面)
 >     * [延迟测试方法](#延迟测试方法)
 >     * [小组件](#小组件)
->     * [颜色](#颜色)
+>     * [外观](#外观)
 >     * [按需求连接](#按需求连接)
 >     * [隧道](#隧道)
 >     * [兼容模式](#兼容模式)
@@ -115,6 +115,7 @@
 >     * [代理类型](#代理类型)
 >     * [开启UDP转发](#开启udp转发)
 >     * [禁用STUN](#禁用stun)
+>     * [Tailscale](#tailscale)
 >     * [权限](#权限)
 >     * [隐藏VPN图标](#隐藏vpn图标)
 >     * [GEOIP数据库](#geoip数据库)
@@ -1383,9 +1384,9 @@
 > 
 > > * 系统设置 > 通用 > 语言与地区，添加或删除一种其他语言
 
-### [颜色](#使用目录)
+### [外观](#使用目录)
 
-> 设置 > 颜色
+> 设置 > 外观
 > 
 > Shadowrocket 支持自定义设置软件配色方案，可以根据个人喜好调整各个板块的颜色，并可以随时恢复默认颜色。同时支持分享和安装已有配色方案，配色案例参考 [此处](https://github.com/LOWERTOP/Shadowrocket-First#shadowrocket-%E9%85%8D%E8%89%B2%E6%96%87%E4%BB%B6)
 > 
@@ -1539,7 +1540,29 @@
 >
 > 若在配置文件 [通用参数](#通用参数) 中使用 `stun-response-ip` 的相关命令，则此处的开关状态将被忽略
 
-### [权限](#权限)
+### [Tailscale](#使用目录)
+
+> Shadowrocket 自版本 **[2.2.89 (3314)](https://t.me/ShadowrocketNews/1527)** 起增加 **[Tailscale](https://tailscale.com/docs)** 全局隧道模组
+> 
+> * **启用**
+>   
+>   启用 Tailscale 作为处理 tailnet 流量的全局模组。当设置变更时数据包 tunnel 将重新加载此模组
+>   
+>   在不使用本隧道模组且配合 Tailscale 使用时，可能需要确保 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内不包含 `100.64.0.0/10` 网段
+>   
+> * **认证密钥**
+>   
+>   填写并使用来自 Tailscale 管理控制台的可复用或临时 **[认证密钥](https://tailscale.com/docs/features/access-control/auth-keys)**，使设备无需登录即可加入 Tailscale 网络
+> 
+> * **控制服务器 URL**
+>   
+>   填写 **[控制服务器地址](https://tailscale.com/docs/how-to/set-up-custom-control-server)**，默认使用初始的 Tailscale 控制服务器，其 URL 为 `https://controlplane.tailscale.com`
+>
+> * **出口节点**
+>   
+>   **[出口节点](https://tailscale.com/docs/features/exit-nodes)** 允许将所有互联网流量通过 Tailscale 网络中的某一台设备转发出去再到达公共互联网。Shadowrocket 默认仅处理 tailnet 流量不使用出口节点。
+
+### [权限](#使用目录)
 
 > * **位置**
 >   
