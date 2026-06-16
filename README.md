@@ -753,6 +753,8 @@
 > 
 > **DIRECT**：直连。连接不经过任何代理服务器
 > 
+> **TAILSCALE**：Tailscale 出口。通过 [Tailscale](#tailscale) 隧道转发
+> 
 > **REJECT**：拒绝。返回 HTTP 状态码 404，没有内容
 > 
 > **REJECT-DICT**：拒绝。返回 HTTP 状态码 200，内容为空的JSON对象
@@ -1548,7 +1550,11 @@
 >   
 >   启用 Tailscale 作为处理 tailnet 流量的全局模组。当设置变更时数据包 tunnel 将重新加载此模组
 >   
->   在不使用本隧道模组且配合 Tailscale 使用时，可能需要确保 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内不包含 `100.64.0.0/10` 网段
+>   * 启用此功能可配合 Tailscale [规则策略](#规则策略) 添加对应的规则
+>   
+>     示例：`DOMAIN-WILDCARD,tail*.ts.net,TAILSCALE`、`DOMAIN-SUFFIX,ts.net,TAILSCALE`
+>   
+>   * 在不使用本隧道模组且配合 Tailscale 使用时，可能需要确保 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内不包含 `100.64.0.0/10` 网段
 >   
 > * **认证密钥**
 >   
