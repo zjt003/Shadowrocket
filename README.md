@@ -1,6 +1,3 @@
-[![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被星标&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/stargazers "已被星标")
-[![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被复刻&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/forks "已被复刻")
-[![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=更新时间&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/activity "更新记录")
 [![Translate to English](https://img.shields.io/static/v1?label=Translate&message=to%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://github.com/LOWERTOP/Shadowrocket/wiki "Google Translate")
 
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
@@ -752,6 +749,8 @@
 > **PROXY**：代理。通过代理服务器转发流量
 > 
 > **DIRECT**：直连。连接不经过任何代理服务器
+> 
+> **TAILSCALE**：Tailscale 出口。通过 [Tailscale](#tailscale) 隧道转发
 > 
 > **REJECT**：拒绝。返回 HTTP 状态码 404，没有内容
 > 
@@ -1548,7 +1547,11 @@
 >   
 >   启用 Tailscale 作为处理 tailnet 流量的全局模组。当设置变更时数据包 tunnel 将重新加载此模组
 >   
->   在不使用本隧道模组且配合 Tailscale 使用时，可能需要确保 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内不包含 `100.64.0.0/10` 网段
+>   * 启用此功能可配合 Tailscale [规则策略](#规则策略) 添加对应的规则
+>   
+>     示例：`DOMAIN-WILDCARD,tail*.ts.net,TAILSCALE`、`DOMAIN-SUFFIX,ts.net,TAILSCALE`
+>   
+>   * 在不使用本隧道模组且配合 Tailscale 使用时，可能需要确保 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内不包含 `100.64.0.0/10` 网段
 >   
 > * **认证密钥**
 >   
