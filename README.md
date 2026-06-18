@@ -510,7 +510,7 @@
 
 ### [通用参数](#使用目录)
 
-> 通用参数是 Shadowrocket 的中最重要的功能参数，位于 [配置文件](#配置文件) [纯文本编辑](#编辑纯文本) 模式中的 `[General]` 字段，该字段选项包含具有 UI 界面的设置项和不包含 UI 界面的 [隐式参数](#隐式参数)
+> 通用参数是 Shadowrocket 中最重要的功能参数，位于 [配置文件](#配置文件) [纯文本编辑](#编辑纯文本) 模式中的 `[General]` 字段，该字段选项包含具有 UI 界面的设置项和不包含 UI 界面的 [隐式参数](#隐式参数)
 > 
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 通用
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[General]`
@@ -687,7 +687,7 @@
 > 
 > **DOMAIN-WILDCARD**：匹配请求域名，支持使用通配符 `*`、`?`
 > 
-> > 如 `DOMAIN-WILDCARD,a*c.example*.com,DIRECT` 可以匹配到 `abc.example123.com、aqwec.example456.com`
+> > 如 `DOMAIN-WILDCARD,a*c.example*.com,DIRECT` 可以匹配到 `abc.example123.com`、`aqwec.example456.com`
 > 
 > **DOMAIN**：匹配请求的完整域名。当为`DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等相似类型分别设置相同的值时，只有其中一种类型会生效
 > 
@@ -762,7 +762,7 @@
 > 
 > **REJECT-IMG**：拒绝。返回 HTTP 状态码 200，内容为 1 像素 GIF
 > 
-> **REJECT-TINYGIF**：拒绝。返回HTTP状态码200，内容为 1 像素 GIF
+> **REJECT-TINYGIF**：拒绝。返回 HTTP 状态码200，内容为 1 像素 GIF
 > 
 > **REJECT-DROP**：拒绝。丢弃 IP 包
 > 
