@@ -1557,7 +1557,7 @@
 >   
 >     示例：`DOMAIN-WILDCARD,tail*.ts.net,TAILSCALE`、`DOMAIN-SUFFIX,ts.net,TAILSCALE`
 >   
->   * 在不使用本隧道模组且配合 Tailscale 使用时，可能需要确保 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内不包含 `100.64.0.0/10` 网段
+>   * 需要注意 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内若包含 `100.64.0.0/10` 网段可能对 Tailscale 有一定影响
 >   
 > * **认证密钥**
 >   
