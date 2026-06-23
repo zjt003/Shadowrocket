@@ -1557,7 +1557,7 @@
 >   
 >     示例：`DOMAIN-WILDCARD,tail*.ts.net,TAILSCALE`、`DOMAIN-SUFFIX,ts.net,TAILSCALE`
 >   
->   * 需要注意 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内若包含 `100.64.0.0/10` 网段可能对 Tailscale 有一定影响
+>   * 需要注意 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内若包含 `100.64.0.0/10` 网段可能对 Tailscale 有一定影响，参见 [Tailscale IP 地址](https://tailscale.com/docs/concepts/tailscale-ip-addresses) 以及 [CGNAT 冲突排查](https://tailscale.com/docs/reference/troubleshooting/network-configuration/cgnat-conflicts)
 >   
 > * **认证密钥**
 >   
