@@ -1569,7 +1569,11 @@
 >
 > * **出口节点**
 >   
->   **[出口节点](https://tailscale.com/docs/features/exit-nodes)** 允许将所有互联网流量通过 Tailscale 网络中的某一台设备转发出去再到达公共互联网。Shadowrocket 默认仅处理 tailnet 流量不使用出口节点。
+>   **[出口节点](https://tailscale.com/docs/features/exit-nodes)** 允许将所有互联网流量通过 Tailscale 网络中的某一台设备转发出去再到达公共互联网。Shadowrocket 默认仅处理 tailnet 流量，不使用出口节点
+>
+> * **始终使用 DERP**
+>   
+>   强制通过 **[DERP 中继服务器](https://tailscale.com/docs/reference/derp-servers)** 转发 Tailscale 流量，并禁用直接 UDP 通道
 
 ### [权限](#使用目录)
 
