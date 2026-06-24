@@ -1557,7 +1557,7 @@
 >   
 >     示例：`DOMAIN-WILDCARD,tail*.ts.net,TAILSCALE`、`DOMAIN-SUFFIX,ts.net,TAILSCALE`
 >   
->   * 需要注意 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内若包含 `100.64.0.0/10` 网段可能对 Tailscale 有一定影响
+>   * 需要注意 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内若包含 `100.64.0.0/10` 网段可能对 Tailscale 有一定影响，参见 [Tailscale IP 地址](https://tailscale.com/docs/concepts/tailscale-ip-addresses) 以及 [CGNAT 冲突排查](https://tailscale.com/docs/reference/troubleshooting/network-configuration/cgnat-conflicts)
 >   
 > * **认证密钥**
 >   
@@ -1569,7 +1569,11 @@
 >
 > * **出口节点**
 >   
->   **[出口节点](https://tailscale.com/docs/features/exit-nodes)** 允许将所有互联网流量通过 Tailscale 网络中的某一台设备转发出去再到达公共互联网。Shadowrocket 默认仅处理 tailnet 流量不使用出口节点。
+>   **[出口节点](https://tailscale.com/docs/features/exit-nodes)** 允许将所有互联网流量通过 Tailscale 网络中的某一台设备转发出去再到达公共互联网。Shadowrocket 默认仅处理 tailnet 流量，不使用出口节点
+>
+> * **始终使用 DERP**
+>   
+>   强制通过 **[DERP 中继服务器](https://tailscale.com/docs/reference/derp-servers)** 转发 Tailscale 流量，并禁用直接 UDP 通道
 
 ### [权限](#使用目录)
 
