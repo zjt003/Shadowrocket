@@ -1574,6 +1574,12 @@
 > * **始终使用 DERP**
 >   
 >   强制通过 **[DERP 中继服务器](https://tailscale.com/docs/reference/derp-servers)** 转发 Tailscale 流量，并禁用直接 UDP 通道
+>
+> * **使用 Tailscale 子网**
+>   
+>   根据用户的网络规则对流量进行路由。部分网络需要启用此项才能访问非 `100.*.*.*` 的 IP 地址
+>   
+>   此功能对应 Tailscale 的接受 **[子网路由](https://tailscale.com/docs/features/subnet-routers#how-subnet-routers-work)** 功能，即客户端是否接受并使用 tailnet 中其他设备广播的子网路由。另可参见 **[管理客户端偏好](https://tailscale.com/docs/features/client/manage-preferences#use-tailscale-subnets)**
 
 ### [权限](#使用目录)
 
