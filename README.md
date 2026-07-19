@@ -4,7 +4,7 @@
 
 > [!NOTE]
 > 
-> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答。本仓非官方仓库，仅由社区进行维护，本仓对原作者及所有为相关项目做出贡献的人表示由衷的感谢！请确保在使用本文及相关软件的过程中符合当地法律法规。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答。本仓并非官方仓库，仅由社区进行维护，本仓对原作者及所有为相关项目做出贡献的人表示由衷的感谢！请确保在使用本文及相关软件的过程中符合当地法律法规。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
 > 
@@ -1838,3 +1838,7 @@
 > ```
 
 ------
+
+[![AppStore](https://shadowlaunch.com/static/appstore.svg)](https://apps.apple.com/us/app/shadowrocket/id932747118 "AppStore")
+
+_[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118) is owned by [Shadow Launch Technology Limited](https://shadowlaunch.com/). All rights reserved._
