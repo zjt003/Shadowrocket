@@ -4,7 +4,7 @@
 
 > [!NOTE]
 > 
-> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答。本仓非官方仓库，仅由社区进行维护，本仓对原作者及所有为相关项目做出贡献的人表示由衷的感谢！请确保在使用本文及相关软件的过程中符合当地法律法规。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答。本仓并非官方仓库，仅由社区进行维护，本仓对原作者及所有为相关项目做出贡献的人表示由衷的感谢！请确保在使用本文及相关软件的过程中符合当地法律法规。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
 > 
@@ -23,7 +23,7 @@
 
 > [!NOTE]
 > 
-> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为 **小火箭**）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络代理工具，同时也支持 Apple TV 等设备，软件自 **[2.2.70 (2712)](https://t.me/ShadowrocketNews/1047)** 版本起已正式支持 macOS
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为 **小火箭**）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络工具，同时也支持 Mac、Apple TV 等苹果设备
 
 > 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
 > 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
@@ -1310,6 +1310,7 @@
 ### [iCloud自动同步](#使用目录)
 
 > Shadowrocket 支持将服务器节点、配置文件、模块和脚本文件等数据类型自动同步至 iCloud 云端
+> 
 > * 数据 > iCloud > 自动同步 > 打开
 > 
 > * 设备 **设置 > 账号 > iCloud**，确保使用 iCloud 的 APP 列表中已经开启 Shadowrocket 和 **iCloud 云盘** 项目，否则会出现 **iCloud 自动同步失败** 的提示
@@ -1320,13 +1321,13 @@
 > 
 > * iCloud 服务中断、网络连接问题以及其他复杂原因可能导致 iCloud 同步异常，这种情况建议选择手动删除 iCloud 备份并重新同步数据
 > 
->   **如果用户删除首页某个节点后发现它又自动恢复，可以尝试以下解决方法：数据 > iCloud，服务器节点下面点击删除 iCloud 备份和同步服务器节点**
+> * iCloud 同步机制存在一定系统级限制，Shadowrocket 仅可以同步添加节点，做不到同步删除节点，若出现自动恢复了已经删除的节点，可以尝试删除 iCloud 节点备份后重新同步
 > 
 > * 添加的 **场景** 和 **分组** 不属于 iCloud 自动同步的数据类型，需要手动备份下载，才能在设备间共享数据
 
 > [!TIP]
 > 
-> 由于 iCloud 的同步机制存在一定限制，在使用 iCloud 进行多设备数据同步时，建议采用以下方式：
+> 在使用 iCloud 进行多设备数据同步时，建议采用以下方式：
 > 
 > * **主设备**：开启自动同步
 > * **副设备**：保持关闭自动同步，仅在需要更新数据时手动执行同步操作
@@ -1574,6 +1575,12 @@
 > * **始终使用 DERP**
 >   
 >   强制通过 **[DERP 中继服务器](https://tailscale.com/docs/reference/derp-servers)** 转发 Tailscale 流量，并禁用直接 UDP 通道
+>
+> * **使用 Tailscale 子网**
+>   
+>   根据用户的网络规则对流量进行路由。部分网络需要启用此项才能访问非 `100.*.*.*` 的 IP 地址
+>   
+>   此功能对应 Tailscale 的接受 **[子网路由](https://tailscale.com/docs/features/subnet-routers#how-subnet-routers-work)** 功能，即客户端是否接受并使用 tailnet 中其他设备广播的子网路由。另可参见 **[管理客户端偏好](https://tailscale.com/docs/features/client/manage-preferences#use-tailscale-subnets)**
 
 ### [权限](#使用目录)
 
@@ -1831,3 +1838,7 @@
 > ```
 
 ------
+
+[![AppStore](https://shadowlaunch.com/static/appstore.svg)](https://apps.apple.com/us/app/shadowrocket/id932747118 "AppStore")
+
+_[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118) is owned by [Shadow Launch Technology Limited](https://shadowlaunch.com/). All rights reserved._
