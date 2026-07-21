@@ -4,16 +4,23 @@
 
 > [!NOTE]
 > 
-> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答。本仓并非官方仓库，仅由社区进行维护，本仓对原作者及所有为相关项目做出贡献的人表示由衷的感谢！请确保在使用本文及相关软件的过程中符合当地法律法规。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> 本使用手册基于 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 维护的关键词列表编写，并结合社区反馈持续更新完善，涵盖 Shadowrocket 大部分功能说明、使用方法及部分常见问题，力求为用户提供一份完整、易读的参考文档
+> 
+> 本仓库为 **非官方项目**，与 [Shadow Launch Technology Limited](https://shadowlaunch.com) 无任何关联，仅由社区进行更新维护。谨向 Shadowrocket 原作者及所有为相关项目作出贡献的开发者、维护者和社区成员致以诚挚感谢
+> 
+> 请确保在使用本手册及相关软件的过程中，遵守您所在国家或地区的法律法规，并自行承担因使用相关功能而产生的责任
+> 
+> 更多配置示例、主题配色及扩展资源，请参阅「**[配色与配置](https://github.com/LOWERTOP/Shadowrocket-First)**」仓库
 
 > [!TIP]
 > 
-> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf "含策略组版本")** 是专为 Shadowrocket 打造的开箱即用的配置文件，首发于 [官方群组](https://t.me/ShadowrocketApp)。该配置文件优化了各项设置并包含了详细的参数说明，可在纯文本模式下查阅<br>
+> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf "含策略组版本")** 是专为 Shadowrocket 编写的开箱即用配置文件，首发于 Shadowrocket 官方群组。配置文件针对常用场景进行了优化，并为绝大多数配置项提供了详细注释，可通过纯文本模式查看完整说明<br>
+> 
+> 本仓库与官方群组保持同步更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 维护的版本也会同步更新至最新内容
+>
 > ```ruby
 > https://lowertop.github.io/Shadowrocket/lazy_group.conf
 > ```
-> 
-> 本仓与官方群组发布的版本同时更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓保持同步。对新手用户而言更推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
 
 ------
 
@@ -23,7 +30,7 @@
 
 > [!NOTE]
 > 
-> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（常被用户称为 **小火箭**）是一款由 **[Shadow Launch Technology Limited](https://shadowlaunch.com/)** 专为 iOS 设备开发的网络工具，同时也支持 Mac、Apple TV 等苹果设备
+> **[Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)**（中文用户常称为 **小火箭**）是由 **[Shadow Launch Technology Limited](https://shadowlaunch.com)** 开发的一款面向 Apple 平台的网络工具，支持 iPhone、iPad、Mac 和 Apple TV 等设备
 
 > 官方群组：[Shadowrocket App](https://t.me/ShadowrocketApp)<br>
 > 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
