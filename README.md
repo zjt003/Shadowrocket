@@ -6,9 +6,9 @@
 > 
 > 本使用手册基于 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 维护的关键词列表编写，并结合社区反馈持续更新完善，涵盖 Shadowrocket 大部分功能说明、使用方法及部分常见问题，力求为用户提供一份完整、易读的参考文档
 > 
-> 本仓库为 **非官方项目**，与 [Shadow Launch Technology Limited](https://shadowlaunch.com) 无任何关联，仅由社区进行更新维护。谨向 Shadowrocket 原作者及所有为相关项目作出贡献的开发者、维护者和社区成员致以诚挚感谢
+> 本仓库为 **非官方项目**，与 [Shadow Launch Technology Limited](https://shadowlaunch.com) 无任何关联，仅由社区进行更新维护。谨向原关键词列表作者及所有为相关项目作出贡献的开发者、维护者和社区成员致以诚挚感谢
 > 
-> 请确保在使用本手册及相关软件的过程中，遵守您所在国家或地区的法律法规，并自行承担因使用相关功能而产生的责任
+> 使用本手册及相关软件时，请遵守当地法律法规，并自行承担相关责任
 > 
 > 更多配置示例、主题配色及扩展资源，请参阅「**[配色与配置](https://github.com/LOWERTOP/Shadowrocket-First)**」仓库
 
