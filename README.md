@@ -36,7 +36,7 @@
 > 官方频道：[Shadowrocket News](https://t.me/ShadowrocketNews)<br>
 > 反馈邮箱：[buginapp@gmail.com](mailto:buginapp@gmail.com)
 
-## [使用目录](#使用目录)
+## [使用目录](https://github.com/LOWERTOP/Shadowrocket)
 
 > 点击 **目录标题** 可以快速定位到相关正文<br>
 > 点击正文的 **蓝色标题** 可以快速回到目录
